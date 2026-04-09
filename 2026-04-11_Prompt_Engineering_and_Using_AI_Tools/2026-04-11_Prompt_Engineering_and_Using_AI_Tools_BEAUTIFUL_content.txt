@@ -1,0 +1,205 @@
+============================================================
+FILE: 2026-04-11_Prompt_Engineering_and_Using_AI_Tools_BEAUTIFUL.pptx
+SLIDES: 16
+============================================================
+
+==================== SLIDE 1 ====================
+Prompt Engineering &Using AI Tools
+Learning to Talk to AI Effectively
+April 11, 2026
+Week 2 of the AI Phase  |  Kids Computer Science Class
+
+==================== SLIDE 2 ====================
+Today's Journey
+1
+Quick Recap: Last Week's AI Foundations
+2
+What is a Prompt?
+3
+Why Prompts Matter
+4
+The Prompting Framework
+5
+Good vs Bad Prompts
+6
+Prompting Techniques
+7
+AI Limitations & Safety
+8
+Hands-On Activity!
+
+==================== SLIDE 3 ====================
+Quick Recap: Last Week's AI Foundations
+LLM = Large Language Model
+AI trained on massive text data to predict the next word
+Transformer
+Architecture that processes all words at once using attention
+Next Token Prediction
+The core process: predicting the most likely next word
+AI Agents
+AI that can plan, use tools, and take actions autonomously
+Now let's learn how to actually USE these AI tools!
+
+==================== SLIDE 4 ====================
+What is a Prompt?
+A prompt is the text instruction you give to an AI to get a response
+Simple:
+"What is the weather?"
+Better:
+"What's the weather forecast for Portland, Oregon this weekend?"
+Best:
+"Give me a 3-day weather forecast for Portland, Oregon starting Friday. Include highs, lows, and rain chance."
+The more specific your prompt, the better the AI's response!
+
+==================== SLIDE 5 ====================
+Why Prompts Matter: Same AI, Different Results
+Vague Prompt
+"Tell me about dogs"
+Result: A generic, unfocused response that covers random dog facts. Not useful for any specific purpose.
+Specific Prompt
+"Explain the top 3 most popular dog breeds for families with kids, including size and temperament"
+Result: A focused, helpful response with exactly what you need -- breed names, sizes, and temperaments.
+The AI is the same -- YOUR prompt determines the quality of the answer!
+
+==================== SLIDE 6 ====================
+The Prompting Framework: R.T.C.F.
+R
+= Role
+Who should the AI be?(teacher, scientist, editor)
+T
+= Task
+What do you want it to do?(explain, write, compare)
+C
+= Context
+What background infodoes it need?
+F
+= Format
+How should the answer look?(list, paragraph, table)
+Example using all four:
+"You are a history teacher (Role). Explain the causes of WW2 (Task). My students are in 8th grade (Context). Use 5 bullet points (Format)."
+Remember: The more parts of RTCF you include, the better the response!
+
+==================== SLIDE 7 ====================
+Putting R.T.C.F. Together
+Role:
+"You are a friendly science teacher for 8th graders."
+Task:
+"Explain how photosynthesis works."
+Context:
+"The students have already learned about plant cells."
+Format:
+"Use 3 bullet points with simple language. Include an analogy."
+Combined Prompt:
+"You are a friendly science teacher for 8th graders. Explain how photosynthesis works. The students have already learned about plant cells. Use 3 bullet points with simple language. Include an analogy."
+You don't need ALL four every time -- but the more you include, the better!
+
+==================== SLIDE 8 ====================
+Good vs Bad Prompts: Side by Side
+Bad Prompt
+Good Prompt
+"Write an essay"
+→
+"Write a 5-paragraph essay about why recycling is important for a 7th grade science class"
+"Fix this code"
+→
+"Find the bug in this Python function that should add two numbers but returns None"
+"Help with homework"
+→
+"Explain how to solve quadratic equations step by step with an example using x² + 5x + 6 = 0"
+Specificity is the key to great AI responses!
+
+==================== SLIDE 9 ====================
+Prompting Techniques
+Zero-Shot
+Just ask directly. No examples needed.
+Example: "Translate 'hello' to Spanish"
+Few-Shot
+Give the AI a few examples first so it learns the pattern.
+Example: "Happy = positive, Sad = negative, Excited = ?"
+Chain-of-Thought
+Ask the AI to think step by step.
+Example: "Solve this math problem. Show your work step by step."
+Remember Few-Shot from last week? GPT-3 surprised everyone by learning from just a few examples!
+
+==================== SLIDE 10 ====================
+Chain-of-Thought: Making AI Think Step by Step
+Without Chain-of-Thought
+"What is 15% tip on $42.50?"
+AI response:
+"The tip would be $6.50"(Might be wrong -- no work shown!)
+With Chain-of-Thought
+"What is 15% tip on $42.50? Think step by step."
+AI response:
+Step 1: 10% of $42.50 = $4.25Step 2: 5% = $4.25 / 2 = $2.125Step 3: 15% = $4.25 + $2.125 = $6.38
+Adding 'think step by step' or 'explain your reasoning' makes AI much more accurate!
+
+==================== SLIDE 11 ====================
+AI Limitations: Hallucinations
+Hallucination = When AI generates false information but presents it confidently
+AI might invent fake book titles that don't exist
+AI might cite made-up statistics or research papers
+AI might give wrong answers to math or logic problems
+ALWAYS fact-check important AI responses! AI is confident, not always correct.
+
+==================== SLIDE 12 ====================
+More AI Limitations to Know
+Knowledge Cutoff
+AI doesn't know about recent events after its training date
+Bias
+AI can reflect biases from its training data
+No Real Understanding
+AI predicts words -- it doesn't truly 'understand' like humans
+Context Window
+AI can only process a limited amount of text at once
+Understanding limitations makes you a SMARTER AI user!
+
+==================== SLIDE 13 ====================
+Using AI Safely & Responsibly
+DO's
+✓  Fact-check important information
+✓  Use AI as a learning helper, not a replacement
+✓  Tell teachers when you use AI for assignments
+✓  Protect your personal information
+DON'T's
+✗  Don't share personal info (address, passwords)
+✗  Don't copy AI output and claim it as your own
+✗  Don't trust AI blindly -- verify important facts
+✗  Don't use AI to cheat on tests or assignments
+AI is a powerful TOOL -- use it wisely and honestly!
+
+==================== SLIDE 14 ====================
+AI Tools You Can Try
+ChatGPT
+by OpenAI
+Most popular chatbot, free tier available
+Claude
+by Anthropic
+Focused on being helpful and safe
+Gemini
+by Google
+Integrated with Google services
+Copilot
+by Microsoft
+Built into Windows, Edge, and Office
+All of these use LLMs -- the concepts you learned last week power these tools!
+
+==================== SLIDE 15 ====================
+Today's Key Takeaways
+1
+A prompt is how you talk to AI -- wording matters!
+2
+Use R.T.C.F.: Role, Task, Context, Format
+3
+Be specific: vague prompts = vague answers
+4
+Chain-of-thought: 'think step by step' improves accuracy
+5
+AI can hallucinate -- always fact-check
+6
+Use AI responsibly -- it's a tool, not a shortcut
+Time for the activity and Kahoot!
+
+==================== SLIDE 16 ====================
+?
+Questions?
+Let's practice prompting!

@@ -1,0 +1,432 @@
+============================================================
+FILE: 2026-04-04_Introduction_to_Generative_AI_and_LLMs.pptx
+SLIDES: 20
+============================================================
+
+==================== SLIDE 1 ====================
+Comprehensive Lecture
+The AI Revolution
+From Neural Networks to Intelligent Agents
+Understanding AI: History, Technology, and Future Applications
+
+==================== SLIDE 2 ====================
+Today's Journey
+What we'll explore in this lecture
+1
+Foundations of AI
+History and neural networks
+2
+The Transformer Era
+2017 breakthrough and beyond
+3
+How LLMs Work
+Training and inference explained
+4
+The Rise of AI Agents
+From chatbots to autonomous systems
+5
+Real-World Applications
+Industry use cases and adoption
+6
+Future and Ethics
+Where AI is headed
+
+==================== SLIDE 3 ====================
+Part 1: Foundations
+What is Artificial Intelligence?
+Definition
+AI is the simulation of human intelligence by machines, enabling them to learn, reason, perceive, and make decisions.
+Key Capabilities:
+• Learning from data and experience
+• Recognizing patterns and making predictions
+• Understanding and generating language
+• Making autonomous decisions
+Types of AI:
+Narrow AI (ANI)
+Specialized for specific tasks. What we have today.
+General AI (AGI)
+Human-level intelligence. Still theoretical.
+Super AI (ASI)
+Surpasses human intelligence. Hypothetical.
+
+==================== SLIDE 4 ====================
+Part 1: Foundations
+The Road to Modern AI
+50s
+Birth of AI
+Turing Test, Dartmouth
+80s
+Expert Systems
+Rule-based AI
+90s
+Machine Learning
+Statistical methods
+10s
+Deep Learning
+ImageNet, AlphaGo
+20s
+LLM Era
+GPT, ChatGPT
+1956
+Dartmouth Conference
+The term 'AI' is coined
+1997
+Deep Blue vs Kasparov
+AI defeats chess champion
+2012
+AlexNet Revolution
+Deep learning takes over
+2017
+Transformers Paper
+Foundation for modern LLMs
+Key Insight: AI has gone through multiple 'winters' of reduced funding, but each revival brought stronger capabilities. The 2017 Transformer architecture triggered the current AI boom.
+
+==================== SLIDE 5 ====================
+Part 1: Foundations
+Neural Networks: The Building Blocks
+Core Concept
+Neural networks are computing systems inspired by the human brain. They consist of interconnected nodes (neurons) that process information in layers.
+How They Learn:
+1
+Input: Data enters through input layer
+2
+Process: Hidden layers transform data
+3
+Output: Final layer produces prediction
+4
+Learn: Weights adjust to reduce errors
+Input
+Hidden
+Output
+Deep Learning = Neural networks with many hidden layers
+
+==================== SLIDE 6 ====================
+Part 2: The Transformer Era
+2017: "Attention Is All You Need"
+The paper that changed everything
+The Problem Before
+Previous models (RNNs, LSTMs) processed text sequentially - one word at a time. This was slow and struggled with long-range dependencies.
+The Breakthrough
+Transformers process all words simultaneously using 'self-attention' - allowing the model to see relationships across the entire input at once.
+Why It Mattered:
+• Massively parallel = much faster training
+• Better at understanding context
+• Enabled scaling to billions of parameters
+This architecture is the foundation of GPT, BERT, Claude, and every modern LLM.
+
+==================== SLIDE 7 ====================
+Part 2: The Transformer Era
+2018: GPT and BERT Are Born
+OpenAI's GPT-1
+June 2018 | 117M parameters
+Generative Pre-trained Transformer. Designed to generate text by predicting the next word.
+Key Characteristics:
+• Decoder-only architecture
+• Left-to-right text generation
+• Autoregressive: predicts next token
+• Excels at text generation, completion
+Became: GPT-2 → GPT-3 → ChatGPT → GPT-4
+Google's BERT
+October 2018 | 340M parameters
+Bidirectional Encoder. Designed to understand text meaning and context.
+Key Characteristics:
+• Encoder-only architecture
+• Bidirectional context understanding
+• Masked language modeling
+• Excels at classification, Q&A
+Powers: Google Search, sentiment analysis, NER
+GPT lineage dominates today's LLMs, but BERT-style models power many search and classification tasks
+
+==================== SLIDE 8 ====================
+Part 2: The Transformer Era
+2020: GPT-3 Changes the Game
+175B
+Parameters
+117x
+Larger than GPT-2
+BREAKTHROUGH: Few-Shot Learning
+GPT-3 could perform new tasks with just a few examples in the prompt - no fine-tuning required.
+New Capabilities:
+• Write code from natural language
+• Answer questions with reasoning
+• Translate between languages
+• Summarize complex topics
+Industry Impact
+API Access Model
+OpenAI offered GPT-3 as a paid API, creating a new business model.
+Scaling Laws Confirmed
+Research showed predictable relationship between compute and performance.
+AI Arms Race Begins
+Google, Meta, Anthropic accelerated LLM development.
+GPT-3 proved that scale could unlock general-purpose language intelligence
+
+==================== SLIDE 9 ====================
+Part 2: The Transformer Era
+The LLM Evolution: 2017-2025
+2017
+Transformer
+Attention Is All You Need
+2018
+GPT-1 + BERT
+Two approaches emerge
+2019
+GPT-2
+1.5B params, scaling
+2020
+GPT-3
+175B, few-shot learning
+2021
+DALL-E
+Image Generation
+2022
+ChatGPT
+Consumer AI revolution
+2023
+GPT-4, Claude
+Multimodal, reasoning
+2024-25
+AI Agents
+Autonomous systems
+OPENAI
+GPT series, ChatGPT, DALL-E, o1
+ANTHROPIC
+Claude series, Constitutional AI
+GOOGLE
+PaLM, Gemini, 1M+ context
+OPEN SOURCE
+LLaMA, Mistral, Mixtral
+Key Trend: From research curiosity (2017) to world-changing technology (2022) in just 5 years. Now AI agents extend LLMs to autonomous action.
+
+==================== SLIDE 10 ====================
+Part 3: How LLMs Work
+Training: How LLMs Learn
+1
+Pre-training
+Learn language patterns from massive text data.
+Scale: Trillions of tokens
+2
+Fine-tuning
+Specialize on curated examples and instructions.
+Scale: Millions of examples
+3
+RLHF
+Learn human preferences for helpfulness and safety.
+Scale: Thousands of comparisons
+The Core Idea: Next Token Prediction
+"The quick brown" → fox   (Predicted)
+By predicting billions of 'next words,' the model learns grammar, facts, reasoning patterns, and more
+Training Cost: GPT-4 estimated at $100M+ to train. Requires thousands of GPUs running for months.
+Why RLHF Matters: Pre-training creates a 'next-word predictor.' RLHF transforms it into a helpful assistant.
+
+==================== SLIDE 11 ====================
+November 2022: ChatGPT Launches
+1M
+Users in 5 days
+100M
+Users in 2 months
+FASTEST GROWING APP IN HISTORY
+TikTok: 9 months to 100M. Instagram: 2.5 years.
+What Made It Different:
+• Conversational: Natural dialogue
+• RLHF: Trained to be helpful
+• Free access: Anyone could try
+• Versatile: Code, write, explain
+Industry Impact
+Google 'Code Red'
+Declared emergency, rushed Bard launch.
+Microsoft's $10B Bet
+Extended OpenAI partnership, integrated everywhere.
+Global AI Race
+Every tech giant accelerated AI plans.
+ChatGPT proved AI could be useful for everyone, not just researchers
+
+==================== SLIDE 12 ====================
+Part 4: The Rise of AI Agents
+From Chatbots to Agents
+The next evolution of AI
+CHATBOT (2022-2023)
+Responds to prompts. Human drives all actions. Limited to text.
+↓
+ASSISTANT WITH TOOLS (2023-2024)
+Can search web, run code, access files. Still needs human oversight.
+↓
+AI AGENT (2024-2025)
+Plans and executes multi-step tasks autonomously. Uses tools, handles errors.
+The Fundamental Shift
+CHATBOT
+Human: "What's the weather?"
+AI: "I can't check weather."
+Human: *googles it*
+AGENT
+Human: "What's the weather?"
+AI: *searches weather API*
+AI: "72°F and sunny"
+The Key Difference
+Agents don't just respond - they take action. They can browse, code, email, and execute tasks in the real world.
+Why Now? LLMs got good enough at reasoning to be trusted with multi-step execution.
+
+==================== SLIDE 13 ====================
+Part 4: The Rise of AI Agents
+What Makes an AI Agent?
+Core Components
+1. LLM Brain
+The reasoning engine that understands tasks and decides actions.
+2. Tools / Actions
+Web search, code execution, API calls, browser control.
+3. Memory
+Short-term context and long-term stored knowledge.
+4. Planning & Orchestration
+Logic to break goals into steps and handle errors.
+The Agent Loop
+Goal / Task
+↓
+Think: Plan next step
+↓
+Act: Use a tool
+↓
+Observe: Get result
+Done? No → Loop | Yes → Return
+
+==================== SLIDE 14 ====================
+Part 4: The Rise of AI Agents
+Enterprise Agent Adoption
+62%
+scaling or experimenting with AI agents
+23%
+Actively Scaling
+39%
+Experimenting
+Projected by 2028
+• 33% of enterprise software will include agents
+• 15% of work decisions made autonomously
+Source: McKinsey, Gartner
+Top AI Agent Use Cases (% of adopters)
+
+==================== SLIDE 15 ====================
+Part 5: Real-World Applications
+AI in the Enterprise Today
+88%
+use AI regularly
+95%
+of U.S. use GenAI
+171%
+average ROI
+65%
+use GenAI (2x YoY)
+IT & Engineering
+• Code generation and review
+• IT help desk automation
+• Security threat detection
+Marketing & Sales
+• Content creation at scale
+• Personalized outreach
+• Lead scoring
+Operations & HR
+• Document processing
+• Recruitment screening
+• Process automation
+Customer Service
+• 24/7 chatbot support
+• Ticket routing
+• Sentiment analysis
+The Challenge: 74% of organizations still struggle to scale AI beyond pilots. Success requires clear use cases, data quality, and change management.
+Sources: McKinsey State of AI 2025, Bain, Deloitte
+
+==================== SLIDE 16 ====================
+Part 5: Real-World Applications
+Industry Applications
+Healthcare
+90% hospital adoption by 2025
+Diagnostics
+AI analyzes medical images
+Clinical Docs
+Auto-generates notes
+Drug Discovery
+AI designs drug candidates
+Finance & Insurance
+325% YoY insurance growth
+Fraud Detection
+Real-time monitoring
+Risk Assessment
+Underwriting automation
+Claims Processing
+Auto-extract and verify
+Legal
+GenAI doubled: 14% to 26%
+Contract Analysis
+Review thousands of contracts
+Legal Research
+Search case law
+Document Drafting
+Generate first drafts
+AI augments professionals rather than replacing them - humans remain in the loop for critical decisions
+
+==================== SLIDE 17 ====================
+Part 6: Future and Ethics
+Where AI Is Headed
+Near-Term (2025-2027)
+Ubiquitous AI Assistants
+AI integrated into every app. Personal assistants that know your context.
+Specialized Agents
+Industry-specific AI: legal, medical, financial analysis, scientific discovery.
+Multimodal by Default
+All AI handles text, images, audio, video. Voice-first interfaces.
+Medium-Term (2027-2030+)
+Autonomous Agent Teams
+Multiple AI agents collaborating on complex projects.
+Scientific Breakthroughs
+AI-driven drug discovery, materials science, climate solutions.
+AGI Horizon?
+Debate continues. Significant uncertainty about timeline remains.
+Key Uncertainty: Rate of progress is hard to predict. Could accelerate or plateau. Either way, current AI is already transformative.
+
+==================== SLIDE 18 ====================
+Part 6: Future and Ethics
+Ethical Considerations and Risks
+Bias and Fairness
+AI can perpetuate biases in training data.
+Misinformation
+AI generates convincing fake content at scale.
+Privacy
+Concerns about data collection and consent.
+Job Displacement
+Automation of knowledge work.
+Industry Responses
+• Constitutional AI (Anthropic)
+• Red teaming and safety testing
+• Content watermarking
+Regulatory Landscape
+• EU AI Act (2024)
+• US Executive Orders
+• Global AI safety summits
+Best Practices
+• Human-in-the-loop
+• Transparency about AI use
+• Regular bias audits
+The Balance: AI offers enormous benefits but requires thoughtful deployment. Success comes from embracing the technology while actively managing risks.
+
+==================== SLIDE 19 ====================
+Summary
+Key Takeaways
+1
+Transformers Changed Everything
+The 2017 architecture enabled scale by processing text in parallel.
+2
+Scale Unlocks Capabilities
+Larger models gain new abilities. GPT-3's few-shot learning was emergent.
+3
+Agents Are the Next Frontier
+AI evolving from answering to taking actions with tools.
+4. Enterprise Adoption Is Here
+88% of enterprises use AI. It's operational, not experimental.
+5. AI Augments, Not Replaces
+Humans handle judgment; AI handles routine work.
+6. Responsible Development Matters
+Powerful AI requires thoughtful governance.
+Bottom Line: We're in the early days of a major technological shift. Understanding AI is now essential for every professional.
+
+==================== SLIDE 20 ====================
+Discussion
+Questions?
+Let's discuss what you've learned and explore how AI might apply to your work and interests.
+Thank you for attending
