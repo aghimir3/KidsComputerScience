@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everest IT — Kids Computer Science Class</title>
+    <style>
+        /* ── Reset & Base ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #333;
+            background: #f8f9fa;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── Hero Section ── */
+        .hero {
+            background: linear-gradient(135deg, #1E3A5F 0%, #2a5298 50%, #1E3A5F 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 1.5rem 2.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #FF9933;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: #FF9933;
+            color: #1E3A5F;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.35rem 1rem;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+        .hero-subtitle {
+            font-size: 1.05rem;
+            color: #c8dcf0;
+            margin-bottom: 1.5rem;
+        }
+        .hero-details {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        .hero-detail {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 0.8rem 1.2rem;
+            min-width: 150px;
+        }
+        .hero-detail-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #FF9933;
+            font-weight: 600;
+        }
+        .hero-detail-value {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #FF9933;
+            color: #1E3A5F;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 0.9rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .hero-cta:hover {
+            background: #ffad5c;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255,153,51,0.3);
+        }
+
+        /* ── Sections ── */
+        .section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1E3A5F;
+            margin-bottom: 0.5rem;
+        }
+        .section-subtitle {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        /* ── Why AI Section ── */
+        .why-ai {
+            background: white;
+        }
+        .why-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.2rem;
+        }
+        .why-card {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 1.5rem;
+            border-left: 4px solid;
+            transition: transform 0.2s;
+        }
+        .why-card:hover { transform: translateY(-3px); }
+        .why-card:nth-child(1) { border-color: #673AB7; }
+        .why-card:nth-child(2) { border-color: #FF9933; }
+        .why-card:nth-child(3) { border-color: #2E7D32; }
+        .why-card-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .why-card h3 { font-size: 1.05rem; color: #1E3A5F; margin-bottom: 0.4rem; }
+        .why-card p { font-size: 0.9rem; color: #555; }
+
+        /* ── Curriculum Timeline ── */
+        .curriculum { background: #f8f9fa; }
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0.6rem;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #3467A6, #673AB7, #2E7D32);
+            border-radius: 3px;
+        }
+        .phase {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+        }
+        .phase::before {
+            content: '';
+            position: absolute;
+            left: -1.65rem;
+            top: 0.5rem;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px currentColor;
+        }
+        .phase:nth-child(1)::before { background: #3467A6; color: #3467A6; }
+        .phase:nth-child(2)::before { background: #673AB7; color: #673AB7; }
+        .phase:nth-child(3)::before { background: #2E7D32; color: #2E7D32; }
+        .phase-header {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+        .phase-months {
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.25rem 0.7rem;
+            border-radius: 50px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .phase:nth-child(1) .phase-months { background: #3467A6; }
+        .phase:nth-child(2) .phase-months { background: #673AB7; }
+        .phase:nth-child(3) .phase-months { background: #2E7D32; }
+        .phase-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1E3A5F;
+        }
+        .phase-now {
+            font-size: 0.7rem;
+            font-weight: 700;
+            background: #FFC107;
+            color: #333;
+            padding: 0.2rem 0.6rem;
+            border-radius: 50px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .phase-desc {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.7;
+        }
+        .phase-closing {
+            text-align: center;
+            font-style: italic;
+            color: #1E3A5F;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+        }
+
+        /* ── AI Deep Dive ── */
+        .ai-section {
+            background: linear-gradient(135deg, #673AB7 0%, #512DA8 100%);
+            color: white;
+        }
+        .ai-section .section-title { color: white; }
+        .ai-section .section-subtitle { color: rgba(255,255,255,0.7); }
+        .ai-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+        }
+        .ai-card {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 14px;
+            padding: 1.3rem;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .ai-card:hover {
+            background: rgba(255,255,255,0.18);
+            transform: translateY(-3px);
+        }
+        .ai-card h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+        .ai-card p { font-size: 0.85rem; color: rgba(255,255,255,0.8); }
+        .ai-bottom {
+            text-align: center;
+            margin-top: 1.5rem;
+            background: rgba(255,193,7,0.15);
+            border: 1px solid rgba(255,193,7,0.3);
+            padding: 1rem;
+            border-radius: 12px;
+            font-weight: 600;
+            color: #FFC107;
+        }
+
+        /* ── Team Section ── */
+        .team { background: white; }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .team-card {
+            background: #f8f9fa;
+            border-radius: 14px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .team-card:hover { transform: translateY(-3px); }
+        .team-card-role {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #FF9933;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+        .team-card h3 {
+            font-size: 1.15rem;
+            color: #1E3A5F;
+            margin-bottom: 0.6rem;
+        }
+        .team-card-detail {
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 0.25rem;
+        }
+        .team-support {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            background: #f0f4f8;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        .team-support strong { color: #1E3A5F; }
+
+        /* ── What's Different ── */
+        .diff { background: #f8f9fa; }
+        .diff-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+        }
+        .diff-col {
+            border-radius: 14px;
+            padding: 1.5rem;
+        }
+        .diff-col.others {
+            background: white;
+            border: 2px solid #FF6F61;
+        }
+        .diff-col.us {
+            background: white;
+            border: 2px solid #2E7D32;
+        }
+        .diff-col h3 {
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid;
+        }
+        .diff-col.others h3 { color: #FF6F61; border-color: #FF6F61; }
+        .diff-col.us h3 { color: #2E7D32; border-color: #2E7D32; }
+        .diff-item {
+            font-size: 0.9rem;
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        .diff-item-icon { flex-shrink: 0; font-size: 0.85rem; }
+        .diff-col.others .diff-item-icon { color: #FF6F61; }
+        .diff-col.us .diff-item-icon { color: #2E7D32; }
+
+        /* ── Schedule ── */
+        .schedule { background: white; }
+        .schedule-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.2rem;
+        }
+        .schedule-card {
+            background: #f8f9fa;
+            border-radius: 14px;
+            padding: 1.5rem;
+            border-top: 4px solid;
+        }
+        .schedule-card:nth-child(1) { border-color: #1E3A5F; }
+        .schedule-card:nth-child(2) { border-color: #FF9933; }
+        .schedule-card h3 { font-size: 1.05rem; color: #1E3A5F; margin-bottom: 0.5rem; }
+        .schedule-card .time {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #FF9933;
+            margin-bottom: 0.5rem;
+        }
+        .schedule-card p { font-size: 0.9rem; color: #555; }
+        .schedule-extras {
+            margin-top: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.8rem;
+        }
+        .schedule-extra {
+            background: #f0f4f8;
+            padding: 0.8rem 1rem;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .schedule-extra-icon { font-size: 1.1rem; }
+
+        /* ── Fees ── */
+        .fees { background: #f8f9fa; }
+        .fees-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        .fees-amount {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1E3A5F;
+        }
+        .fees-amount span { font-size: 1rem; color: #999; font-weight: 400; }
+        .fees-admission {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0.5rem 0 1rem;
+        }
+        .fees-multi {
+            background: #FFF3E0;
+            color: #E65100;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        .fees-methods {
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+        .fees-method {
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 0.4rem;
+        }
+        .fees-method a { color: #3467A6; }
+
+        /* ── FAQ ── */
+        .faq { background: white; }
+        .faq-list { max-width: 700px; margin: 0 auto; }
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            overflow: hidden;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.2rem 0;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1E3A5F;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: inherit;
+        }
+        .faq-question:hover { color: #FF9933; }
+        .faq-arrow {
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+            color: #999;
+        }
+        .faq-item.open .faq-arrow { transform: rotate(180deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 200px;
+            padding-bottom: 1.2rem;
+        }
+        .faq-answer p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* ── CTA Footer ── */
+        .cta-footer {
+            background: linear-gradient(135deg, #1E3A5F 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 1.5rem;
+        }
+        .cta-footer h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        .cta-footer-sub {
+            color: #c8dcf0;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+        .cta-contacts {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        .cta-contact {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            min-width: 200px;
+        }
+        .cta-contact-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #FF9933;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+        .cta-contact-value {
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+        .cta-contact-value a {
+            color: white;
+            text-decoration: none;
+        }
+        .cta-contact-value a:hover { color: #FF9933; }
+        .cta-contact-note {
+            font-size: 0.8rem;
+            color: #c8dcf0;
+            margin-top: 0.3rem;
+        }
+        .cta-apply {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #FF9933;
+            color: #1E3A5F;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+            margin-bottom: 1rem;
+        }
+        .cta-apply:hover {
+            background: #ffad5c;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255,153,51,0.3);
+        }
+        .cta-footer-info {
+            font-size: 0.85rem;
+            color: #c8dcf0;
+        }
+        .cta-footer-brand {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.8rem;
+            color: #8aa8c8;
+        }
+
+        /* ── Mobile Responsive ── */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.6rem; }
+            .hero-details { gap: 0.8rem; }
+            .hero-detail { min-width: 130px; padding: 0.6rem 0.8rem; }
+            .section { padding: 2rem 1.2rem; }
+            .section-title { font-size: 1.3rem; }
+            .diff-grid { grid-template-columns: 1fr; }
+            .cta-footer h2 { font-size: 1.4rem; }
+            .cta-contacts { flex-direction: column; align-items: center; }
+            .cta-contact { width: 100%; max-width: 300px; }
+            .ai-grid { grid-template-columns: 1fr; }
+            .team-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 400px) {
+            .hero { padding: 2rem 1rem; }
+            .hero h1 { font-size: 1.4rem; }
+            .hero-detail { min-width: 100%; }
+            .fees-amount { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ── Hero ── -->
+<section class="hero">
+    <div class="hero-badge">New Session Starting April 4, 2026</div>
+    <h1>Kids Computer Science Class</h1>
+    <p class="hero-subtitle">Empowering Future Innovators Through Technology</p>
+    <div class="hero-details">
+        <div class="hero-detail">
+            <div class="hero-detail-label">When</div>
+            <div class="hero-detail-value">Every Saturday</div>
+            <div style="font-size:0.8rem;color:#c8dcf0">9 AM &ndash; 1 PM Pacific</div>
+        </div>
+        <div class="hero-detail">
+            <div class="hero-detail-label">Who</div>
+            <div class="hero-detail-value">Ages 10 &ndash; 18</div>
+            <div style="font-size:0.8rem;color:#c8dcf0">All experience levels</div>
+        </div>
+        <div class="hero-detail">
+            <div class="hero-detail-label">How</div>
+            <div class="hero-detail-value">Live &amp; Online</div>
+            <div style="font-size:0.8rem;color:#c8dcf0">Via Microsoft Teams</div>
+        </div>
+    </div>
+    <a href="https://forms.office.com/pages/responsepage.aspx?id=UcjWa8cxZUmxBQ98t7uR9lkbiQeo4n9PggBv9gtU0xJUMExHTTdJME1PSlY4RFNJVFFDUFBIRzI3UC4u" class="hero-cta" target="_blank">Apply Now &rarr;</a>
+</section>
+
+<!-- ── Why AI ── -->
+<section class="why-ai">
+    <div class="section">
+        <h2 class="section-title">Why Your Child Needs AI Skills &mdash; Now</h2>
+        <p class="section-subtitle">Every top university and employer is looking for students who understand AI.</p>
+        <div class="why-cards">
+            <div class="why-card">
+                <div class="why-card-icon">&#127891;</div>
+                <h3>College Applications</h3>
+                <p>Stanford, MIT, and Harvard value students who can build with AI &mdash; not just use it. Your child will stand out.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-card-icon">&#128188;</div>
+                <h3>Future Careers</h3>
+                <p>AI skills are becoming required across every industry &mdash; tech, medicine, law, and business.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-card-icon">&#128640;</div>
+                <h3>Head Start</h3>
+                <p>Students who learn AI now will have a massive advantage over those who don't. The gap is only widening.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Who It's For ── -->
+<section style="background:#f8f9fa;">
+    <div class="section" style="text-align:center; padding-top:2rem; padding-bottom:2rem;">
+        <p style="font-size:1.05rem; color:#555; max-width:700px; margin:0 auto;">
+            <strong style="color:#1E3A5F;">Who it's for:</strong> Students ages 10 to 18 who want to understand technology, build with AI, and learn programming &mdash; whether they want to pursue tech careers, stand out on college applications, or simply become confident with the tools shaping every industry. <strong style="color:#FF9933;">No prior experience needed.</strong> Join from anywhere in the world.
+        </p>
+    </div>
+</section>
+
+<!-- ── Curriculum ── -->
+<section class="curriculum">
+    <div class="section">
+        <h2 class="section-title">A Complete Year of Computer Science</h2>
+        <p class="section-subtitle">Three phases that build on each other &mdash; from foundations to AI to programming.</p>
+        <div class="timeline">
+            <div class="phase">
+                <div class="phase-header">
+                    <span class="phase-months">Jan &ndash; Mar</span>
+                    <span class="phase-name">Foundations</span>
+                </div>
+                <p class="phase-desc">Learn how computers and the internet actually work &mdash; from the hardware inside your PC to cloud computing, Linux, and command line tools. Students also learn cybersecurity basics to stay safe online.</p>
+            </div>
+            <div class="phase">
+                <div class="phase-header">
+                    <span class="phase-months">Apr &ndash; Jun</span>
+                    <span class="phase-name">Artificial Intelligence</span>
+                    <span class="phase-now">&#9733; Starts April 4</span>
+                </div>
+                <p class="phase-desc">The hottest topic in tech &mdash; and your child will understand it. Students learn prompt engineering, work hands-on with ChatGPT, Claude Code, and OpenClaw, build their own AI agents, and explore AI ethics and safety.</p>
+            </div>
+            <div class="phase">
+                <div class="phase-header">
+                    <span class="phase-months">Jul &ndash; Dec</span>
+                    <span class="phase-name">Programming</span>
+                </div>
+                <p class="phase-desc">From writing their first line of code to building a complete software project. Students learn programming fundamentals, developer tools like VS Code and GitHub, logic and problem-solving, and data structures &mdash; finishing with a capstone project they can showcase.</p>
+            </div>
+        </div>
+        <p class="phase-closing">Enrollment opens every January, April, and July &mdash; join at the start of any phase and build from there.</p>
+    </div>
+</section>
+
+<!-- ── AI Deep Dive ── -->
+<section class="ai-section">
+    <div class="section">
+        <h2 class="section-title">Starting April: Artificial Intelligence</h2>
+        <p class="section-subtitle">Your child won't just use AI &mdash; they'll understand how it works and build with it.</p>
+        <div class="ai-grid">
+            <div class="ai-card">
+                <h3>&#129504; How AI Works</h3>
+                <p>Understand what's behind the buzz &mdash; LLMs, training data, and neural networks, demystified.</p>
+            </div>
+            <div class="ai-card">
+                <h3>&#9997;&#65039; Prompt Engineering</h3>
+                <p>The #1 skill for getting professional results from any AI tool.</p>
+            </div>
+            <div class="ai-card">
+                <h3>&#128187; ChatGPT &amp; Claude Code</h3>
+                <p>Hands-on with the same tools professionals use at work every day.</p>
+            </div>
+            <div class="ai-card">
+                <h3>&#129302; OpenClaw &amp; AI Agents</h3>
+                <p>Build and customize autonomous AI agents that can work on their own.</p>
+            </div>
+            <div class="ai-card">
+                <h3>&#128736;&#65039; AI-Powered Projects</h3>
+                <p>Students build real projects using AI tools &mdash; not just theory.</p>
+            </div>
+            <div class="ai-card">
+                <h3>&#9878;&#65039; Ethics &amp; Safety</h3>
+                <p>Use AI responsibly &mdash; understand limitations, bias, and best practices.</p>
+            </div>
+        </div>
+        <div class="ai-bottom">These are skills most adults don't have yet. Your child will be years ahead.</div>
+    </div>
+</section>
+
+<!-- ── Team ── -->
+<section class="team">
+    <div class="section">
+        <h2 class="section-title">Learn From Industry Professionals</h2>
+        <p class="section-subtitle">Your child learns from the same people who build the technology they use every day.</p>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-card-role">Founder &amp; Lead Instructor</div>
+                <h3>Samir Thapa (Bijay)</h3>
+                <p class="team-card-detail">Principal Technology Specialist at Microsoft</p>
+                <p class="team-card-detail">30+ years in the IT industry</p>
+                <p class="team-card-detail">Multiple Master's degrees</p>
+            </div>
+            <div class="team-card">
+                <div class="team-card-role">Teacher</div>
+                <h3>Abhigya</h3>
+                <p class="team-card-detail">Lead Software Engineer at Flagship Financial Group</p>
+                <p class="team-card-detail">Master's in Software Engineering</p>
+                <p class="team-card-detail">Open Source (FOSS) Contributor</p>
+            </div>
+            <div class="team-card">
+                <div class="team-card-role">Teacher</div>
+                <h3>Sanskar</h3>
+                <p class="team-card-detail">CS Engineering 2025 &mdash; Cal State University</p>
+                <p class="team-card-detail">World's youngest Microsoft Cloud Certified</p>
+                <p class="team-card-detail">Software Engineer at Google, Northrop Grumman</p>
+            </div>
+        </div>
+        <div class="team-support">
+            <strong>Support Team:</strong> Sachin sir (Assistant Teacher) &bull; Ishwari maam (Assistant Teacher) &bull; Pratikshya maam (Program Manager &mdash; Parent Contact)
+        </div>
+    </div>
+</section>
+
+<!-- ── What's Different ── -->
+<section class="diff">
+    <div class="section">
+        <h2 class="section-title">This Isn't Your Average Computer Class</h2>
+        <p class="section-subtitle">Your child deserves more than a playlist of tutorials.</p>
+        <div class="diff-grid">
+            <div class="diff-col others">
+                <h3>Other Programs</h3>
+                <div class="diff-item"><span class="diff-item-icon">&#10007;</span> Watch pre-recorded videos alone</div>
+                <div class="diff-item"><span class="diff-item-icon">&#10007;</span> No real teacher interaction</div>
+                <div class="diff-item"><span class="diff-item-icon">&#10007;</span> Generic, one-size-fits-all content</div>
+                <div class="diff-item"><span class="diff-item-icon">&#10007;</span> No homework or accountability</div>
+                <div class="diff-item"><span class="diff-item-icon">&#10007;</span> No feedback on progress</div>
+            </div>
+            <div class="diff-col us">
+                <h3>Everest IT</h3>
+                <div class="diff-item"><span class="diff-item-icon">&#10003;</span> Live instruction every Saturday</div>
+                <div class="diff-item"><span class="diff-item-icon">&#10003;</span> Industry professionals as teachers</div>
+                <div class="diff-item"><span class="diff-item-icon">&#10003;</span> Structured, progressive curriculum</div>
+                <div class="diff-item"><span class="diff-item-icon">&#10003;</span> Weekly homework with grading</div>
+                <div class="diff-item"><span class="diff-item-icon">&#10003;</span> Real feedback and mentorship</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Schedule ── -->
+<section class="schedule">
+    <div class="section">
+        <h2 class="section-title">Class Schedule</h2>
+        <p class="section-subtitle">Support 6 days a week &mdash; not just Saturdays.</p>
+        <div class="schedule-cards">
+            <div class="schedule-card">
+                <h3>Saturday Class</h3>
+                <div class="time">9:00 AM &ndash; 1:00 PM Pacific</div>
+                <p>4 hours of live instruction, hands-on activities, quizzes, and homework review. Every Saturday.</p>
+            </div>
+            <div class="schedule-card">
+                <h3>Daily Hangout Sessions</h3>
+                <div class="time">4:30 &ndash; 5:30 PM Pacific</div>
+                <p>Monday through Friday. Assistant teachers help with homework, answer questions, and communicate with parents.</p>
+            </div>
+        </div>
+        <div class="schedule-extras">
+            <div class="schedule-extra"><span class="schedule-extra-icon">&#128214;</span> 2&ndash;4 hours of weekly homework</div>
+            <div class="schedule-extra"><span class="schedule-extra-icon">&#127909;</span> All classes recorded if missed</div>
+            <div class="schedule-extra"><span class="schedule-extra-icon">&#127942;</span> Certificate upon completion</div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Fees ── -->
+<section class="fees">
+    <div class="section">
+        <h2 class="section-title" style="text-align:center;">Tuition</h2>
+        <p class="section-subtitle" style="text-align:center;">Invest in your child's future.</p>
+        <div class="fees-card">
+            <div class="fees-amount">$200 <span>/ month</span></div>
+            <p class="fees-admission">+ $99 one-time admission fee</p>
+            <div class="fees-multi">&#128101; 2 kids from same family: $300/month total</div>
+            <div class="fees-methods">
+                <p style="font-weight:600;color:#1E3A5F;margin-bottom:0.5rem;">Payment Methods</p>
+                <p class="fees-method">Zelle: <strong>pay@everestitt.com</strong></p>
+                <p class="fees-method">Credit Card / PayPal: <a href="http://tinyurl.com/eitpay" target="_blank">tinyurl.com/eitpay</a></p>
+            </div>
+            <p style="font-size:0.8rem;color:#999;margin-top:0.8rem;">Fees are non-refundable.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq">
+    <div class="section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything parents want to know.</p>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">Can my child join class from home? <span class="faq-arrow">&#9662;</span></button>
+                <div class="faq-answer"><p>Absolutely! We use Microsoft Teams to learn collaboratively. Almost all our students attend remotely.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What type of computer is required? <span class="faq-arrow">&#9662;</span></button>
+                <div class="faq-answer"><p>Any PC or Mac computer is fine. Just make sure it is not older than 5 years.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What happens if my child misses a class? <span class="faq-arrow">&#9662;</span></button>
+                <div class="faq-answer"><p>Please encourage your child to watch class recordings and join the Monday&ndash;Friday hangout sessions (4:30&ndash;5:30 PM Pacific) to catch up.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Will my child understand the teachers? <span class="faq-arrow">&#9662;</span></button>
+                <div class="faq-answer"><p>Our teachers are born and raised in the US, hold degrees in Computer Science and Software Engineering, and speak English fluently.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What kind of headset is recommended? <span class="faq-arrow">&#9662;</span></button>
+                <div class="faq-answer"><p>We recommend the Yealink WH66 Dual Ear (Microsoft Teams certified). Contact Mr. Prabhakar to order: +1 626 230 7764.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can my child attend in person? <span class="faq-arrow">&#9662;</span></button>
+                <div class="faq-answer"><p>Yes, our classroom is in Los Angeles. However, almost all students attend remotely via Microsoft Teams. Contact us for the address if interested.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">My child is over 18 &mdash; can they join? <span class="faq-arrow">&#9662;</span></button>
+                <div class="faq-answer"><p>This class is designed for ages 10 to 18. We plan to open an adult class in the future. Follow our TikTok and Facebook for updates.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can you provide a discount? <span class="faq-arrow">&#9662;</span></button>
+                <div class="faq-answer"><p>For 2 kids in the same household (same parent), the monthly fee is $300 total. There is no discount for only 1 child.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── CTA Footer ── -->
+<section class="cta-footer">
+    <h2>Give Your Child the Skills That Matter</h2>
+    <p class="cta-footer-sub">The AI unit starts April 4th &mdash; don't let your child fall behind.</p>
+    <div class="cta-contacts">
+        <div class="cta-contact">
+            <div class="cta-contact-label">Call or WhatsApp</div>
+            <div class="cta-contact-value"><a href="tel:+16264196649">626-419-6649</a></div>
+            <div class="cta-contact-note">or +1 626 833 6811</div>
+        </div>
+        <div class="cta-contact">
+            <div class="cta-contact-label">Email</div>
+            <div class="cta-contact-value"><a href="mailto:kids@everestitt.com">kids@everestitt.com</a></div>
+            <div class="cta-contact-note">We respond within 24 hours</div>
+        </div>
+        <div class="cta-contact">
+            <div class="cta-contact-label">Parent Contact</div>
+            <div class="cta-contact-value">Pratikshya maam</div>
+            <div class="cta-contact-note">Program Manager</div>
+        </div>
+    </div>
+    <a href="https://forms.office.com/pages/responsepage.aspx?id=UcjWa8cxZUmxBQ98t7uR9lkbiQeo4n9PggBv9gtU0xJUMExHTTdJME1PSlY4RFNJVFFDUFBIRzI3UC4u" class="cta-apply" target="_blank">Apply Now &rarr;</a>
+    <p class="cta-footer-info">Every Saturday &bull; 9 AM &ndash; 1 PM Pacific &bull; Ages 10&ndash;18 &bull; No Experience Needed</p>
+    <div class="cta-footer-brand">
+        <a href="https://everestitt.com" style="color:#FF9933;text-decoration:none;font-weight:600;">everestitt.com</a> &mdash; Empowering Future Innovators
+    </div>
+</section>
+
+<script>
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        // Toggle clicked
+        if (!isOpen) item.classList.add('open');
+    });
+});
+
+// Scroll animation
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.why-card, .ai-card, .team-card, .phase, .schedule-card, .diff-col').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>
