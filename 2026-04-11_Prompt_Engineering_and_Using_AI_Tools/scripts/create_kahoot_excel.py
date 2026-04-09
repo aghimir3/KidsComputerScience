@@ -91,7 +91,7 @@ QUESTIONS = [
     (
         "Which prompt uses the RTCF framework correctly?",
         "'Help me with homework'",
-        "'You are a tutor. Explain photosynthesis to an 8th grader in 3 bullet points.'",
+        "'You are a tutor. Explain photosynthesis to an 8th grader. Use 3 bullets.'",
         "'Photosynthesis'",
         "'I need to learn'",
         30,
