@@ -1,0 +1,185 @@
+============================================================
+FILE: Networking_Basics_for_Kids.pptx
+SLIDES: 13
+============================================================
+
+==================== SLIDE 1 ====================
+How the Internet Works!
+A Fun Journey Into Computer Networks
+Get ready to explore the digital world!
+
+==================== SLIDE 2 ====================
+What is a Network?
+Think of it like a FRIENDSHIP GROUP!
+A network is when computers are connected so they can talk to each other and share things.
+Just like you and your friends pass notes in class, computers send messages through cables or Wi-Fi!
+Fun Fact: Your school probably has hundreds of computers all connected in one big network!
+💻 ↔️ 💻
+Computers talking to each other!
+
+==================== SLIDE 3 ====================
+What is an IP Address?
+It's like your HOME ADDRESS!
+Every computer has a special number called an IP Address. It tells other computers where to find it!
+Just like the mailman needs your address to deliver letters, computers need IP addresses to send messages!
+Example: 192.168.1.25
+IP = Internet Protocol
+Compare it!
+🏠
+Home Address
+123 Main Street
+💻
+IP Address
+192.168.1.25
+Both help find exactly where to deliver something!
+
+==================== SLIDE 4 ====================
+What is a Gateway?
+It's like the FRONT DOOR of your network!
+A Gateway is like a security guard at the entrance of a building. It checks who comes in and who goes out!
+When your computer wants to visit a website, it asks the gateway: "Can you help me get to the internet?"
+Usually: Your router at home is your gateway!
+Your Home Network
+💻 📱 🎮 Your devices
+⬇️
+🚪 GATEWAY (Router)
+⬇️
+🌍 THE INTERNET
+
+==================== SLIDE 5 ====================
+What is DNS?
+It's like a PHONE BOOK for the internet!
+DNS stands for Domain Name System. It translates website names into IP addresses!
+Imagine having to remember 142.250.80.46 instead of google.com - that would be so hard!
+DNS helps you type easy names instead of hard numbers!
+How DNS Works:
+1. You type: www.google.com
+⬇️
+2. DNS looks it up in the "phone book"
+⬇️
+3. DNS finds: 142.250.80.46
+⬇️
+4. You arrive at Google! ✓
+
+==================== SLIDE 6 ====================
+What is a Router?
+It's like a TRAFFIC POLICE OFFICER!
+A Router directs internet traffic to the right place, just like a traffic cop tells cars which way to go!
+It makes sure the video you're watching goes to YOUR tablet, not your sister's phone!
+At home: The box with blinking lights that gives you Wi-Fi!
+Router Sends Data to the Right Device
+💻
+Dad's laptop
+📱
+Mom's phone
+🎮
+Your game
+⬆️  ⬆️  ⬆️
+📡 ROUTER
+"I'll send this video to the game console!"
+
+==================== SLIDE 7 ====================
+Wi-Fi vs Ethernet Cable
+📶 Wi-Fi
+Like talking through the AIR!
+• Uses invisible radio waves
+• No cables needed!
+• Can walk around with your device
+• Sometimes slower than cables
+Great for: phones, tablets, laptops
+🔌 Ethernet Cable
+Like a HIGHWAY for data!
+• Uses a special cable
+• Super fast connection
+• Very reliable - doesn't drop
+• Device must stay plugged in
+Great for: desktop computers, gaming
+
+==================== SLIDE 8 ====================
+What is a Subnet Mask?
+It's like NEIGHBORHOOD BOUNDARIES!
+A Subnet Mask tells your computer which other computers are in the same "neighborhood" (network).
+Just like your ZIP code tells you which houses are in your area!
+Common example: 255.255.255.0
+This means "we're all in the same neighborhood!"
+Your Network Neighborhood
+Same Subnet = Same Neighborhood
+💻
+.1.10
+📱
+.1.15
+🖨️
+.1.20
+🎮
+.1.25
+All start with 192.168.1.X = same neighborhood!
+192.168.2.X = Different neighborhood!
+
+==================== SLIDE 9 ====================
+How Data Travels: Packets!
+It's like sending a PUZZLE in the mail!
+When you send a picture or message, it gets broken into tiny pieces called PACKETS.
+Each packet travels to the destination, then they all get put back together!
+Why? Small packets travel faster and are easier to fix if something goes wrong!
+Sending a Photo
+📷 Your photo gets broken up...
+📦 Part 1
+📦 Part 2
+📦 Part 3
+📦 Part 4
+⬇️ Travel through internet ⬇️
+📷 ✨ ...and put back together!
+
+==================== SLIDE 10 ====================
+What is Ping?
+It's like playing MARCO POLO!
+Ping is a way to check if another computer is there and responding!
+Your computer says "HELLO!" and waits to see if the other computer says "I'M HERE!"
+It also tells you how fast the response came back (in milliseconds)!
+💻
+Your PC
+"Hello!"
+➡️
+⬅️
+"I'm here!"
+🌐
+Website
+Result: Reply in 25ms ✓
+Lower number = faster connection!
+
+==================== SLIDE 11 ====================
+The ipconfig Command
+Like asking "What's MY address?"
+ipconfig shows you all the network information about YOUR computer!
+It tells you your IP address, gateway, and other cool info!
+We'll try this together! It's a real command you can type!
+Command Prompt
+C:\> ipconfig
+Windows IP Configuration
+Ethernet adapter:
+IPv4 Address: 192.168.1.25
+Subnet Mask: 255.255.255.0
+Default Gateway: 192.168.1.1
+Your computer's "ID card" for the network!
+
+==================== SLIDE 12 ====================
+Let's Remember What We Learned!
+🏠 IP Address
+Your computer's home address
+🚪 Gateway
+The front door to the internet
+📖 DNS
+Internet's phone book
+📡 Router
+Traffic police for data
+🏘️ Subnet Mask
+Network neighborhood boundaries
+📦 Packets
+Puzzle pieces of data
+Now let's try some real commands! 💻
+
+==================== SLIDE 13 ====================
+🎮
+KAHOOT TIME!
+Let's test what you learned today!
+Get your devices ready and join the game!

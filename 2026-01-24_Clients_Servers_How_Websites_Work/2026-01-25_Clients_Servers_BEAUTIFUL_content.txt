@@ -1,0 +1,203 @@
+============================================================
+FILE: 2026-01-25_Clients_Servers_BEAUTIFUL.pptx
+SLIDES: 15
+============================================================
+
+==================== SLIDE 1 ====================
+Clients, Servers &How Websites Work
+Understanding the Internet
+January 25, 2026
+
+==================== SLIDE 2 ====================
+Today's Journey
+1
+What are Clients & Servers?
+2
+HTTP & HTTPS - The Web's Language
+3
+Ports - The Apartment Numbers
+4
+How a Website Actually Loads
+5
+Hands-on: tracert Command
+
+==================== SLIDE 3 ====================
+What is a CLIENT?
+A device that ASKS for information
+Examples of Clients:
+💻
+Your Laptop
+📱
+Your Phone
+🎮
+Gaming Console
+📺
+Smart TV
+🔑 Key: When YOU browse the web, YOUR device is the client!
+
+==================== SLIDE 4 ====================
+What is a SERVER?
+A computer that SERVES information to clients
+What makes a server special?
+• Always ON (24/7)
+• Connected to the internet
+• Waiting for requests
+• Stores websites, apps, data
+🖥️
+SERVER
+🔑 Google, Netflix, YouTube all run on powerful servers!
+
+==================== SLIDE 5 ====================
+How Clients & Servers Talk
+💻
+CLIENT
+(Your Computer)
+🖥️
+SERVER
+(Google's Computer)
+1. REQUEST
+"Hey, can I see google.com?"
+2. RESPONSE
+"Here's the webpage!"
+This request-response pattern happens EVERY time you visit a website!
+
+==================== SLIDE 6 ====================
+HTTP - The Web's Language
+H
+Hyper
+T
+Text
+T
+Transfer
+P
+Protocol
+HTTP is the set of rules that clients and servers use to communicate.It's like the language they both speak!
+🗣️ Think of it like: When you order food, you speak the same language as the waiter.HTTP is the "language" computers use to order and deliver web pages!
+
+==================== SLIDE 7 ====================
+HTTP vs HTTPS
+What's the 'S' for?
+HTTP
+📬
+Like a POSTCARDAnyone can read it!
+HTTPS
+🔒
+Like a LOCKED BOXOnly you & server can read!
+S = SECURE
+🔑 Always look for HTTPS and the 🔒 in your browser!Especially when entering passwords or credit cards.
+
+==================== SLIDE 8 ====================
+What are PORTS?
+🏢 Think of a server like an APARTMENT BUILDING...
+#80
+Web (HTTP)
+#443
+Secure Web
+#22
+SSH
+#25
+Email
+SERVER
+The Analogy:
+• IP Address = Building Address
+• Port = Apartment Number
+• Different services live in different "apartments"
+
+==================== SLIDE 9 ====================
+Common Port Numbers
+The ones you should know!
+80
+HTTP
+Regular websites
+443
+HTTPS
+Secure websites
+22
+SSH
+Remote computer access
+53
+DNS
+Domain lookups
+💡 Remember: 80 for regular, 443 for secure!
+
+==================== SLIDE 10 ====================
+Anatomy of a URL
+https://www.google.com/search?q=cats
+https://
+Protocol
+The language
+www.
+Subdomain
+Optional prefix
+google
+Domain
+The website name
+.com
+TLD
+Top-level domain
+/search
+Path
+Page location
+?q=cats
+Query
+Extra info
+🔑 The DOMAIN (like 'google') is the main identifier!It's what you type to find a website.
+
+==================== SLIDE 11 ====================
+The Journey of Loading a Website
+1
+You typegoogle.com
+2
+Computer asks DNSfor IP address
+3
+DNS returns IP:142.250.80.46
+4
+Browser sendsrequest to server
+5
+Server sendswebpage back
+6
+Browser displaysthe page!
+⚡ All of this happens in less than a second!
+
+==================== SLIDE 12 ====================
+DNS - The Internet's Phone Book
+You know your friend's NAME, but your phone needs their NUMBER to call them.DNS works the same way for websites!
+google.com(Domain Name)
+📖DNS
+142.250.80.46(IP Address)
+DNS (Domain Name System) translates human-friendly namesinto computer-friendly IP addresses.Without DNS, you'd have to memorize numbers like 142.250.80.46!
+
+==================== SLIDE 13 ====================
+tracert - Trace the Route!
+Hands-on Activity
+tracert shows every STOP (hop) your data makes on its journey to a website!
+Try this command:
+tracert google.com
+What you'll see:
+1
+Your Router
+2
+ISP
+3
+Data Center
+4
+Google Server
+
+==================== SLIDE 14 ====================
+Today's Key Takeaways
+CLIENT
+A device that ASKS for information
+SERVER
+A computer that SERVES information
+HTTP/HTTPS
+The language of the web (S = Secure!)
+PORTS
+Like apartment numbers for services
+DNS
+Translates names to IP addresses
+🎉 Great job today! Time for Kahoot!
+
+==================== SLIDE 15 ====================
+❓
+Questions?
+Ask away before we start the Kahoot!

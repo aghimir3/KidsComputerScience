@@ -1,0 +1,152 @@
+============================================================
+FILE: Linux_Lecture_Slides.pptx
+SLIDES: 10
+============================================================
+
+==================== SLIDE 1 ====================
+Introduction to Linux
+A Guide for Young Computer Scientists
+Weekend Computer Science Class
+
+==================== SLIDE 2 ====================
+What is Linux?
+Linux is a free and open-source operating system.
+An operating system (OS) manages your computer’s hardware and lets you run programs — just like Windows or macOS, but anyone can use, modify, and share Linux for free!
+What is “Open Source”?
+Imagine you bake a cake and share the recipe with all your friends. They can bake the same cake, add chocolate chips, or share their new version. That’s open source — the “recipe” for Linux is available to everyone!
+Free to Use
+Never pay a cent
+Open Source
+Anyone can view & improve the code
+Secure
+Resistant to viruses
+Customizable
+Change almost everything
+
+==================== SLIDE 3 ====================
+The History of Linux
+In 1991, a 21-year-old Finnish college student named Linus Torvalds wanted an operating system he could tinker with. So he built his own — and shared it with the world for free!
+1991
+Linus Torvalds creates Linux as a hobby project in Finland
+1993
+First distros appear: Debian & Slackware
+1998
+IBM invests heavily — Linux goes mainstream
+2004
+Ubuntu makes Linux beginner-friendly
+2008
+Google releases Android, built on Linux
+Today
+Powers the internet, supercomputers, phones & space!
+
+==================== SLIDE 4 ====================
+Where is Linux Used Today?
+Linux is everywhere — even if you can’t always see it!
+Smartphones
+3B+ Android devices run Linux
+The Internet
+Google, YouTube, Netflix all run on Linux servers
+Space
+NASA & Mars helicopter run Linux
+Supercomputers
+100% of top 500 supercomputers
+Gaming
+Steam Deck runs SteamOS (Linux)
+Cloud
+AWS, Google Cloud, Azure rely on Linux
+
+==================== SLIDE 5 ====================
+Why Linux Matters in CS
+1
+See Under the Hood
+Linux gives you full control to learn how computers really work
+2
+Industry Standard
+Most developers, data scientists, and cybersecurity experts use Linux daily
+3
+Powers the Internet
+Building websites or apps? You’ll almost certainly use Linux servers
+4
+Builds Problem-Solving
+The terminal makes you think logically — a key skill for any programmer
+5
+Free & Accessible
+Anyone in the world can learn Linux without paying a cent
+
+==================== SLIDE 6 ====================
+Linux Distributions
+Because Linux is open source, many groups have created their own versions called distributions ("distros"). Think of it like ice cream — the base is the same, but each flavor is a little different!
+Ubuntu
+Most popular for beginners. Easy to use and great for learning.
+Fedora
+Has the latest software. Popular with developers.
+Linux Mint
+Beginner-friendly with a Windows-like desktop.
+Debian
+One of the oldest. Super stable and reliable.
+Arch Linux
+For advanced users who build their system from scratch.
+
+==================== SLIDE 7 ====================
+The Terminal
+A text-based way to talk to your computer. Instead of clicking icons, you type commands. It looks intimidating at first, but it’s incredibly powerful!
+Terminal
+$ ls
+Desktop  Documents  Downloads
+$ mkdir my_project
+$ cd my_project
+$ touch hello.txt
+$ ls
+hello.txt
+$ _
+Speed
+Many tasks are faster by typing than clicking
+Power
+Some things can only be done through the terminal
+Automation
+Write scripts to automate repetitive tasks
+Remote Access
+Often the only way to manage servers
+
+==================== SLIDE 8 ====================
+Essential Commands
+ls
+List files and folders
+$ ls
+cd
+Change directory
+$ cd Documents
+mkdir
+Make a new directory
+$ mkdir my_folder
+touch
+Create a new empty file
+$ touch hello.txt
+rm
+Remove (delete) a file
+$ rm hello.txt
+rmdir
+Remove an empty folder
+$ rmdir old_folder
+
+==================== SLIDE 9 ====================
+Let’s Try It!
+1.  Go to DistroSea.com in your browser
+2.  Select Ubuntu and wait for it to load
+3.  Open the Terminal (Ctrl + Alt + T)
+4.  Start practicing your commands!
+
+==================== SLIDE 10 ====================
+Recap
+1
+Linux is a free, open-source OS created by Linus Torvalds in 1991
+2
+It’s used everywhere: phones, servers, supercomputers, space, gaming
+3
+Linux comes in many flavors called distributions (Ubuntu, Fedora, Mint…)
+4
+The terminal is a powerful text-based way to control your computer
+5
+Key commands: ls, cd, mkdir, touch, rm, rmdir
+6
+Learning Linux builds real CS skills used by professionals worldwide

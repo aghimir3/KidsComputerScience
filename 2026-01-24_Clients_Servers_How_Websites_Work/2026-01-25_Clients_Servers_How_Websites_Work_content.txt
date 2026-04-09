@@ -1,0 +1,171 @@
+============================================================
+FILE: 2026-01-25_Clients_Servers_How_Websites_Work.pptx
+SLIDES: 16
+============================================================
+
+==================== SLIDE 1 ====================
+Clients, Servers & How Websites Work!
+The Journey Your Data Takes OnlineJanuary 25, 2026
+
+==================== SLIDE 2 ====================
+Quick Review: What We Learned Last Time
+Let's remember our networking vocabulary!
+• IP Address - Your computer's home address
+• DNS - The internet's phone book (names to numbers)
+• Router - Traffic cop that directs data
+• Gateway - The front door to the internet
+• Packets - Small pieces that data travels in
+• Ping - "Hello? Are you there?" test
+Key Commands:ipconfig - See your network infoping - Test if a site responds
+All of these work together every time you visit a website!
+
+==================== SLIDE 3 ====================
+Clients vs Servers
+Think of it like a RESTAURANT!
+• CLIENT = The customer who ASKS for things
+• SERVER = The waiter who SERVES things
+• Your computer/phone/tablet is usually a CLIENT
+• It asks for websites, videos, files...
+• A SERVER is a computer that answers requests
+• It sends back the website, video, or file you asked for!
+CLIENT"I'd like theGoogle homepageplease!"   request   ------>   <------   responseSERVER"Here's the page!"
+
+==================== SLIDE 4 ====================
+What is a Server?
+It's a computer that's ALWAYS ready to help!
+• A server is just a computer - but with a special job
+• It runs 24/7, waiting for requests
+• It stores websites, games, videos, emails...
+• One server can help THOUSANDS of clients at once!
+• Big companies have MILLIONS of servers
+Server = Computer that SERVESStores filesHosts websitesHandles emailRuns gamesAlways on, always ready!
+Google has over 2 MILLION servers around the world!
+
+==================== SLIDE 5 ====================
+What is a Client?
+That's YOU! (Well, your device...)
+• A client is any device that ASKS for information
+• Your laptop, phone, tablet, gaming console = clients
+• Clients send REQUESTS to servers
+• Clients receive RESPONSES back
+• Right now, your device is a client!
+Common Clients:LaptopsPhonesGame consolesSmart TVsSmart speakersAll asking servers for stuff!
+Your phone makes hundreds of server requests every day without you even knowing!
+
+==================== SLIDE 6 ====================
+The Journey: What Happens When You Visit google.com?
+Let's follow your request step by step!
+• STEP 1: You type google.com in your browser
+• STEP 2: Your computer asks DNS "What's the IP?"
+• STEP 3: DNS replies: "142.250.80.46"
+• STEP 4: Your computer sends a request to that IP
+• STEP 5: The request goes through your router/gateway
+• STEP 6: It travels across the internet to Google's server!
+You --> Router --> Internet -->--> Google's ServerHome --> Door --> Web --> Server
+
+==================== SLIDE 7 ====================
+The Journey: The Response Comes Back!
+Google's server answers your request!
+• STEP 7: Google's server receives your request
+• STEP 8: It finds the homepage you asked for
+• STEP 9: It breaks the page into PACKETS
+• STEP 10: Packets travel back through the internet
+• STEP 11: Your computer receives all the packets
+• STEP 12: Your browser puts them together = You see Google!
+Google's Server --> Internet -->--> Router --> You!Server --> Web --> Door --> HomeAll in less than 1 second!
+This whole journey happens in about 20-100 milliseconds!
+
+==================== SLIDE 8 ====================
+HTTP and HTTPS
+It's like choosing POSTCARD vs SEALED ENVELOPE!
+• HTTP = HyperText Transfer Protocol
+• It's the LANGUAGE computers use to talk about websites
+• HTTPS = HTTP + S (S = Secure!)
+• HTTPS encrypts (scrambles) your data so no one can read it
+• Look for the padlock icon in your browser!
+• Always use HTTPS for passwords and payments!
+HTTPLike a postcardAnyone can read itvsHTTPSLike a locked boxOnly you and theserver can read it
+The 'S' in HTTPS means your data is scrambled so hackers can't read it!
+
+==================== SLIDE 9 ====================
+What is a Port?
+Think of it like APARTMENT NUMBERS!
+• An IP address gets you to the building (computer)
+• A PORT gets you to the right apartment (service)
+• One server can run many services on different ports
+• Port 80 = HTTP (websites)
+• Port 443 = HTTPS (secure websites)
+• Port 25 = Email
+IP Address: 142.250.80.46= The BuildingPort: 443= Apartment NumberFull Address:142.250.80.46:443
+There are 65,535 possible ports - like a huge apartment building!
+
+==================== SLIDE 10 ====================
+Common Port Numbers to Know
+Each service has its favorite "apartment"!
+• Port 80 - HTTP (regular websites)
+• Port 443 - HTTPS (secure websites)
+• Port 22 - SSH (remote computer access)
+• Port 25 - SMTP (sending email)
+• Port 53 - DNS (domain name lookups)
+• Port 3389 - Remote Desktop (Windows)
+When you visit:https://google.comYour browser secretly adds:https://google.com:443Port 443 is assumedfor HTTPS!
+You usually don't see port numbers because browsers add them automatically!
+
+==================== SLIDE 11 ====================
+Understanding a URL
+Every part has a meaning!
+• URL = Uniform Resource Locator (fancy name for web address)
+• https:// - The protocol (how to talk)
+• www - Subdomain (optional)
+• google - Domain name (the website)
+• .com - Top-level domain (type of site)
+• /search - Path (specific page)
+https://www.google.com/searchhttps:// = Protocolwww = Subdomaingoogle = Domain.com = TLD/search = PathLike a detailed address!
+
+==================== SLIDE 12 ====================
+The tracert Command
+Watch your data's journey hop by hop!
+• tracert = TRACE ROUTE
+• Shows every stop your data makes
+• Each stop is called a HOP
+• You can see how long each hop takes
+• Great for finding where problems are!
+Command Prompt:C:\> tracert google.com1   2ms   Router2   5ms   ISP Server3  12ms   City Hub4  25ms   West Coast5  30ms   Google!Each line = one hop!
+Your data might hop through 10-20 computers before reaching its destination!
+
+==================== SLIDE 13 ====================
+Let's Try These Commands!
+Hands-on time! Open Command Prompt!
+• ipconfig - See YOUR network info
+• ping google.com - Test if Google is responding
+• tracert google.com - Watch the journey!
+• nslookup google.com - Ask DNS for the IP address
+Try this:1. Press Windows + R2. Type: cmd3. Press Enter4. Type the commands!Challenge: How manyhops to reach YouTube?
+tracert might take 30 seconds to complete - be patient!
+
+==================== SLIDE 14 ====================
+Putting It All Together!
+Now you understand the full journey!
+• You (CLIENT) ask for a website
+• DNS translates the name to an IP address
+• Your request goes through your GATEWAY/ROUTER
+• It travels through the internet (many HOPS)
+• It arrives at the SERVER on the right PORT
+• The server sends back the page using HTTP/HTTPS
+• Your browser shows you the result!
+The Complete Path:You  |DNS Lookup  |Gateway  |Internet Hops  |Server:443  |Website!
+
+==================== SLIDE 15 ====================
+Today's Key Takeaways
+Remember these important ideas!
+• CLIENT = asks for things (your device)
+• SERVER = serves things (website computers)
+• HTTP/HTTPS = how they talk (HTTPS is secure!)
+• PORT = apartment number for services
+• tracert = shows the journey of your data
+• URL = the complete address with all the parts
+New Commands:tracert - See the routenslookup - DNS lookupKey Ports:80 = HTTP443 = HTTPS
+
+==================== SLIDE 16 ====================
+KAHOOT TIME!
+Let's test what you learned today!Get your devices ready and join the game!

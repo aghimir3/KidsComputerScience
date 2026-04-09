@@ -1,0 +1,59 @@
+🔍 CLASSWORK: Internet Investigator
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 YOUR MISSION
+
+You're an Internet Investigator! Pick 3 websites you actually use and uncover how they work.
+
+✅ Review last week (IP, DNS, Gateway)
+✅ Break down URLs into parts
+✅ Check site security (HTTPS)
+✅ Trace your data's path with tracert
+✅ Design your own website!
+
+📊 Points: 100 (+10 bonus)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 HOW TO COMPLETE
+
+1️⃣ DOWNLOAD
+   ⬇️ Download the PDF attached below
+
+2️⃣ OPEN
+   💻 Windows: Double-click → Opens in Edge
+   🍎 Mac: Double-click → Opens in Preview
+
+3️⃣ FILL IT OUT
+   🖱️ Click blue boxes to type answers
+   ☑️ Click checkboxes to select
+   ⌨️ Press Tab to move between fields
+
+4️⃣ SAVE
+   💻 Windows: Ctrl + S
+   🍎 Mac: Cmd + S
+   📁 Name it: YourName_InternetInvestigator.pdf
+
+5️⃣ SUBMIT
+   📤 Post your PDF here in Teams
+   📧 Also send to Ishwari Raut ma'am
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🛠️ HELPFUL COMMANDS
+
+🔎 TRACERT (trace your data's path)
+   💻 Windows: Open cmd → type: tracert youtube.com
+   🍎 Mac: Open Terminal → type: traceroute youtube.com
+   🌐 Can't run it? Use: traceroute-online.com
+
+🔧 DEVELOPER TOOLS (for bonus)
+   💻 Windows: Press F12
+   🍎 Mac: Press Cmd + Option + I
+   → Click "Network" tab → Refresh page
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏰ DUE: End of class
+
+❓ Questions? Ask now or message in Teams!

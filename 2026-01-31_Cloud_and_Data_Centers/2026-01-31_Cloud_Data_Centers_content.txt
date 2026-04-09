@@ -1,0 +1,297 @@
+============================================================
+FILE: 2026-01-31_Cloud_Data_Centers.pptx
+SLIDES: 21
+============================================================
+
+==================== SLIDE 1 ====================
+The Cloud & Data Centers
+Where the Internet Actually Lives
+January 31, 2026
+
+==================== SLIDE 2 ====================
+Today's Journey
+1
+Quick Review: Servers Refresher
+2
+What is 'The Cloud'?
+3
+Inside a Data Center
+4
+The Big Three: AWS, Google, Azure
+5
+AI + Cloud: ChatGPT, Grok & More!
+6
+Hands-on: Cloud Explorer
+
+==================== SLIDE 3 ====================
+Quick Review: What's a Server?
+From last week...
+A SERVER is a computer that stores data and serves it to clients
+Your Device
+(Client)
+Server
+(Stores websites)
+But WHEREare theseservers?
+Today's Big Question: Where do all these servers actually live?
+
+==================== SLIDE 4 ====================
+Wait... What IS 'The Cloud'?
+What People Think:
+Some magicalfloating computersin the sky
+What It Actually Is:
+Other people'scomputers inBIG buildings
+"The Cloud" = Servers in Data Centers Around the World
+There's a famous saying: "There is no cloud... it's just someone else's computer!"
+
+==================== SLIDE 5 ====================
+What is a Data Center?
+A HUGE building filled with thousands of servers
+Thousands of Servers
+Rows and rows of computers
+24/7 Power
+Never turns off - backup generators
+Massive Cooling
+Servers get HOT - needs AC
+High Security
+Guards, cameras, locked doors
+Super Fast Internet
+Connected to the backbone
+
+==================== SLIDE 6 ====================
+How Big Are Data Centers?
+Mind-blowing numbers!
+Google
+Has 30+ data centers worldwide
+2+ million servers total!
+Amazon (AWS)
+Data centers in 30+ countries
+Millions of servers
+Microsoft
+200+ data centers globally
+Powers Xbox, Teams, Office
+A single data center can use as much electricity as a small CITY!
+
+==================== SLIDE 7 ====================
+What Can the Cloud Do?
+Three main things...
+STORAGE
+Store your files
+Google Drive, iCloud,Dropbox, OneDrive
+COMPUTE
+Run programs
+Netflix streaming,Online games, AI
+NETWORKING
+Connect things
+Video calls, messaging,websites
+You use ALL of these every single day!
+
+==================== SLIDE 8 ====================
+Cloud Services You Already Use!
+YouTube
+Videos stored on Google's servers
+Netflix
+Movies streamed from data centers
+Google Drive
+Your files in the cloud
+iCloud
+iPhone backups & photos
+Spotify
+Music streamed from servers
+Fortnite/Roblox
+Game data on cloud servers
+TikTok
+Videos stored in data centers
+Discord
+Messages saved in the cloud
+
+==================== SLIDE 9 ====================
+What If There Was No Cloud?
+No YouTube
+You'd have to download EVERY video first
+No Streaming
+Back to buying DVDs and CDs!
+No Cloud Saves
+Lose your phone? Lose EVERYTHING
+No Online Gaming
+No multiplayer, no updates
+No Google Docs
+Can't work on projects together
+No Video Calls
+No Zoom, Teams, or FaceTime
+The cloud makes our digital life possible!
+
+==================== SLIDE 10 ====================
+The Big Three Cloud Providers
+Amazon Web Services(AWS)
+The biggest!~33% of cloud market
+Who uses it:
+Netflix, Twitch,NASA, McDonald's
+Microsoft Azure
+Second biggest!~22% of cloud market
+Who uses it:
+Xbox Live, LinkedIn,Adobe, Samsung
+Google Cloud
+Third biggest!~10% of cloud market
+Who uses it:
+Spotify, Twitter,Snapchat, PayPal
+
+==================== SLIDE 11 ====================
+How Does Cloud Computing Work?
+1
+You open an app(YouTube, Drive, etc.)
+2
+Your request travelsthrough the internet
+3
+Arrives at adata center
+4
+Server processesyour request
+5
+Response sentback to you!
+All of this happens in MILLISECONDS!(faster than you can blink)
+
+==================== SLIDE 12 ====================
+Local vs. Cloud Storage
+LOCAL STORAGE
+(On YOUR device)
+Your phone's storage
+Computer's hard drive
+USB flash drives
+Works offline
+Can be lost/damaged
+CLOUD STORAGE
+(On remote servers)
+Google Drive, iCloud
+Accessible anywhere
+Backed up automatically
+Needs internet
+Shared across devices
+Best practice: Use BOTH! Cloud for backup, local for speed.
+
+==================== SLIDE 13 ====================
+Cloud Safety & Privacy
+Remember: When you put something in 'the cloud,' you're storing it on someone else's computers!
+Use Strong Passwords
+Don't use 'password123'!
+Enable 2FA
+Two-factor authentication adds extra protection
+Know What You Share
+Be careful what you upload
+Check Privacy Settings
+Control who sees your stuff
+The cloud is convenient, but always think before you upload!
+
+==================== SLIDE 14 ====================
+Putting It All Together
+Your Device(Client)
+Request
+Internet
+DATA CENTER
+Servers
+Last week: You learned about CLIENTS and SERVERS
+This week: You learned WHERE those servers actually live!
+Next: How the internet connects everything together
+
+==================== SLIDE 15 ====================
+Why AI Needs the Cloud
+The secret behind ChatGPT, DALL-E, and more!
+AI needs MASSIVE computing power - more than any single computer can provide!
+TRAINING
+Teaching AI requiresprocessing BILLIONSof examples
+GPT-4 trained on45TB of text data!
+COMPUTING
+AI calculations needthousands of powerfulGPUs working together
+One AI query = millionsof calculations!
+STORAGE
+AI models are HUGEGPT-4 has 1.7 trillionparameters
+Too big for yourlaptop or phone!
+Without cloud data centers, AI like ChatGPT simply couldn't exist!
+
+==================== SLIDE 16 ====================
+Meet the AI Chatbots!
+The most powerful AIs in the world
+ChatGPT
+by OpenAI
+Runs on: Microsoft Azure
+Most popular AI chatbot175B+ parameters
+Grok
+by xAI (Elon Musk)
+Runs on: X.ai Cloud
+Built into X (Twitter)Real-time information
+Claude
+by Anthropic
+Runs on: AWS + Google
+Known for being safeand helpful
+Gemini
+by Google
+Runs on: Google Cloud
+Multimodal AI(text, images, code)
+All these AIs need THOUSANDS of cloud servers to answer a single question!
+
+==================== SLIDE 17 ====================
+AI in Apps You Use Daily!
+AI is everywhere...
+GoogleSearch
+AI understandsyour questions
+YouTube
+AI recommendsvideos for you
+Instagram
+AI filters &recommendations
+Snapchat
+AI face filtersin real-time
+Spotify
+AI creates yourpersonalized playlists
+TikTok
+AI picks videosfor your For You page
+Grammarly
+AI fixes yourwriting mistakes
+GoogleTranslate
+AI translates100+ languages
+All these AI features run on cloud servers - not on your device!
+
+==================== SLIDE 18 ====================
+The Future: AI + Cloud
+What's coming next?
+TODAY (2026)
+ChatGPT answers questions
+AI generates images & videos
+Voice assistants help you
+AI recommends content
+THE FUTURE
+AI creates movies & games
+AI helps doctors & scientists
+AI assistants for everything
+Self-driving cars everywhere
+ALL of this is only possible because of CLOUD COMPUTING!More powerful AI = More powerful data centers needed
+Why This Matters to YOU:
+Cloud Engineer
+AI Developer
+Data Scientist
+ML Engineer
+
+==================== SLIDE 19 ====================
+Real Data Center Photos!
+Inside Google's Data Centers
+Photo: Google
+Photo: Google
+Photo: Google
+Photo: Google
+Photo: Google
+
+==================== SLIDE 20 ====================
+Today's Key Takeaways
+THE CLOUD
+Servers in data centers (not in the sky!)
+DATA CENTERS
+Huge buildings with thousands of servers
+BIG 3 PROVIDERS
+AWS, Microsoft Azure, Google Cloud
+AI + CLOUD
+ChatGPT, Grok, Claude all need cloud power!
+CLOUD SAFETY
+Strong passwords & think before you share
+Great job today! Time for Kahoot!
+
+==================== SLIDE 21 ====================
+?
+Questions?
+Ask away before we start the Kahoot!

@@ -1,0 +1,171 @@
+============================================================
+FILE: 2026-02-07_Internet_Backbone_and_ISPs.pptx
+SLIDES: 17
+============================================================
+
+==================== SLIDE 1 ====================
+How the Internet Connects Everything
+ISPs, Backbones, and the Cables Under the Ocean
+February 7, 2026
+
+==================== SLIDE 2 ====================
+Today's Journey
+1
+Quick Review: Cloud & Data Centers
+2
+What is an ISP?
+3
+Internet Backbones & Fiber
+4
+Undersea Cables & What If They Break?
+5
+Internet Exchange Points (IXPs)
+6
+CDNs: Content Close to You
+7
+Asking ChatGPT: A Real-World Trace
+8
+Hands-on: Internet Map Explorer
+
+==================== SLIDE 3 ====================
+Quick Review
+From last week
+The cloud is real buildings filled with servers (data centers)
+Today we answer a new question:
+How do those data centers connect to the whole world?
+Answer: ISPs, backbones, and huge cables!
+
+==================== SLIDE 4 ====================
+What is an ISP?
+ISP = Internet Service Provider
+- The company that connects your home or school to the internet
+- Examples: Comcast, Spectrum, AT&T, Verizon, Cox
+- They own local cables, towers, and neighborhood equipment
+- Your ISP is your first hop to the wider internet
+Think of an ISP like your neighborhood road system
+
+==================== SLIDE 5 ====================
+From Your Home to the Internet
+Your Device
+Home Router
+ISP Network
+Your data leaves your house and enters your ISP's network.
+From there, it travels to bigger and bigger networks.
+
+==================== SLIDE 6 ====================
+Internet Backbones
+Backbones = Super-fast fiber highways that carry internet traffic
+Fiber optic cables use light to send data super fast.
+
+==================== SLIDE 7 ====================
+Undersea Cables
+Most of the world's internet travels through cables under the ocean
+These cables connect continents so data can cross the globe.
+
+==================== SLIDE 8 ====================
+What If a Cable Breaks?
+It happens more often than you think!
+Shark Bites
+Sharks sometimes biteunderwater cables!
+Ship Anchors
+Anchors can snag andcut cables on the seafloor
+Earthquakes
+Undersea quakes cansnap cables apart
+Wear & Tear
+Salt water and pressuredamage cables over time
+Good news: There are 500+ undersea cables! If one breaks, traffic reroutes through others.
+
+==================== SLIDE 9 ====================
+Internet Exchange Points (IXPs)
+IXP = A meeting place where networks connect and swap traffic
+ISP A
+ISP B
+Cloud Provider
+University
+IXPs make the internet faster and cheaper by shortening routes.
+
+==================== SLIDE 10 ====================
+CDNs: Content Close to You
+CDN = Content Delivery Network
+Without CDN
+You
+Server
+3,000+ miles away
+Slow loading, buffering, lag
+With CDN
+You
+Nearby Cache
+~50 miles away
+Fast loading, no buffering!
+CDN examples: YouTube, Netflix, TikTok, Spotify, Fortnite updates, school portals
+Result: Faster loading, less buffering, and smoother games.
+
+==================== SLIDE 11 ====================
+Example: Loading a YouTube Video
+You tap a video
+Your request goes to your ISP
+It hops across the backbone
+A nearby CDN serves the video
+The video streams to your device
+
+==================== SLIDE 12 ====================
+Latency: Distance Matters
+Latency = the delay before data arrives.
+Closer servers = faster response
+That is why CDNs and local data centers are so important.
+
+==================== SLIDE 13 ====================
+Why Can the Internet Feel Slow?
+Busy Wi-Fi
+Too many devices at once
+Long Distance
+Data travels farther
+Backbone Congestion
+Too much traffic
+Server Load
+Popular sites get crowded
+Most slowdowns are about distance, traffic, or Wi-Fi.
+
+==================== SLIDE 14 ====================
+What Happens When You Ask ChatGPT a Question?
+1
+You type a question on your phone or laptop
+2
+Your router sends it to your ISP
+3
+Your ISP passes it along the backbone
+4
+It may cross undersea cables to reach a data center
+5
+Thousands of GPUs process your question
+6
+The answer travels all the way back to you!
+Total time: ~1-2 seconds! All thanks to fast cables and backbones.
+
+==================== SLIDE 15 ====================
+Hands-on: Internet Map Explorer
+We will explore real internet maps together
+- Find where undersea cables land near North America
+- Look for big internet hubs (IXPs)
+- See how many cables connect different continents
+- Notice: the internet is physical, not magic
+Get ready for the class activity!
+
+==================== SLIDE 16 ====================
+Today's Key Takeaways
+ISP
+Your first connection to the internet
+BACKBONE
+Fast fiber highways connecting cities
+UNDERSEA CABLES
+Connect continents under the ocean
+IXP
+Meeting point where networks swap traffic
+CDN
+Brings content closer for speed
+Great job today! Time for Kahoot!
+
+==================== SLIDE 17 ====================
+?
+Questions?
+Ask away before we start the Kahoot!

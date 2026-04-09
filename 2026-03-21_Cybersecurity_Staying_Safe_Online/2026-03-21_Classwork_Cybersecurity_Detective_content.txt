@@ -1,0 +1,252 @@
+============================================================
+FILE: 2026-03-21_Classwork_Cybersecurity_Detective.pdf
+PAGES: 8
+============================================================
+
+==================== PAGE 1 ====================
+CLASSWORK: Cybersecurity Detective
+Can You Spot the Scam?
+Page 1 of 8
+Student Information
+Name:
+Date:
+Your Mission Today
+You are a Cybersecurity Detective! Your job is to identify online threats, spot phishing scams, evaluate password strength, and
+learn how to protect yourself online.
+KEY TERMS REFERENCE
+Cybersecurity: Protecting computers, networks, and data from threats
+Phishing: Fake emails/texts/websites that trick you into sharing info
+Password: A secret word or phrase that controls access to an account
+2FA: Two-Factor Authentication -- a second verification step
+Social Engineering: Tricking people into giving up confidential information
+Digital Footprint: The trail of data you leave behind online
+Malware: Malicious software: viruses, ransomware, spyware
+HTTPS: Secure version of HTTP -- look for the padlock!
+
+==================== PAGE 2 ====================
+CLASSWORK: Cybersecurity Detective
+Can You Spot the Scam?
+Page 2 of 8
+PART 1: Password Strength Analysis (20 points)
+Rate each password from 1 (very weak) to 5 (very strong). Explain why.
+Q1: password123
+Rating (1-5):
+Why?
+Q2: MyDog$Name!2026
+Rating (1-5):
+Why?
+Q3: abc
+Rating (1-5):
+Why?
+Q4: PurpleTiger$Eats42Tacos!
+Rating (1-5):
+Why?
+Q5: john2010
+Rating (1-5):
+Why?
+
+==================== PAGE 3 ====================
+CLASSWORK: Cybersecurity Detective
+Can You Spot the Scam?
+Page 3 of 8
+PART 1 (continued): Create Your Own Strong Passwords
+Q6: Create a strong password using the passphrase method.
+Pick 3-4 random words and add numbers/symbols. Example: BlueFrog$Jumps99High!
+Your passphrase:
+Why is this strong?
+Q7: Your friend uses 'gaming123' for their Fortnite AND email.
+What advice would you give them? Write 2-3 sentences.
+PART 2: Spot the Phishing Scam! (25 points)
+Instructions
+Read each message below. Decide if it is REAL or a SCAM. Then list the red flags that helped you decide.
+MESSAGE 1:
+"FROM: security@amaz0n-verify.com"
+"Subject: URGENT! Your account will be SUSPENDED in 24 hours!"
+"Click here immediately to verify your identity: http://amaz0n-login.sketchy.ru"
+A) REAL
+B) SCAM
+Red flags you noticed:
+
+==================== PAGE 4 ====================
+CLASSWORK: Cybersecurity Detective
+Can You Spot the Scam?
+Page 4 of 8
+PART 2 (continued): More Messages to Analyze
+MESSAGE 2:
+"FROM: noreply@microsoft.com"
+"Subject: Your Microsoft 365 subscription renewal"
+"Hi Student, your M365 plan renews on April 1. No action needed."
+"View your subscription: https://account.microsoft.com"
+A) REAL
+B) SCAM
+Why did you choose this answer?
+MESSAGE 3:
+"TEXT from unknown number: Congratulations!! You have won a FREE"
+"iPhone 16! Click this link to claim NOW before it expires:"
+"http://free-iphones-real.biz/claim?id=29381"
+A) REAL
+B) SCAM
+Red flags you noticed:
+MESSAGE 4:
+"FROM: itsupport@yourschool.edu"
+"Subject: Password reset required"
+"Dear Student, please reply to this email with your current password"
+"so we can reset it for you. Thank you, IT Department"
+A) REAL
+B) SCAM
+Red flags you noticed:
+
+==================== PAGE 5 ====================
+CLASSWORK: Cybersecurity Detective
+Can You Spot the Scam?
+Page 5 of 8
+PART 3: Social Engineering Scenarios (20 points)
+Read each scenario and answer the question.
+Scenario 1: Someone calls you saying they are from Apple Support.
+They say your iCloud account has been hacked and they need your
+password to 'secure it.' What should you do?
+Scenario 2: You find a USB drive in the school parking lot
+labeled 'Final Exam Answers.' What should you do?
+Scenario 3: A friend sends you a DM on Instagram: 'OMG look at this
+embarrassing photo of you! Click here!' But the link looks weird.
+What should you do?
+
+==================== PAGE 6 ====================
+CLASSWORK: Cybersecurity Detective
+Can You Spot the Scam?
+Page 6 of 8
+PART 4: Two-Factor Authentication (15 points)
+Q1: What does 2FA stand for?
+A) Two-File Authentication
+B) Two-Factor Authentication
+C) Two-Finger Access
+D) Two-Firewall Activation
+Q2: Which of these is an example of 2FA?
+A) Using a longer password
+B) Logging in with password + a code from your phone
+C) Changing your password every month
+D) Using the same password on two sites
+Q3: Name two of your accounts where you should turn on 2FA.
+Account 1:
+Account 2:
+Q4: Why is 2FA important even if you have a strong password?
+PART 5: Safe Browsing Check (10 points)
+Q1: Which URL is most likely safe?
+A) http://free-games-download.biz
+B) https://www.google.com
+C) http://g00gle.com
+D) https://login-verify-paypal.ru
+Q2: What does the 'S' in HTTPS stand for, and why does it matter?
+
+==================== PAGE 7 ====================
+CLASSWORK: Cybersecurity Detective
+Can You Spot the Scam?
+Page 7 of 8
+PART 6: AI & Cybersecurity (10 points)
+AI and Security
+Artificial Intelligence is changing cybersecurity -- it is used by BOTH attackers and defenders. Understanding how AI affects
+security will be important as we start our AI unit next month!
+Q1: AI can now write phishing emails with perfect grammar and no
+spelling mistakes. How does this make phishing HARDER to detect?
+Q2: A 'deepfake' is an AI-generated video or audio that looks and
+sounds like a real person. Give an example of how this could be
+used to scam someone.
+Q3: AI is also used for DEFENSE. Which of these are real ways AI
+helps protect us? (Check all that apply)
+Filtering spam and phishing emails from your inbox
+Detecting unusual activity on your bank account
+Making your password longer automatically
+Monitoring networks for cyber attacks 24/7
+Q4: Your grandma gets a phone call that sounds exactly like your
+voice saying you are in trouble and need money. But it is actually
+an AI voice clone. What should she do to verify it is really you?
+
+==================== PAGE 8 ====================
+CLASSWORK: Cybersecurity Detective
+Can You Spot the Scam?
+Page 8 of 8
+REFLECTION (10 points)
+What is the most important cybersecurity tip you learned today? Why?
+What is one thing you will change about how you use the internet
+after today's class?
+On a scale of 1-5, how confident do you feel about staying safe online?
+Rating (1-5):
+Explain your rating:
+BONUS: Create a Cybersecurity Tip Poster (+10 points)
+Bonus Challenge
+Design a mini cybersecurity awareness poster! Write a catchy title, 3 safety tips, and a slogan that would convince other
+teenagers to take security seriously.
+Poster Title:
+Tip 1:
+Tip 2:
+Tip 3:
+Slogan:
+SUBMISSION:
+1. Microsoft Teams   2. Copy to Ishwari Raut ma'am
+Due: End of class  |  Total Points: 100 (+10 bonus)
+
+========================================
+FORM FIELDS: 62
+========================================
+  student_name (/Tx): 
+  date (/Tx): 
+  pw_rate_1 (/Tx): 
+  pw_explain_1 (/Tx): 
+  pw_rate_2 (/Tx): 
+  pw_explain_2 (/Tx): 
+  pw_rate_3 (/Tx): 
+  pw_explain_3 (/Tx): 
+  pw_rate_4 (/Tx): 
+  pw_explain_4 (/Tx): 
+  pw_rate_5 (/Tx): 
+  pw_explain_5 (/Tx): 
+  pw_create_1 (/Tx): 
+  pw_create_explain_1 (/Tx): 
+  pw_advice (/Tx): 
+  phish_1_A (/Btn): /Off
+  phish_1_B (/Btn): /Off
+  phish_1_flags (/Tx): 
+  phish_2_A (/Btn): /Off
+  phish_2_B (/Btn): /Off
+  phish_2_flags (/Tx): 
+  phish_3_A (/Btn): /Off
+  phish_3_B (/Btn): /Off
+  phish_3_flags (/Tx): 
+  phish_4_A (/Btn): /Off
+  phish_4_B (/Btn): /Off
+  phish_4_flags (/Tx): 
+  se_1 (/Tx): 
+  se_2 (/Tx): 
+  se_3 (/Tx): 
+  tfa_q1_A (/Btn): /Off
+  tfa_q1_B (/Btn): /Off
+  tfa_q1_C (/Btn): /Off
+  tfa_q1_D (/Btn): /Off
+  tfa_q2_A (/Btn): /Off
+  tfa_q2_B (/Btn): /Off
+  tfa_q2_C (/Btn): /Off
+  tfa_q2_D (/Btn): /Off
+  tfa_account1 (/Tx): 
+  tfa_account2 (/Tx): 
+  tfa_why (/Tx): 
+  browse_q1_A (/Btn): /Off
+  browse_q1_B (/Btn): /Off
+  browse_q1_C (/Btn): /Off
+  browse_q1_D (/Btn): /Off
+  browse_https (/Tx): 
+  ai_phishing (/Tx): 
+  ai_deepfake (/Tx): 
+  ai_def_spam (/Btn): /Off
+  ai_def_bank (/Btn): /Off
+  ai_def_pw (/Btn): /Off
+  ai_def_monitor (/Btn): /Off
+  ai_voice_clone (/Tx): 
+  reflection_1 (/Tx): 
+  reflection_2 (/Tx): 
+  confidence_rating (/Tx): 
+  confidence_explain (/Tx): 
+  bonus_title (/Tx): 
+  bonus_tip1 (/Tx): 
+  bonus_tip2 (/Tx): 
+  bonus_tip3 (/Tx): 
+  bonus_slogan (/Tx): 

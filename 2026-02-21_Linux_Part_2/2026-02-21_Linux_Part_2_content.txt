@@ -1,0 +1,142 @@
+============================================================
+FILE: Week2_Linux_Slides.pptx
+SLIDES: 10
+============================================================
+
+==================== SLIDE 1 ====================
+Linux Week 2
+Working with File Content
+cat • echo • cp • mv • > • >>
+
+==================== SLIDE 2 ====================
+Quick Recap: Week 1
+Last week you learned to navigate, create, and delete files and folders.
+ls
+List files and folders
+cd
+Change directory
+mkdir
+Make a new directory
+touch
+Create an empty file
+rm
+Remove a file
+rmdir
+Remove an empty directory
+This week: We’ll learn to read files, write content into files, copy files, and move/rename files!
+
+==================== SLIDE 3 ====================
+Command: echo
+Print text to the screen — or write text into files!
+Print to screen
+$ echo "Hello World!"
+Displays: Hello World!
+Write to a file  (>)
+$ echo "My name is Alex" > name.txt
+Creates name.txt with that text (overwrites if it exists)
+Append to a file  (>>)
+$ echo "I love Linux" >> name.txt
+Adds a new line to the end of name.txt
+
+==================== SLIDE 4 ====================
+Understanding > vs >>
+Output redirection lets you save text to files instead of just printing to screen.
+>  (Overwrite)
+Replaces everything in the file with new content.
+$ echo "Hello" > file.txt
+$ echo "Goodbye" > file.txt
+file.txt now contains:
+
+Goodbye
+⚠️  "Hello" is gone — overwritten!
+>>  (Append)
+Adds new content to the end of the file.
+$ echo "Hello" > file.txt
+$ echo "Goodbye" >> file.txt
+file.txt now contains:
+
+Hello
+Goodbye
+✅  Both lines are kept!
+
+==================== SLIDE 5 ====================
+Command: cat
+Short for "concatenate" — it displays the contents of a file in the terminal.
+View the contents of any text file
+$ cat name.txt
+Terminal
+$ echo "My name is Alex" > name.txt
+$ echo "I am learning Linux" >> name.txt
+$ cat name.txt
+My name is Alex
+I am learning Linux
+$ _
+
+==================== SLIDE 6 ====================
+Command: cp
+Copy files and folders — like Ctrl+C / Ctrl+V but in the terminal!
+Copy a file
+$ cp notes.txt backup.txt
+Makes a copy called backup.txt
+Copy into a folder
+$ cp notes.txt backups/
+Copies notes.txt into the backups folder
+Copy a folder
+$ cp -r photos/ photos_backup/
+The -r flag copies the folder and everything inside it
+
+==================== SLIDE 7 ====================
+Command: mv
+Move files to a different location OR rename them — one command, two superpowers!
+Move a file
+$ mv photo.txt images/
+Moves photo.txt into the images folder. The original is gone from its old location.
+Think of it like cutting and pasting!
+Rename a file
+$ mv old_name.txt new_name.txt
+Renames the file. Linux doesn’t have a separate rename command — mv does both!
+Same file, new name!
+Key difference from cp: cp makes a copy (original stays), mv moves it (original is gone).
+
+==================== SLIDE 8 ====================
+Week 2 Command Reference
+echo
+Print text or write to files
+$ echo "Hi" > file.txt
+cat
+View contents of a file
+$ cat file.txt
+cp
+Copy a file or folder
+$ cp file.txt copy.txt
+mv
+Move or rename a file
+$ mv old.txt new.txt
+>
+Write output to file (overwrite)
+$ echo "text" > file.txt
+>>
+Append output to file
+$ echo "more" >> file.txt
+
+==================== SLIDE 9 ====================
+Let’s Practice!
+1.  Go to DistroSea.com and launch Ubuntu
+2.  Open the Terminal (Ctrl + Alt + T)
+3.  Follow along with the classwork worksheet
+4.  Use Week 1 commands too — you’ll need them!
+
+==================== SLIDE 10 ====================
+Week 2 Recap
+1
+echo prints text and can write content into files
+2
+> overwrites a file, >> appends to the end
+3
+cat displays the contents of a file in the terminal
+4
+cp copies files and folders (use -r for folders)
+5
+mv moves files to new locations OR renames them
+6
+cp keeps the original, mv removes it from the old location

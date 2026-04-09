@@ -1,0 +1,36 @@
+🚀 FINISHED EARLY? Try a bonus challenge!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Pick ANY one (or more!) of these challenges. Post your answer here in the chat when you're done!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔍 CHALLENGE 1: Cable Detective
+
+Go to submarinecablemap.com and find:
+   - The LONGEST undersea cable in the world
+   - The SHORTEST undersea cable
+
+Write down both names and where they connect. Which one do you think carries more data?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🗺️ CHALLENGE 2: CDN Placement Game
+
+You work at Netflix. You have a budget for ONLY 5 CDN servers to cover the entire United States. Which 5 cities do you pick and why? Think about population, distance, and where the most users are.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✍️ CHALLENGE 3: Data Packet Story
+
+Write a short story (5-8 sentences) from the point of view of a data packet. You start as a YouTube video request on a kid's phone in Denver, Colorado. Describe every stop on your journey — router, ISP, backbone, maybe an undersea cable — until you arrive back as a video. Make it dramatic!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📰 CHALLENGE 4: Internet Outage Reporter
+
+A major undersea cable between the US and Europe was just cut by a ship anchor! Write a 5-sentence breaking news report. Who is affected? What slows down? How does the internet try to fix itself?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+These are optional but fun! Post your answer in the chat 💬

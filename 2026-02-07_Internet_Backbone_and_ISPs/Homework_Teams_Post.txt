@@ -1,0 +1,57 @@
+📡 HOMEWORK: Internet Connection Detective
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 YOUR MISSION
+
+Investigate your own internet connection and explore how data travels across the world!
+
+✅ Find out who your ISP is
+✅ Research a real undersea cable
+✅ Trace a ChatGPT question through the internet
+✅ Solve speed & latency scenarios
+✅ Reflect on what you learned
+
+📊 Points: 100 (+5 bonus for speed test)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 HOW TO COMPLETE
+
+1️⃣ DOWNLOAD
+   ⬇️ Download the PDF attached below
+
+2️⃣ OPEN
+   💻 Windows: Double-click → Opens in Edge
+   🍎 Mac: Double-click → Opens in Preview
+
+3️⃣ FILL IT OUT
+   🖱️ Click blue boxes to type answers
+   ☑️ Click checkboxes to select
+   ⌨️ Press Tab to move between fields
+
+4️⃣ SAVE
+   💻 Windows: Ctrl + S
+   🍎 Mac: Cmd + S
+   📁 Name it: YourName_InternetDetective.pdf
+
+5️⃣ SUBMIT
+   📤 Post your PDF here in Teams
+   📧 Also send to Ishwari Raut ma'am
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌍 WEBSITE YOU WILL NEED
+
+🔗 Submarine Cable Map: submarinecablemap.com
+   → Pick any cable, click it, and answer the questions in Part 2
+
+💡 TIPS
+   → Ask a parent/guardian if you don't know your ISP (Q1)
+   → Check your internet bill or router app
+   → For the bonus, search "speed test" in Google
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏰ DUE: Next class
+
+❓ Questions? Message in Teams!

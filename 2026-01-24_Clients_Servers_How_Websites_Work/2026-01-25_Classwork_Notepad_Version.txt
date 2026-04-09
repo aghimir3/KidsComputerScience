@@ -1,0 +1,295 @@
+============================================================
+        CLASSWORK: Internet Investigator
+        Mission: Analyze Your Digital World
+============================================================
+
+Name: ________________________________________
+Date: January 25, 2026
+Total Points: 115 (+10 bonus)
+
+------------------------------------------------------------
+                LAST WEEK REVIEW (15 points)
+------------------------------------------------------------
+
+Q1: What is an IP Address? (3 pts)
+    A) A website name like google.com
+    B) A unique number that identifies your computer on a network
+    C) Your Wi-Fi password
+    D) A type of cable
+
+    Your Answer: _____
+
+
+Q2: What does DNS do? (3 pts)
+    A) Speeds up your internet
+    B) Blocks viruses
+    C) Translates website names (like google.com) into IP addresses
+    D) Connects your Wi-Fi
+
+    Your Answer: _____
+
+
+Q3: What is a Gateway? (3 pts)
+    A) A website you visit often
+    B) The "front door" that connects your network to the internet
+    C) A type of computer virus
+    D) Your computer's password
+
+    Your Answer: _____
+
+
+Q4: What command shows YOUR computer's IP address? (3 pts)
+
+    Windows command: _____________________
+    Mac command: _____________________
+
+
+Q5: Match the term to the analogy (3 pts)
+
+    TERMS:                  ANALOGIES:
+    - IP Address            A) Traffic police directing cars
+    - Router                B) Your home address
+    - Packets               C) Puzzle pieces sent through mail
+
+    Your Answers:
+    IP Address = _____
+    Router = _____
+    Packets = _____
+
+
+============================================================
+                    YOUR MISSION
+============================================================
+
+Pick 3 websites YOU actually use from these categories:
+- Video/Social: YouTube, TikTok, Instagram, Discord, Snapchat
+- School/Learning: Google Classroom, Khan Academy, Quizlet
+- Gaming/Fun: Steam, Roblox, Twitch, Spotify
+
+
+------------------------------------------------------------
+            CASE FILE #1 (20 points)
+------------------------------------------------------------
+
+Website Name: _________________________________
+
+Full URL (copy from browser): _________________________________
+
+PART A: URL Breakdown
+    Protocol (http or https?): _____________
+    Subdomain (if any): _____________
+    Domain Name: _____________
+    TLD (.com, .org, etc.): _____________
+    Path (if any): _____________
+
+PART B: Security Check
+    Does it have a lock icon? (Yes/No): _____________
+    Is it HTTP or HTTPS?: _____________
+    Would you enter a password here? Why?
+    _______________________________________________
+
+PART C: Tracert Investigation
+    Command used:
+        Windows: tracert [website]
+        Mac: traceroute [website]
+
+    Total hops: _____________
+    Fastest hop: #_____ at _____ ms
+    Slowest hop: #_____ at _____ ms
+
+
+------------------------------------------------------------
+            CASE FILE #2 (20 points)
+------------------------------------------------------------
+
+Website Name: _________________________________
+
+Full URL (copy from browser): _________________________________
+
+PART A: URL Breakdown
+    Protocol (http or https?): _____________
+    Subdomain (if any): _____________
+    Domain Name: _____________
+    TLD (.com, .org, etc.): _____________
+    Path (if any): _____________
+
+PART B: Security Check
+    Does it have a lock icon? (Yes/No): _____________
+    Is it HTTP or HTTPS?: _____________
+    Would you enter a password here? Why?
+    _______________________________________________
+
+PART C: Tracert Investigation
+    Command used:
+        Windows: tracert [website]
+        Mac: traceroute [website]
+
+    Total hops: _____________
+    Fastest hop: #_____ at _____ ms
+    Slowest hop: #_____ at _____ ms
+
+
+------------------------------------------------------------
+            CASE FILE #3 (20 points)
+------------------------------------------------------------
+
+Website Name: _________________________________
+
+Full URL (copy from browser): _________________________________
+
+PART A: URL Breakdown
+    Protocol (http or https?): _____________
+    Subdomain (if any): _____________
+    Domain Name: _____________
+    TLD (.com, .org, etc.): _____________
+    Path (if any): _____________
+
+PART B: Security Check
+    Does it have a lock icon? (Yes/No): _____________
+    Is it HTTP or HTTPS?: _____________
+    Would you enter a password here? Why?
+    _______________________________________________
+
+PART C: Tracert Investigation
+    Command used:
+        Windows: tracert [website]
+        Mac: traceroute [website]
+
+    Total hops: _____________
+    Fastest hop: #_____ at _____ ms
+    Slowest hop: #_____ at _____ ms
+
+
+------------------------------------------------------------
+            INVESTIGATION SUMMARY (25 points)
+------------------------------------------------------------
+
+Q1: When you visited these websites, your computer was the:
+    A) CLIENT
+    B) SERVER
+
+    Your Answer: _____
+    Why? _______________________________________________
+
+
+Q2: Which website had the FEWEST hops?
+
+    Answer: _________________________________
+    Why is fewer hops usually better?
+    _______________________________________________
+
+
+Q3: Did all 3 websites use HTTPS? (Yes/No): _____
+
+    What should you NEVER enter on a site without HTTPS?
+    _______________________________________________
+
+
+Q4: HTTPS uses which port?
+    A) Port 80
+    B) Port 443
+
+    Your Answer: _____
+
+
+Q5: What happens FIRST when you type a website in your browser?
+    A) The server sends you the webpage
+    B) Your browser displays the content
+    C) DNS translates the domain to an IP address
+    D) You click a link
+
+    Your Answer: _____
+
+
+------------------------------------------------------------
+            CREATIVE CHALLENGE (10 points)
+------------------------------------------------------------
+
+Design your own website for something you love!
+
+Your website name: _________________________________
+
+Your URL would be:
+    https://_________.___________.com/___________
+           (subdomain)  (domain)       (path)
+
+What would your server store? (list all that apply):
+    [ ] Images/photos
+    [ ] Videos
+    [ ] User accounts
+    [ ] Game data
+    [ ] Music
+    [ ] Other: _____________
+
+    Your choices: _______________________________________________
+
+Would it NEED HTTPS? Why?
+_______________________________________________
+
+
+------------------------------------------------------------
+            REFLECTION (5 points)
+------------------------------------------------------------
+
+One thing I learned today:
+_______________________________________________
+_______________________________________________
+
+One thing I'm still curious about:
+_______________________________________________
+_______________________________________________
+
+
+------------------------------------------------------------
+            BONUS: Request Counter (+10 points)
+------------------------------------------------------------
+
+Open Developer Tools > Network tab > Refresh the page
+    Windows: Press F12
+    Mac: Press Cmd + Option + I
+
+Website 1: _____________ requests, biggest file type: _____________
+Website 2: _____________ requests, biggest file type: _____________
+Website 3: _____________ requests, biggest file type: _____________
+
+Which site made the MOST requests? _____________
+Why do you think?
+_______________________________________________
+
+
+============================================================
+                    NEED HELP?
+============================================================
+
+OPENING COMMAND LINE:
+    Windows: Press Windows+R, type "cmd", press Enter
+    Mac: Press Cmd+Space, type "Terminal", press Enter
+
+RUNNING TRACE COMMAND:
+    Windows: tracert google.com
+    Mac: traceroute google.com
+
+OPENING DEVELOPER TOOLS:
+    Windows: Press F12
+    Mac (Chrome): Press Cmd+Option+I
+
+CAN'T RUN TRACERT?
+    Use this website instead: https://www.traceroute-online.com/
+
+
+============================================================
+                SUBMISSION INSTRUCTIONS
+============================================================
+
+1. Save this file with your name:
+   Example: JohnSmith_InternetInvestigator.txt
+
+2. Submit in Microsoft Teams
+
+3. Also send a copy to Ishwari Raut ma'am
+
+Due: End of class (or as instructed)
+
+Questions? Ask during class or message in Teams!
+
+============================================================

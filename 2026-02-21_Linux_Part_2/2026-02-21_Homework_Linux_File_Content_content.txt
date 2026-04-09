@@ -1,0 +1,241 @@
+============================================================
+FILE: 2026-02-21_Homework_Linux_File_Content.pdf
+PAGES: 6
+============================================================
+
+==================== PAGE 1 ====================
+Week 2: Linux Terminal Homework
+Page 1
+Week 2: Linux Terminal
+Homework
+echo, cat, cp, mv, and Output Redirection
+Name:
+Date:
+Homework Reminder
+Use DistroSea.com to practice and test your answers. Try every command before writing it!
+Section 1: Matching
+Match each command with what it does. Write the letter in the box.
+A.
+Print text to the screen
+B.
+Display contents of a file
+C.
+Write output to a file (replaces contents)
+D.
+Append output to a file (adds to end)
+E.
+Copy a file
+F.
+Move or rename a file
+1.
+echo "Hello"
+2.
+cat notes.txt
+3.
+cp file.txt copy.txt
+4.
+echo "Hi" > file.txt
+5.
+mv old.txt new.txt
+6.
+echo "More" >> file.txt
+
+==================== PAGE 2 ====================
+Week 2: Linux Terminal Homework
+Page 2
+Section 2: Write the Command
+Write the exact Linux command you would use for each task.
+1. 
+Print "I love Linux" to the terminal screen.
+2. 
+Write the text "Hello World" into a file called greeting.txt (create/overwrite).
+3. 
+Add the text "Second line" to the END of greeting.txt without erasing it.
+4. 
+Display the contents of a file called notes.txt.
+5. 
+Make a copy of report.txt called report_backup.txt.
+6. 
+Rename the file draft.txt to final.txt.
+7. 
+Move the file photo.jpg into a folder called images.
+
+==================== PAGE 3 ====================
+Week 2: Linux Terminal Homework
+Page 3
+Section 3: Predict the Output
+Look at the commands below. Predict what the output of the LAST command will be.
+1. 
+What will cat show?
+echo "Apple" > fruits.txt
+echo "Banana" >> fruits.txt
+echo "Cherry" >> fruits.txt
+cat fruits.txt
+Your prediction:
+2. 
+What will cat show?
+echo "First draft" > essay.txt
+echo "Second draft" > essay.txt
+cat essay.txt
+Your prediction:
+3. 
+What will ls show?
+echo "data" > info.txt
+cp info.txt info_copy.txt
+mv info.txt renamed.txt
+ls
+Your prediction:
+4. 
+What will cat archive/info.txt show, and will info.txt still be in the current folder?
+echo "Important data" > info.txt
+mkdir archive
+mv info.txt archive/
+cat archive/info.txt
+Your prediction:
+
+==================== PAGE 4 ====================
+Week 2: Linux Terminal Homework
+Page 4
+Section 4: True or False
+Write T for True or F for False in each box.
+1.
+echo "Hello" prints text to the screen.
+2.
+The > symbol adds text to the end of a file without erasing it.
+3.
+The >> symbol overwrites (replaces) the contents of a file.
+4.
+cat is used to display the contents of a file.
+5.
+cp file.txt copy.txt creates a copy and keeps the original.
+6.
+mv old.txt new.txt deletes old.txt permanently.
+7.
+After mv file.txt folder/, the file is no longer in the original location.
+8.
+echo "Hi" > file.txt will create the file if it doesn’t exist.
+9.
+You can use cat folder/file.txt to read a file inside a folder.
+10.
+cp and mv do exactly the same thing.
+
+==================== PAGE 5 ====================
+Week 2: Linux Terminal Homework
+Page 5
+Section 5: Build a Project
+Use DistroSea.com. Write the exact command for each step.
+Project: "My Recipe Book"
+Create a recipe book folder structure with files containing actual text content.
+Step 1:
+Create a folder called "recipes"
+Command:
+Step 2:
+Go inside the recipes folder
+Command:
+Step 3:
+Create a file called "pancakes.txt" with the text: "Mix flour, eggs, and milk. Cook on a pan."
+Command:
+Step 4:
+Create a file called "sandwich.txt" with the text: "Put meat and cheese between bread."
+Command:
+Step 5:
+Add a second line to pancakes.txt: "Top with syrup and berries."
+Command:
+Step 6:
+Use cat to verify pancakes.txt has 2 lines
+Command:
+Step 7:
+Create a folder called "favorites"
+Command:
+Step 8:
+Copy pancakes.txt into the favorites folder
+Command:
+Step 9:
+Move sandwich.txt into the favorites folder
+Command:
+Step 10:
+List the contents of the favorites folder
+Command:
+Step 11:
+Read the contents of favorites/pancakes.txt
+Command:
+
+==================== PAGE 6 ====================
+Week 2: Linux Terminal Homework
+Page 6
+Section 6: Reflection
+Answer in your own words. There are no wrong answers here!
+1. 
+What is the difference between > and >>? When would you use each one?
+2. 
+What is the difference between cp and mv? Give a real-life example for each.
+3. 
+If you accidentally used > instead of >> and lost your file contents, what would you do differently
+next time?
+4. 
+What was the most interesting or surprising thing you learned this week?
+5. 
+Rate your confidence with this week’s commands (1 = not confident, 5 = very confident):
+echo
+(1-5)
+cat
+(1-5)
+>  and >>
+(1-5)
+cp
+(1-5)
+mv
+(1-5)
+
+========================================
+FORM FIELDS: 49
+========================================
+  student_name (/Tx): 
+  student_date (/Tx): 
+  match_1 (/Tx): 
+  match_2 (/Tx): 
+  match_3 (/Tx): 
+  match_4 (/Tx): 
+  match_5 (/Tx): 
+  match_6 (/Tx): 
+  hw2_7 (/Tx): 
+  hw2_8 (/Tx): 
+  hw2_9 (/Tx): 
+  hw2_10 (/Tx): 
+  hw2_11 (/Tx): 
+  hw2_12 (/Tx): 
+  hw2_13 (/Tx): 
+  hw2_14 (/Tx): 
+  hw2_15 (/Tx): 
+  hw2_16 (/Tx): 
+  hw2_17 (/Tx): 
+  tf_18 (/Tx): 
+  tf_19 (/Tx): 
+  tf_20 (/Tx): 
+  tf_21 (/Tx): 
+  tf_22 (/Tx): 
+  tf_23 (/Tx): 
+  tf_24 (/Tx): 
+  tf_25 (/Tx): 
+  tf_26 (/Tx): 
+  tf_27 (/Tx): 
+  proj_28 (/Tx): 
+  proj_29 (/Tx): 
+  proj_30 (/Tx): 
+  proj_31 (/Tx): 
+  proj_32 (/Tx): 
+  proj_33 (/Tx): 
+  proj_34 (/Tx): 
+  proj_35 (/Tx): 
+  proj_36 (/Tx): 
+  proj_37 (/Tx): 
+  proj_38 (/Tx): 
+  hw2_39 (/Tx): 
+  hw2_40 (/Tx): 
+  hw2_41 (/Tx): 
+  hw2_42 (/Tx): 
+  rate_43 (/Tx): 
+  rate_44 (/Tx): 
+  rate_45 (/Tx): 
+  rate_46 (/Tx): 
+  rate_47 (/Tx): 
