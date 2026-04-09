@@ -405,6 +405,8 @@ class ClassworkPDF:
             height=0.55 * inch,
         )
 
+        self.space(0.15 * inch)
+
         self.text("Scenario 1: You want AI to help you study for a biology test about cells.", bold=True)
         self.space(0.05 * inch)
         self.text_field("Role:", "s1_role", label_width=0.8 * inch)
@@ -502,6 +504,8 @@ class ClassworkPDF:
             color=Colors.SKY_BLUE,
             height=0.85 * inch,
         )
+
+        self.space(0.15 * inch)
 
         self.multiline_field("Your ultimate prompt:", "bonus_prompt", height=1.0 * inch)
 

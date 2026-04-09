@@ -424,6 +424,8 @@ class HomeworkPDF:
             Colors.LIGHT_PURPLE, 0.7 * inch
         )
 
+        self.space(0.15 * inch)
+
         self.text("Task: Ask AI to explain a topic you're learning in another class right now.", bold=True)
         self.space(0.05 * inch)
 
