@@ -10,7 +10,7 @@ import os
 from openpyxl import Workbook
 
 # =============================================================================
-# KAHOOT QUESTIONS (12 total)
+# KAHOOT QUESTIONS (16 total)
 # Format: (Question, Answer 1, Answer 2, Answer 3, Answer 4, Time limit, Correct Answer)
 # Correct Answer = 1,2,3,4
 # =============================================================================
@@ -123,6 +123,42 @@ QUESTIONS = [
         "Give shorter answers",
         20,
         2,
+    ),
+    (
+        "What does the 'T' in the RTCF framework stand for?",
+        "Tone",
+        "Task",
+        "Template",
+        "Topic",
+        20,
+        2,
+    ),
+    (
+        "What is 'zero-shot' prompting?",
+        "When AI gives no answer",
+        "Asking directly with no examples",
+        "Giving the AI zero seconds to respond",
+        "Deleting your prompt and starting over",
+        20,
+        2,
+    ),
+    (
+        "What is a 'context window' in AI?",
+        "The screen where you type prompts",
+        "A browser tab with AI open",
+        "The limited amount of text AI can process at once",
+        "A window that shows AI's source code",
+        20,
+        3,
+    ),
+    (
+        "Which company created the AI chatbot called Claude?",
+        "Google",
+        "OpenAI",
+        "Microsoft",
+        "Anthropic",
+        20,
+        4,
     ),
 ]
 
