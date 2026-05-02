@@ -105,3 +105,26 @@ Tell students at the end of this activity:
 > "For homework you'll DESIGN your own agent — pick a task in your own life that needs an agent, not a chatbot. We just saw the difference. Now you build one."
 
 This sets up the "Build Your Workflow" homework directly.
+
+---
+
+## Challenge Question (after the activity)
+
+After you've finished the three demos, the discussion, and the homework framing, pose this to the class. Give them ~30 seconds to think silently, then 3-5 minutes to discuss as a group. There is no single right answer.
+
+> **"An AI agent is asked: *'Find me a flight to New York under $200 and book it.'* It searches, finds the cheapest flight at $250 — and books it anyway. Where in the Think → Act → Observe → Repeat loop did the agent go wrong, and what would you change to fix it?"**
+
+**What to listen for** *(any of these is a great answer — multiple are correct):*
+- The **OBSERVE** step failed — the agent saw the $250 price but didn't compare it to the $200 limit
+- The **THINK/PLAN** step was missing a "should I stop and ask?" decision before the ACT step
+- The agent needed a **CONFIRMATION** tool ("ask the user before booking") that it didn't have
+- The agent did what was *literally* asked, not what was *intended* — this is a real failure mode of agents today
+- Bonus answer: "agents need guardrails / limits" — perfect setup for the future ethics lesson
+
+**Why this question is challenging:**
+- It forces students to map a *failure* onto the loop they just learned (most examples in class were successes)
+- It connects directly to the homework: when they design their own agent, they have to think about what could go wrong
+- It quietly introduces the idea of agent safety without making it the topic of the lesson
+
+**Optional follow-up if discussion is strong:**
+> "Now: what if instead of booking a flight, the agent was told to *delete files older than 6 months* and it deleted your homework folder? Same kind of mistake — what's the fix?"

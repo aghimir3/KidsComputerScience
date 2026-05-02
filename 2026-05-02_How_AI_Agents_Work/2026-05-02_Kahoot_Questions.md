@@ -1,7 +1,7 @@
 # Kahoot Quiz - May 2, 2026
 
 **Topic:** How AI Agents Actually Work — Inside the Loop
-**Total Questions:** 12
+**Total Questions:** 15
 **Format:** Multiple choice, 4 answers each, ~20-25 second time limit
 
 ---
@@ -162,10 +162,49 @@
 
 ---
 
+## Question 13
+
+**Q:** What is an AI "hallucination"?
+- A) When the AI sees pictures or images
+- B) When the AI confidently makes up an answer that isn't true
+- C) When the AI runs out of memory
+- D) When the AI uses too many tools at once
+
+**Correct:** B
+**Time:** 20s
+
+---
+
+## Question 14
+
+**Q:** In the agent loop, what is the "Act" step?
+- A) The agent talks back to the user
+- B) The agent uses a tool to do something (search, send email, run code)
+- C) The agent thinks about its options
+- D) The agent saves its memory
+
+**Correct:** B
+**Time:** 20s
+
+---
+
+## Question 15
+
+**Q:** An assistant has MEMORY but no TOOLS. Which task can it still NOT do?
+- A) Remember your name from earlier in the chat
+- B) Look up today's weather
+- C) Write a poem about your dog
+- D) Answer trivia from its training data
+
+**Correct:** B
+**Time:** 25s
+
+---
+
 ## Notes for Teacher
 
-- Q1, Q3, Q5, Q8 — vocabulary checks (agent loop, context window, system prompt, reasoning)
+- Q1, Q3, Q5, Q8, Q14 — vocabulary checks (agent loop steps, context window, system prompt, reasoning)
 - Q2, Q9 — connect agents back to networking (HTTP requests, the AI connection per CLAUDE.md)
-- Q6, Q11 — chatbot vs agent distinction (key takeaway from 4/25)
-- Q4, Q10 — limitations & failure modes (sets up later ethics lesson)
+- Q6, Q11, Q15 — chatbot vs assistant vs agent distinction (mirrors today's live activity)
+- Q4, Q10, Q13 — limitations & failure modes (forgetting, looping, hallucination — sets up later ethics lesson)
 - Q12 — AGI clarification (came up in 4/25 Q&A)

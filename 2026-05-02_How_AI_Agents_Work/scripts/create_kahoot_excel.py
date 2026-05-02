@@ -10,7 +10,7 @@ import os
 from openpyxl import Workbook
 
 # =============================================================================
-# KAHOOT QUESTIONS (12 total)
+# KAHOOT QUESTIONS (15 total)
 # Format: (Question, Answer 1, Answer 2, Answer 3, Answer 4, Time limit, Correct)
 # Correct = 1, 2, 3, or 4
 # Kahoot: question max ~120 chars, answer max ~75 chars
@@ -122,6 +122,33 @@ QUESTIONS = [
         "False - agents use tools today; AGI is human-level and doesn't exist yet",
         "True - but only the paid versions",
         "False - AGI is just a faster agent",
+        25,
+        2,
+    ),
+    (
+        "What is an AI 'hallucination'?",
+        "When the AI sees pictures or images",
+        "When the AI confidently makes up an answer that isn't true",
+        "When the AI runs out of memory",
+        "When the AI uses too many tools at once",
+        20,
+        2,
+    ),
+    (
+        "In the agent loop, what is the 'Act' step?",
+        "The agent talks back to the user",
+        "The agent uses a tool to do something (search, send email, run code)",
+        "The agent thinks about its options",
+        "The agent saves its memory",
+        20,
+        2,
+    ),
+    (
+        "An assistant has MEMORY but no TOOLS. Which task can it still NOT do?",
+        "Remember your name from earlier in the chat",
+        "Look up today's weather",
+        "Write a poem about your dog",
+        "Answer trivia from its training data",
         25,
         2,
     ),

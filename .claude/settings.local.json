@@ -56,7 +56,10 @@
       "Bash(mv \"Week6_AI_Classwork_Editable.pdf\" \"2026-04-04_Classwork_Generative_AI_and_LLMs.pdf\")",
       "Bash(mv \"Week6_AI_Homework_Editable.pdf\" \"2026-04-04_Homework_Generative_AI_and_LLMs.pdf\")",
       "Bash(PYTHONIOENCODING=utf-8 python \"c:/Users/abhig/OneDrive/Documents/EverestIT Claude/tools/read_pptx.py\" \"c:/Users/abhig/OneDrive/Documents/EverestIT Claude/2026-04-04_Introduction_to_Generative_AI_and_LLMs/2026-04-04_Introduction_to_Generative_AI_and_LLMs.pptx\")",
-      "Bash(PYTHONIOENCODING=utf-8 python \"c:/Users/abhig/OneDrive/Documents/EverestIT Claude/tools/read_pptx.py\" \"c:/Users/abhig/OneDrive/Documents/EverestIT Claude/2026-04-11_Prompt_Engineering_and_Using_AI_Tools/2026-04-11_Prompt_Engineering_and_Using_AI_Tools_BEAUTIFUL.pptx\")"
+      "Bash(PYTHONIOENCODING=utf-8 python \"c:/Users/abhig/OneDrive/Documents/EverestIT Claude/tools/read_pptx.py\" \"c:/Users/abhig/OneDrive/Documents/EverestIT Claude/2026-04-11_Prompt_Engineering_and_Using_AI_Tools/2026-04-11_Prompt_Engineering_and_Using_AI_Tools_BEAUTIFUL.pptx\")",
+      "PowerShell(python tools/read_pdf.py \"2026-04-25_Intro_to_AI_Agents/AI_Agents_Classwork_Editable.pdf\")",
+      "PowerShell(Rename-Item \"2026-04-25_Intro_to_AI_Agents/AI_Agents_Classwork_Editable.pdf\" \"2026-04-25_Classwork_Using_AI_Agents.pdf\")",
+      "PowerShell(Rename-Item \"2026-04-25_Intro_to_AI_Agents/AI_Agents_Homework_Editable.pdf\" \"2026-04-25_Homework_Using_AI_Agents.pdf\")"
     ]
   }
 }

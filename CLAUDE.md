@@ -100,7 +100,7 @@ When creating or editing slides:
 
 ## Kahoot Quizzes
 
-Most classes include a Kahoot quiz with **~12 questions**.
+Most classes include a Kahoot quiz with **15 questions**.
 
 ### Question Guidelines
 
