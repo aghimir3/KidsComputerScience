@@ -203,6 +203,26 @@ class HomeworkPDF:
         )
         self.y -= height + 0.1 * inch
 
+    def checkbox_row(self, items, indent=0.2 * inch, col_width=2.5 * inch):
+        """Draw a row of real form checkboxes side by side.
+        items is a list of (label, field_name) tuples.
+        """
+        c = self.c
+        x = Layout.MARGIN + indent
+        for label, field_name in items:
+            c.acroForm.checkbox(
+                name=field_name,
+                x=x, y=self.y - 0.02 * inch,
+                size=12,
+                borderColor=Colors.MEDIUM_BLUE,
+                fillColor=Colors.WHITE,
+            )
+            c.setFillColor(Colors.DARK_GRAY)
+            c.setFont("Helvetica", 10)
+            c.drawString(x + 0.22 * inch, self.y, label)
+            x += col_width
+        self.y -= 0.3 * inch
+
     def space(self, amount=0.15 * inch):
         self.y -= amount
 
@@ -315,15 +335,21 @@ class HomeworkPDF:
 
         self.text("Which TOOLS does your agent need? Check at least 2:",
                  bold=True)
-        self.space(0.05 * inch)
+        self.space(0.1 * inch)
 
-        # Tool checkboxes - using text fields instead so all show consistently
-        self.text("[  ] Web search    [  ] Code execution    [  ] Image generation",
-                 size=10, indent=0.2 * inch)
-        self.text("[  ] Send email    [  ] Calendar / reminders    [  ] File reader",
-                 size=10, indent=0.2 * inch)
-        self.text("[  ] Other (describe below)", size=10, indent=0.2 * inch)
-        self.space(0.05 * inch)
+        self.checkbox_row([
+            ("Web search", "tool_search"),
+            ("Code execution", "tool_code"),
+            ("Image generation", "tool_image"),
+        ])
+        self.checkbox_row([
+            ("Send email", "tool_email"),
+            ("Calendar / reminders", "tool_calendar"),
+            ("File reader", "tool_files"),
+        ])
+        self.checkbox_row([
+            ("Other (describe below)", "tool_other"),
+        ])
         self.text_field("Other tools:", "agent_other_tools",
                        1.0 * inch, 4 * inch)
 

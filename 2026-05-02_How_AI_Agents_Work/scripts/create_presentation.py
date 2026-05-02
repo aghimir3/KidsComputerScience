@@ -96,6 +96,46 @@ def slide_3_recap(prs):
         COLORS["meta_gold"])
 
 
+def slide_3b_components(prs):
+    slide = prs.slides.add_slide(prs.slide_layouts[6])
+    add_title_bar(slide, "Recap: The 4 Core Components",
+                  "Every agent has these four parts working together")
+
+    components = [
+        ("LLM Brain",
+         "The model that reads & writes text",
+         COLORS["agent_purple"]),
+        ("Tools",
+         "Functions for action: search, code, email",
+         COLORS["act_orange"]),
+        ("Memory",
+         "What the agent remembers in this chat",
+         COLORS["medium_blue"]),
+        ("Planning",
+         "Breaking a big task into small steps",
+         COLORS["observe_green"]),
+    ]
+    for i, (name, desc, color) in enumerate(components):
+        col = i % 2
+        row = i // 2
+        x = 0.7 + col * 6.15
+        y = 1.8 + row * 1.95
+        add_rounded_box(slide, Inches(x), Inches(y), Inches(5.9),
+                        Inches(1.7), color)
+        add_styled_textbox(slide, Inches(x + 0.2), Inches(y + 0.2),
+                           Inches(5.5), Inches(0.5),
+                           name, font_size=22, font_color=COLORS["white"],
+                           bold=True, alignment=PP_ALIGN.CENTER)
+        add_styled_textbox(slide, Inches(x + 0.2), Inches(y + 0.85),
+                           Inches(5.5), Inches(0.7),
+                           desc, font_size=15, font_color=COLORS["light_gray"],
+                           alignment=PP_ALIGN.CENTER)
+
+    add_takeaway_bar(slide,
+        "Today we open up each one and see how it actually works.",
+        COLORS["dark_blue"])
+
+
 def slide_4_question(prs):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     add_full_bg(slide, COLORS["dark_blue"])
@@ -509,8 +549,8 @@ def slide_13_demo_intro(prs):
     add_styled_textbox(slide, Inches(1.7), Inches(4.45), Inches(10.0),
                        Inches(1.0),
                        '"What is the most popular video game right now, '
-                       'how many people are playing it, and write a '
-                       'short poem about it?"',
+                       'how many people are playing it this week, and '
+                       'write me a 4-line poem about it?"',
                        font_size=18, font_color=COLORS["dark_gray"],
                        alignment=PP_ALIGN.CENTER)
 
@@ -737,6 +777,7 @@ def main():
         slide_1_title,
         slide_2_agenda,
         slide_3_recap,
+        slide_3b_components,
         slide_4_question,
         slide_5_llm_brain,
         slide_6_system_prompt,
