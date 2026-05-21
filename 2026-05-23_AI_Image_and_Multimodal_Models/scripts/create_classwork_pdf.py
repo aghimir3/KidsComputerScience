@@ -313,17 +313,17 @@ class ClassworkPDF:
 
         self.info_box(
             "Can You Spot the Fake?",
-            "AI-generated images are getting better every day. Your teacher "
-            "will show you several images. For each one, decide: REAL or "
-            "AI-GENERATED? Write your guess and explain your reasoning.",
+            "AI-generated images are getting better every day. Go to "
+            "whichfaceisreal.com and play 5 rounds. For each round, write "
+            "which face you picked and whether you were right or wrong.",
             Colors.LIGHT_RED, 0.7 * inch
         )
 
         # Image evaluations
         for i in range(1, 6):
-            self.text(f"Image {i}:", bold=True, size=10)
-            self.text_field("Real or AI?", f"image_{i}_guess", 1.0 * inch, 2 * inch)
-            self.text_field("Why do you think so?", f"image_{i}_why", 1.6 * inch)
+            self.text(f"Round {i}:", bold=True, size=10)
+            self.text_field("Which did you pick? (Left/Right)", f"image_{i}_guess", 2.5 * inch, 2 * inch)
+            self.text_field("Were you correct?", f"image_{i}_why", 1.5 * inch, 2.5 * inch)
             self.space(0.05 * inch)
 
         self.space(0.05 * inch)
