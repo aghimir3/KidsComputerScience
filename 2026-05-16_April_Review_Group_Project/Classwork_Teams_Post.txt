@@ -1,0 +1,86 @@
+🤖 CLASSWORK: AI Review — Group Presentation Project
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 YOUR MISSION
+
+Work in a group of 3 to create a short presentation reviewing EVERYTHING we've learned about AI since April!
+
+Your team will build a PowerPoint (or Google Slides, Canva, etc.) and present it to the class (~3-4 minutes).
+
+Your presentation must tell a story featuring an AI agent character that shows off the key concepts we learned.
+
+📊 Points: 100 (+10 bonus)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+👥 TEAM ROLES (1 per person)
+
+🧠 AI Architect
+   → Design the AI character: pick the LLM, write a system prompt using RTCF, choose a temperature, list the tools & memory
+
+📝 Story Director
+   → Write the story/skit: show the Think → Act → Observe loop in action, include a hallucination moment the user catches
+
+🎨 Presenter/Designer
+   → Build the slides and lead the presentation: include key vocabulary, make it visual, practice delivery
+
+Every role touches on concepts from class — no one is left out!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏱️ TIME BUDGET (90 minutes)
+
+0-10 min   → Setup, read the brief, assign roles, brainstorm
+10-60 min  → Build! (50 min — work together)
+60-70 min  → Combine everything + practice
+70-90 min  → Class presentations (~3-4 min each)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📦 DELIVERABLE
+
+Your team submits ONE PowerPoint (or Google Slides / Canva export) that includes:
+
+✅ Your AI agent character (name, LLM, tools, memory)
+✅ A system prompt written using RTCF
+✅ A temperature setting with explanation
+✅ A story showing Think → Act → Observe
+✅ A hallucination moment + how to catch it
+✅ At least 6 vocabulary terms from class
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 WORKSHEET
+
+⬇️ Download the PDF worksheet attached below — it will guide your team through each role step by step.
+
+1️⃣ DOWNLOAD the PDF
+2️⃣ OPEN it (click blue boxes to type, checkboxes to select)
+3️⃣ FILL IT OUT as you work
+4️⃣ SAVE as: TeamName_AI_Review_Worksheet.pdf
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📤 SUBMIT (both items)
+
+1. Your PRESENTATION (PowerPoint / Slides link)
+2. Your filled-out WORKSHEET (PDF)
+
+📤 Post both here in Teams
+📧 Also send to Ishwari Raut ma'am
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 KEY VOCAB TO INCLUDE
+
+LLM • Transformer • Tokens • Next-token prediction • RTCF • Meta prompting • Hallucination • AI Agent • Think → Act → Observe • Tools • Memory • Context window • Temperature • Attention • System prompt
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⭐ BONUS (+10 points)
+
+Watch another team's presentation and write feedback:
+→ One concept they explained really well
+→ One question you have about their presentation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

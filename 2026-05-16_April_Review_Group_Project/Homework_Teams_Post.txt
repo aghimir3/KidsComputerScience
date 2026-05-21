@@ -1,0 +1,70 @@
+📚 HOMEWORK: April & May AI Review
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 YOUR MISSION
+
+Review everything we've learned about AI — from GenAI basics all the way through LLM internals!
+
+This is an individual assignment. No group needed.
+
+📊 Points: 100 (+10 bonus)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 WHAT'S INSIDE
+
+✅ Section 1: Vocabulary Match (20 pts)
+✅ Section 2: True or False (10 pts)
+✅ Section 3: Multiple Choice (15 pts)
+✅ Section 4: Short Answer (20 pts)
+✅ Section 5: Applied Scenarios (25 pts)
+✅ Section 6: Reflection (10 pts)
+⭐ BONUS: AI Concept Map (+10 pts)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 HOW TO COMPLETE
+
+1️⃣ DOWNLOAD
+   ⬇️ Download the PDF attached below
+
+2️⃣ OPEN
+   💻 Windows: Double-click → Opens in Edge
+   🍎 Mac: Double-click → Opens in Preview
+
+3️⃣ FILL IT OUT
+   🖱️ Click blue boxes to type answers
+   ☑️ Click checkboxes to select
+   ⌨️ Press Tab to move between fields
+
+4️⃣ SAVE
+   💻 Windows: Ctrl + S
+   🍎 Mac: Cmd + S
+   📁 Name it: YourName_AI_Review_Homework.pdf
+
+5️⃣ SUBMIT
+   📤 Post your PDF here in Teams
+   📧 Also send to Ishwari Raut ma'am
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 TOPICS COVERED
+
+This homework reviews everything from April & May:
+🔹 Generative AI & LLMs (ANI/AGI/ASI, Transformers, GPT)
+🔹 Prompting & RTCF (Role, Task, Context, Format)
+🔹 Meta Prompting (using AI to improve prompts)
+🔹 AI Agents (LLM + tools + memory + planning)
+🔹 Agent Loop (Think → Act → Observe)
+🔹 LLM Internals (tokens, temperature, attention, hallucination)
+🔹 AI Safety & Ethics
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⭐ BONUS (+10 points)
+
+Draw or describe a concept map connecting at least 8 AI terms we learned. Show how the concepts relate to each other!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏰ DUE: Next class
