@@ -1,4 +1,24 @@
+# Python
 __pycache__/
 *.pyc
-~
+*.pyo
+.venv/
+venv/
+
+# Auto-generated text extractions (from tools/read_*.py)
 *_content.txt
+
+# Office temp/lock files
+~$*
+~*
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Claude local settings
+.claude/

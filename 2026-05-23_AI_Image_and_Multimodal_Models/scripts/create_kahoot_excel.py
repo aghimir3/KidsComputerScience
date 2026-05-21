@@ -151,6 +151,24 @@ QUESTIONS = [
         20,
         2,
     ),
+    (
+        "What do AI image models learn from during training?",
+        "A single artist's sketchbook",
+        "Billions of images paired with text descriptions from the internet",
+        "Only photographs taken by professional cameras",
+        "Screenshots of video games",
+        25,
+        2,
+    ),
+    (
+        "During training, what does the AI learn to do with noise?",
+        "Add more noise to make images blurry",
+        "Remove noise step by step to recover the original image",
+        "Replace noise with random colors",
+        "Ignore the noise completely",
+        25,
+        2,
+    ),
 ]
 
 

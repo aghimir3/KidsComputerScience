@@ -5,7 +5,7 @@ Hi everyone! Here is today's classwork assignment.
 📄 File: 2026-05-23_Classwork_AI_Image_Lab.pdf
 
 ✏️ Instructions:
-• Open the PDF and fill it out digitally (or print and handwrite)
+• Open the PDF and fill it out digitally
 • Section 1: Prompt Battle — write vague vs. detailed prompts and compare results (30 points)
 • Section 2: Multimodal Challenge — upload a photo and test AI's understanding (30 points)
 • Section 3: Real vs. AI Detective — identify which images are AI-generated (25 points)
@@ -14,9 +14,7 @@ Hi everyone! Here is today's classwork assignment.
 
 ⏰ Total: 100 points + 10 bonus points
 
-📨 Submit to:
-1. Upload here in Teams
-2. Also send a copy to Ishwari Raut ma'am
+📨 Submit to: Ishwari Raut ma'am
 
 💡 You'll need access to an AI tool (ChatGPT, Gemini, or similar) to complete this assignment.
 

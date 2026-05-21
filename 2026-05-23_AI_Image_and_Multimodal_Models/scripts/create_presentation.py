@@ -120,6 +120,40 @@ def slide_what_are_image_models(prs):
         "You type a text description (prompt) and the AI creates an image from scratch!")
 
 
+def slide_how_trained(prs):
+    slide = prs.slides.add_slide(prs.slide_layouts[6])
+    add_title_bar(slide, "How Are Image Models Trained?",
+                 subtitle="They learn from BILLIONS of image + caption pairs")
+
+    # Analogy box
+    add_rounded_box(slide, Inches(0.5), Inches(1.6), Inches(12.33), Inches(1.0),
+                   COLORS["sky_blue"])
+    add_styled_textbox(slide, Inches(0.8), Inches(1.7), Inches(11.7), Inches(0.4),
+                      "Think of it like art school — but instead of years, it's weeks of studying billions of examples.",
+                      font_size=16, font_color=COLORS["dark_blue"], bold=True)
+
+    # Training steps
+    steps = [
+        ("1. Collect Data", "Billions of images from the\ninternet with text descriptions\n(captions, alt text, tags)", COLORS["medium_blue"]),
+        ("2. Add Noise", "The model learns to add random\nnoise to images (blur them\nmore and more)", COLORS["diffusion_blue"]),
+        ("3. Learn to Denoise", "Then it learns to REVERSE the\nprocess — remove the noise to\nget back to the original image", COLORS["image_purple"]),
+        ("4. Connect Text", "It learns which text descriptions\nmatch which images, so your\nprompt can guide the output", COLORS["prompt_gold"]),
+    ]
+    for i, (label, desc, color) in enumerate(steps):
+        x = 0.4 + i * 3.25
+        add_rounded_box(slide, Inches(x), Inches(2.9), Inches(3.0), Inches(0.7),
+                       color, text=label, text_size=14)
+        add_styled_textbox(slide, Inches(x + 0.15), Inches(3.7), Inches(2.8), Inches(1.2),
+                          desc, font_size=12, font_color=COLORS["dark_gray"],
+                          alignment=PP_ALIGN.CENTER)
+        if i < 3:
+            add_arrow(slide, Inches(x + 3.05), Inches(3.1), Inches(0.4), Inches(0.3),
+                     COLORS["orange"])
+
+    add_takeaway_bar(slide,
+        "Training takes weeks on thousands of GPUs — but once trained, generation takes seconds!")
+
+
 def slide_how_it_works_1(prs):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     add_title_bar(slide, "How Do Image Models Work?",
@@ -411,6 +445,7 @@ def main():
     slide_agenda(prs)
     slide_recap(prs)
     slide_what_are_image_models(prs)
+    slide_how_trained(prs)
     slide_how_it_works_1(prs)
     slide_how_it_works_2(prs)
     slide_multimodal(prs)
