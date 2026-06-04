@@ -1,0 +1,19 @@
+HOMEWORK - Design Your First Agent-Ready Workflow
+
+Hi everyone! Here is this week's homework assignment.
+
+File: 2026-06-06_Homework_Agent_Ready_Workflow.pdf
+
+Instructions:
+- No new agent platform install is required.
+- Choose a safe task an AI agent could help with.
+- Define the goal, success criteria, allowed tools, not allowed actions, approval rules, and test plan.
+- Remember: an agent with tools can affect real files, browsers, messages, and commands, so safety rules come first.
+
+Total: 100 points + 5 bonus points
+
+Submit to:
+1. Microsoft Teams
+2. Copy Ishwari Raut ma'am
+
+Due: Next class

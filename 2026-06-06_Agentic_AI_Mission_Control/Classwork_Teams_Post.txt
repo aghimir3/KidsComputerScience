@@ -1,0 +1,22 @@
+CLASSWORK - Agentic AI Mission Control (June 6, 2026)
+
+Hi everyone! Here is today's classwork assignment.
+
+File: 2026-06-06_Classwork_Agentic_AI_Mission_Control.pdf
+
+Instructions:
+- Open the PDF and fill it out digitally.
+- Use Gemini Canvas or another approved AI app-builder.
+- Start from your May 30 app/game OR make a fresh simple Canvas app.
+- Write an agent job brief before prompting.
+- Make 2 improvements and 1 bug fix.
+- Test your app using a checklist before calling it finished.
+- Answer the future agent tools reflection.
+
+Total: 100 points + 10 bonus points
+
+Submit to:
+1. Microsoft Teams
+2. Copy Ishwari Raut ma'am
+
+Reminder: Your job today is not just to prompt. Your job is to supervise the AI like a mission controller.
