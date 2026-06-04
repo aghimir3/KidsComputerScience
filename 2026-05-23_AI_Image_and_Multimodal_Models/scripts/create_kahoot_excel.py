@@ -46,7 +46,7 @@ QUESTIONS = [
     (
         "What is 'multimodal' AI?",
         "AI that only works with text",
-        "AI that can understand and generate multiple types of data (text, images, audio)",
+        "AI that understands and generates multiple data types (text, images, audio)",
         "AI that works on multiple computers at once",
         "AI that speaks multiple languages",
         25,
@@ -55,7 +55,7 @@ QUESTIONS = [
     (
         "Which is a BETTER image prompt?",
         "Make a dog",
-        "A golden retriever in a sunflower field, watercolor style, warm sunset lighting",
+        "A golden retriever in a sunflower field, watercolor style, sunset light",
         "Dog picture please",
         "Image of animal",
         20,
