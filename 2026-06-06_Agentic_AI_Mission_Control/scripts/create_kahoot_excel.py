@@ -146,6 +146,33 @@ QUESTIONS = [
         20,
         1,
     ),
+    (
+        'According to the "How We Got Here" slide, what happened in November 2022?',
+        "ChatGPT made an AI chat interface become mainstream",
+        "Claude Code became a coding agent in the terminal",
+        "Operator became a browser agent for web tasks",
+        "OpenClaw and Hermes connected models to tools",
+        25,
+        1,
+    ),
+    (
+        "On the timeline, what did GPT-4 and Claude represent in March 2023?",
+        "Stronger reasoning assistants",
+        "Apps that no longer need testing",
+        "A rule that agents should delete files",
+        "A tool only for typing practice",
+        25,
+        1,
+    ),
+    (
+        "What is the main trend shown from ChatGPT to Codex and 2026 agent platforms?",
+        "AI tools are moving from chat toward using tools with human supervision",
+        "AI stopped using language",
+        "Humans no longer need to set limits",
+        "Testing became unnecessary",
+        25,
+        1,
+    ),
 ]
 
 

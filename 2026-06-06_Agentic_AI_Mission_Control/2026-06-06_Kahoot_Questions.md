@@ -1,7 +1,7 @@
 # Kahoot Quiz - June 6, 2026
 
 **Topic:** Agentic AI Mission Control  
-**Total Questions:** 15  
+**Total Questions:** 18  
 **Format:** Multiple choice, 4 answers each
 
 ---
@@ -186,9 +186,46 @@
 
 ---
 
+## Question 16
+
+**Q:** According to the "How We Got Here" slide, what happened in November 2022?
+- A) ChatGPT made an AI chat interface become mainstream
+- B) Claude Code became a coding agent in the terminal
+- C) Operator became a browser agent for web tasks
+- D) OpenClaw and Hermes connected models to tools
+
+**Correct:** A
+
+---
+
+## Question 17
+
+**Q:** On the timeline, what did GPT-4 and Claude represent in March 2023?
+- A) Stronger reasoning assistants
+- B) Apps that no longer need testing
+- C) A rule that agents should delete files
+- D) A tool only for typing practice
+
+**Correct:** A
+
+---
+
+## Question 18
+
+**Q:** What is the main trend shown from ChatGPT to Codex and 2026 agent platforms?
+- A) AI tools are moving from chat toward using tools with human supervision
+- B) AI stopped using language
+- C) Humans no longer need to set limits
+- D) Testing became unnecessary
+
+**Correct:** A
+
+---
+
 ## Notes for Teacher
 
 - Q1-Q3 reinforce job brief vocabulary.
 - Q4, Q9, Q10, Q15 connect to agent safety and tool permissions.
 - Q5-Q8 reinforce plan, observe, test, and refine.
 - Q11-Q14 check practical supervision habits for the classwork.
+- Q16-Q18 reinforce the PowerPoint timeline from LLM chat tools to supervised agents.
