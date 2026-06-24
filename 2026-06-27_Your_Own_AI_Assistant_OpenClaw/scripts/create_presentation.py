@@ -179,6 +179,43 @@ def build(prs):
     add_takeaway_bar(s, "A real assistant that runs on your computer and works for you.",
                      COLORS["teal"])
 
+    # 4b. What it can do (everyday)
+    s = new_slide(prs)
+    add_title_bar(s, "What OpenClaw Can Do", "Your everyday helper")
+    caps_xs = [0.6, 4.74, 8.88]
+    caps_a = [
+        (COLORS["medium_blue"], "\U0001F4AC Chat & answer", "Questions, ideas, explanations"),
+        (COLORS["teal"], "\U0001F4C4 Files & code", "Read, write, and edit files"),
+        (COLORS["purple"], "\u26A1 Run commands", "Do real tasks (with your OK)"),
+        (COLORS["green"], "\U0001F310 Browse the web", "Look things up, read pages"),
+        (COLORS["orange"], "\U0001F9E0 Remember you", "Notes that last across chats"),
+        (COLORS["light_blue"], "\u23F0 Reminders & tasks", "Schedule things, daily briefings"),
+    ]
+    for i, (color, title, desc) in enumerate(caps_a):
+        x = caps_xs[i % 3]
+        y = 1.7 + (i // 3) * 2.15
+        card(s, x, y, 3.85, 1.9, color, title, [desc], title_size=15, desc_size=12)
+    add_takeaway_bar(s, "It's not just a chatbot \u2014 it can actually get things done.",
+                     COLORS["dark_blue"])
+
+    # 4c. What it can do (bigger powers)
+    s = new_slide(prs)
+    add_title_bar(s, "...And Its Bigger Powers", "Even if we don't try them all today")
+    caps_b = [
+        (COLORS["purple"], "\U0001F4F1 Message you", "WhatsApp, Telegram, Discord"),
+        (COLORS["medium_blue"], "\U0001F4E7 Email helper", "Sort & summarize your inbox"),
+        (COLORS["pink"], "\U0001F3A8 Create media", "Images, audio, even video"),
+        (COLORS["teal"], "\U0001F50C Add new tools", "Plug in MCP tool packs"),
+        (COLORS["green"], "\U0001F4DA Learn new skills", "Reusable how-tos to follow"),
+        (COLORS["orange"], "\U0001F91D Work as a team", "Spin up helper agents"),
+    ]
+    for i, (color, title, desc) in enumerate(caps_b):
+        x = caps_xs[i % 3]
+        y = 1.7 + (i // 3) * 2.15
+        card(s, x, y, 3.85, 1.9, color, title, [desc], title_size=15, desc_size=12)
+    add_takeaway_bar(s, "We'll try just a few today \u2014 but this is the full scope.",
+                     COLORS["teal"])
+
     # 5. Chatbot vs Assistant
     s = new_slide(prs)
     add_title_bar(s, "Chatbot vs. Assistant", "What makes an assistant special?")
