@@ -1,0 +1,284 @@
+============================================================
+  CLASSWORK: YOUR OWN AI ASSISTANT WITH OPENCLAW
+  Saturday, June 27, 2026
+============================================================
+
+Today you will run a real AI assistant on your own computer.
+You will talk to it in the terminal, ask it questions, let it
+make a simple file, and practice using it safely.
+
+This is classwork, so work carefully and save your answers.
+
+Total: 100 points + 10 bonus points
+
+------------------------------------------------------------
+IMPORTANT SAFETY RULES
+------------------------------------------------------------
+
+1. NEVER share the OpenRouter API key in a public chat.
+   Treat it like a password.
+
+2. If OpenClaw asks to run a command, READ it first.
+   Only approve it if you understand what it is doing.
+
+3. If you are unsure, choose deny and ask the teacher.
+
+4. Work inside a safe test folder only. Do not use folders
+   with important files.
+
+5. Keep ask mode on. Do not switch to auto mode.
+
+
+------------------------------------------------------------
+PART 1 - SETUP CHECKPOINT (15 points)
+------------------------------------------------------------
+
+Complete these steps with your group.
+
+1. Check Node.js:
+
+   node --version
+
+2. Check OpenClaw:
+
+   openclaw --version
+
+3. Run onboarding if you have not already done it:
+
+   openclaw onboard
+
+   Choose:
+   - Provider: OpenRouter
+   - API key: use the private class key from your teacher
+   - Messaging channel: Skip for now
+
+4. Set the class model:
+
+   openclaw models set openrouter/deepseek/deepseek-v4-flash
+
+5. Confirm the model/account:
+
+   openclaw models status
+
+Answer these questions in your classwork submission:
+
+1. What Node.js version did your computer show?
+2. What OpenClaw version did your computer show?
+3. Why should the API key be kept private?
+
+
+------------------------------------------------------------
+PART 2 - START OPENCLAW (10 points)
+------------------------------------------------------------
+
+You need TWO terminal windows.
+
+TERMINAL 1 - Start the Gateway:
+
+   openclaw gateway
+
+Leave this terminal open. The Gateway is the assistant's
+running brain.
+
+TERMINAL 2 - Start chat:
+
+   openclaw chat
+
+When chat opens, type:
+
+   Hello! Introduce yourself in two sentences.
+
+Answer these questions in your classwork submission:
+
+4. What did your assistant say when it introduced itself?
+5. What is the job of the OpenClaw Gateway?
+
+
+------------------------------------------------------------
+PART 3 - MISSION A: FIRST CONTACT (10 points)
+------------------------------------------------------------
+
+In openclaw chat, ask:
+
+   What are you, and what can you help me do?
+
+Then ask:
+
+   Explain the difference between a chatbot and an AI assistant.
+
+Answer in your classwork submission:
+
+6. In your own words, how is an AI assistant different from a
+   regular chatbot?
+
+
+------------------------------------------------------------
+PART 4 - MISSION B: WATCH IT ACT (15 points)
+------------------------------------------------------------
+
+First, make a safe test folder.
+
+On Mac:
+
+   mkdir ~/Desktop/openclaw-test
+   cd ~/Desktop/openclaw-test
+
+On Windows PowerShell:
+
+   mkdir $env:USERPROFILE\Desktop\openclaw-test
+   cd $env:USERPROFILE\Desktop\openclaw-test
+
+Start chat from inside that folder:
+
+   openclaw chat
+
+Ask your assistant:
+
+   Make a file called space.txt with one cool fact about space.
+
+When OpenClaw asks for approval:
+
+1. Read the command carefully.
+2. If it looks safe, approve it.
+3. If you are unsure, deny it and ask the teacher.
+
+After it finishes, check the file.
+
+On Mac:
+
+   cat space.txt
+
+On Windows PowerShell:
+
+   type space.txt
+
+Answer in your classwork submission:
+
+7. What did OpenClaw want to do before you approved it?
+8. What was written inside space.txt?
+9. Why is it important that OpenClaw asks before changing files?
+
+
+------------------------------------------------------------
+PART 5 - MISSION C: PERSONALITY (10 points)
+------------------------------------------------------------
+
+Ask your assistant:
+
+   From now on, your name is Nova, a cheerful helper.
+   Re-introduce yourself.
+
+Answer in your classwork submission:
+
+10. Did the assistant follow your personality instruction?
+    Give one example from its response.
+
+
+------------------------------------------------------------
+PART 6 - MISSION D: MEMORY (15 points)
+------------------------------------------------------------
+
+Ask your assistant:
+
+   Remember: my team is the Sharks and our favorite game is Minecraft.
+
+Then ask:
+
+   What is my team's name and our favorite game?
+
+Answer in your classwork submission:
+
+11. Did the assistant remember correctly?
+12. Where does OpenClaw save memories/settings: only in the cloud,
+    or on your computer? Explain briefly.
+
+
+------------------------------------------------------------
+PART 7 - MISSION E: INTERVIEW YOUR ASSISTANT (15 points)
+------------------------------------------------------------
+
+Ask your assistant these questions:
+
+1. How do you remember things about me between conversations?
+2. What is an API key, and why should I keep it secret?
+3. Before you run a command on my computer, what do you do first?
+
+Answer in your classwork submission:
+
+13. What did your assistant say about memory?
+14. What did your assistant say about API keys?
+15. What did your assistant say it should do before running commands?
+
+
+------------------------------------------------------------
+PART 8 - REFLECTION (10 points)
+------------------------------------------------------------
+
+Answer these questions in complete sentences:
+
+16. What was the coolest thing your assistant did today?
+17. What is one risk of using an AI assistant that can run commands?
+18. What is one safe habit you will use with AI tools in the future?
+19. If you had your own assistant at home, what would you want it
+    to help you with?
+
+
+------------------------------------------------------------
+BONUS - QUICK QUESTS (10 bonus points)
+------------------------------------------------------------
+
+Choose ONE bonus quest.
+
+BONUS OPTION A:
+Ask OpenClaw:
+
+   Make jokes.txt with 3 kid-friendly jokes.
+
+Then open the file and copy your favorite joke into your submission.
+
+BONUS OPTION B:
+Ask OpenClaw:
+
+   Make a file called ai_unit_summary.txt with 5 things I learned
+   during the AI unit.
+
+Then open the file and copy your favorite line into your submission.
+
+BONUS OPTION C:
+Ask OpenClaw:
+
+   Create a short thank-you message for my AI class teacher.
+
+Copy the message into your submission.
+
+
+------------------------------------------------------------
+WHAT TO SUBMIT
+------------------------------------------------------------
+
+Submit your answers to questions 1-19.
+
+You do NOT need to submit your API key.
+Do NOT paste the API key into your classwork.
+
+If you did the bonus, include your bonus answer too.
+
+All classwork must be submitted to:
+1. Microsoft Teams
+2. Ishwari Raut ma'am
+
+
+------------------------------------------------------------
+WHEN YOU ARE DONE
+------------------------------------------------------------
+
+1. In the chat terminal, type:
+
+   exit
+
+2. In the gateway terminal, press Ctrl+C to stop OpenClaw.
+
+3. Make sure nothing is still running after class.
+
+Great work. You ran a real AI assistant on your computer!
+============================================================

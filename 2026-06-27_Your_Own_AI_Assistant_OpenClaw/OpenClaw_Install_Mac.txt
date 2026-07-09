@@ -1,0 +1,143 @@
+============================================================
+  INSTALL OPENCLAW ON A MAC
+  Your Own AI Assistant - Setup Steps
+============================================================
+
+Follow these steps in order. Take your time, and read each
+step before you type. If you get stuck, raise your hand!
+
+What you need:
+  - A Mac laptop where you can install software
+  - Internet access
+  - About 10 minutes
+
+------------------------------------------------------------
+STEP 1 - Open the Terminal
+------------------------------------------------------------
+
+1. Click the magnifying glass (Spotlight) in the top-right
+   corner of your screen, OR press:  Command (cmd) + Spacebar
+2. Type:  Terminal
+3. Press Enter.
+
+A window with text will open. This is where you type
+commands. Don't worry - we'll tell you exactly what to type.
+
+
+------------------------------------------------------------
+STEP 2 - Check if Node.js is already installed
+------------------------------------------------------------
+
+OpenClaw needs a program called Node.js to run.
+
+Type this command and press Enter:
+
+   node --version
+
+What you might see:
+  - A number like  v24.3.0  or  v22.19.0  -> GREAT! You have
+    Node. Skip to STEP 4.
+  - A number lower than v22.19 (like v18 or v20) -> Go to STEP 3.
+  - An error like "command not found" -> Go to STEP 3.
+
+
+------------------------------------------------------------
+STEP 3 - Install Node.js (only if you need it)
+------------------------------------------------------------
+
+We need Node.js version 22.19 or newer (version 24 is best).
+
+EASIEST WAY (download the installer):
+  1. Open a web browser and go to:  https://nodejs.org
+  2. Click the big button that says "LTS" to download it.
+  3. Open the file you downloaded and click through the
+     installer (keep clicking "Continue" / "Agree" / "Install").
+  4. When it finishes, CLOSE the Terminal and open it again
+     (repeat STEP 1).
+  5. Check your work - type this and press Enter:
+
+        node --version
+
+     You should now see a number like v22.19 or higher.
+
+If your Mac has Homebrew (ask your teacher if unsure), you
+can instead type:
+
+   brew install node
+
+
+------------------------------------------------------------
+STEP 4 - Install OpenClaw
+------------------------------------------------------------
+
+Now for the main event! Type this command and press Enter:
+
+   npm install -g openclaw
+
+This downloads OpenClaw and may take a minute. You'll see
+lots of text scroll by - that's normal. Wait until you get
+your typing cursor back.
+
+If you see a big RED error that says "EACCES" or
+"permission denied" (it may also show a path like
+/usr/local/lib/node_modules/openclaw):
+
+   Don't worry - this just means your Mac wants permission
+   first. Fix it by adding the word "sudo" to the front of
+   the command:
+
+     1. Type this and press Enter:
+
+           sudo npm install -g openclaw
+
+     2. Your Mac will ask for your password (the same one
+        you use to log in to the computer). Type it and
+        press Enter.
+
+        IMPORTANT: The letters will NOT show up as you type
+        - not even dots. That is normal! It keeps your
+        password secret. Just type it carefully and press
+        Enter.
+
+     3. Wait for the text to finish scrolling. That's it!
+
+   ("sudo" means "super user do." It gives this one command
+   permission to install software on your Mac.)
+
+
+------------------------------------------------------------
+STEP 5 - Check that it worked
+------------------------------------------------------------
+
+Type this command and press Enter:
+
+   openclaw --version
+
+If you see a version number like  v2026.6.x  -> SUCCESS!
+OpenClaw is installed. You're ready for the next part of class.
+
+
+------------------------------------------------------------
+IF SOMETHING GOES WRONG
+------------------------------------------------------------
+
+"openclaw: command not found"
+   -> Run STEP 4 again, then close and reopen the Terminal.
+
+"node version too old"
+   -> Go back to STEP 3 and install Node.js version 24.
+
+"permission denied" / "EACCES" when installing
+   -> Add the word sudo to the front of the command:
+      sudo npm install -g openclaw
+      Then type your Mac login password when asked (the
+      typing stays invisible - that's normal). See STEP 4
+      for the full steps.
+
+Still stuck?
+   -> Raise your hand and ask your teacher. That's what
+      we're here for!
+
+------------------------------------------------------------
+  Nice work! You just installed real developer software. 
+============================================================

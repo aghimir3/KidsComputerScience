@@ -1,0 +1,166 @@
+============================================================
+  INSTALL OPENCLAW ON WINDOWS
+  Your Own AI Assistant - Setup Steps
+============================================================
+
+Follow these steps in order. Take your time, and read each
+step before you type. If you get stuck, raise your hand!
+
+What you need:
+  - A Windows laptop where you can install software
+    (OpenClaw does NOT work on Chromebooks)
+  - Internet access
+  - About 10 minutes
+
+------------------------------------------------------------
+STEP 1 - Open PowerShell
+------------------------------------------------------------
+
+1. Click the Start menu (Windows logo) in the bottom-left.
+2. Type:  PowerShell
+3. Click "Windows PowerShell" when it appears.
+
+A blue window with text will open. This is where you type
+commands. Don't worry - we'll tell you exactly what to type.
+
+TIP: If a later step says "permission" or "access denied,"
+right-click "Windows PowerShell" and choose
+"Run as administrator" instead.
+
+
+------------------------------------------------------------
+STEP 2 - Check if Node.js is already installed
+------------------------------------------------------------
+
+OpenClaw needs a program called Node.js to run.
+
+Type this command and press Enter:
+
+   node --version
+
+What you might see:
+  - A number like  v24.3.0  or  v22.19.0  -> GREAT! You have
+    Node. Skip to STEP 4.
+  - A number lower than v22.19 (like v18 or v20) -> Go to STEP 3.
+  - An error like "not recognized" -> Go to STEP 3.
+
+
+------------------------------------------------------------
+STEP 3 - Install Node.js (only if you need it)
+------------------------------------------------------------
+
+We need Node.js version 22.19 or newer (version 24 is best).
+
+  1. Open a web browser and go to:  https://nodejs.org
+  2. Click the big button that says "LTS" to download it.
+  3. Open the file you downloaded (it ends in .msi).
+  4. Click through the installer - keep clicking "Next" and
+     "Agree," then "Install." If Windows asks "Do you want to
+     allow this app to make changes?", click "Yes."
+  5. When it finishes, CLOSE PowerShell and open it again
+     (repeat STEP 1).
+  6. Check your work - type this and press Enter:
+
+        node --version
+
+     You should now see a number like v22.19 or higher.
+
+
+------------------------------------------------------------
+STEP 4 - Install OpenClaw
+------------------------------------------------------------
+
+Now for the main event! Type this command and press Enter:
+
+   npm install -g openclaw
+
+This downloads OpenClaw and may take a minute. You'll see
+lots of text scroll by - that's normal. Wait until you get
+your typing cursor back.
+
+If you see an error about "permission" or "access denied":
+  1. Close PowerShell.
+  2. Click Start, type PowerShell, then RIGHT-CLICK
+     "Windows PowerShell" and choose "Run as administrator."
+  3. Click "Yes" if Windows asks for permission.
+  4. Type the command again:
+
+        npm install -g openclaw
+
+If you see an error that says "running scripts is disabled
+on this system" or "npm.ps1 cannot be loaded":
+
+   This means PowerShell is set up to block scripts. Here
+   are two ways to fix it - try the easy one first.
+
+   EASY FIX - use Command Prompt instead of PowerShell:
+     1. Click the Start menu.
+     2. Type:  cmd
+     3. Click "Command Prompt" when it appears (a black
+        window opens).
+     4. Type the install command again and press Enter:
+
+           npm install -g openclaw
+
+     Command Prompt doesn't block scripts, so this usually
+     just works!
+
+   OTHER FIX - tell PowerShell it's okay to run scripts:
+     1. In PowerShell, type this exactly and press Enter:
+
+           Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+     2. It will ask "Do you want to change the execution
+        policy?" - type  Y  and press Enter.
+     3. Now try the install command again:
+
+           npm install -g openclaw
+
+     (This is a safe, common setting that lets the tools
+     you install run on your computer.)
+
+
+------------------------------------------------------------
+STEP 5 - Check that it worked
+------------------------------------------------------------
+
+Type this command and press Enter:
+
+   openclaw --version
+
+If you see a version number like  v2026.6.x  -> SUCCESS!
+OpenClaw is installed. You're ready for the next part of class.
+
+
+------------------------------------------------------------
+IF SOMETHING GOES WRONG
+------------------------------------------------------------
+
+"openclaw is not recognized" / "command not found"
+   -> Run STEP 4 again, then close and reopen PowerShell.
+
+"node version too old"
+   -> Go back to STEP 3 and install Node.js version 24.
+
+"permission" / "access denied" when installing
+   -> Reopen PowerShell as administrator (right-click ->
+      "Run as administrator") and try STEP 4 again.
+
+"running scripts is disabled" / "npm.ps1 cannot be loaded"
+   -> PowerShell is blocking scripts. Easiest fix: open
+      Command Prompt (Start -> type cmd) and run the install
+      there. Or, in PowerShell, run this once and press Y:
+      Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+      Then try STEP 4 again. (See STEP 4 for full details.)
+
+Using a Chromebook?
+   -> OpenClaw won't run on Chromebooks. Ask your teacher
+      about using a Windows or Mac laptop instead.
+
+Still stuck?
+   -> Raise your hand and ask your teacher. That's what
+      we're here for!
+
+------------------------------------------------------------
+  Nice work! You just installed real developer software. 
+============================================================

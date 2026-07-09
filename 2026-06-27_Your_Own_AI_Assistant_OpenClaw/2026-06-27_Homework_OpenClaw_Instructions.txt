@@ -1,0 +1,186 @@
+============================================================
+  HOMEWORK: YOUR OWN AI ASSISTANT WITH OPENCLAW
+  Saturday, June 27, 2026
+============================================================
+
+Today in class, you installed and used OpenClaw, a real AI
+assistant that can chat, remember information, and ask before
+it runs commands on your computer.
+
+For homework, you will review what you learned and explain
+how to use an AI assistant safely.
+
+Total: 100 points + 5 bonus points
+
+IMPORTANT:
+- Do NOT include your OpenRouter API key in your homework.
+- Do NOT post or share the API key anywhere public.
+- If you run OpenClaw at home, keep ask mode on and read every
+  command before approving it.
+
+
+------------------------------------------------------------
+PART 1 - VOCABULARY REVIEW (20 points)
+------------------------------------------------------------
+
+Answer each question in 1-2 complete sentences.
+
+1. What is OpenClaw?
+
+2. What is OpenRouter?
+
+3. What is an API key?
+
+4. Why should an API key be kept private, like a password?
+
+5. What is the Gateway in OpenClaw?
+
+
+------------------------------------------------------------
+PART 2 - COMMAND REVIEW (20 points)
+------------------------------------------------------------
+
+Write what each command does.
+
+6. node --version
+
+7. npm install -g openclaw
+
+8. openclaw --version
+
+9. openclaw models set openrouter/deepseek/deepseek-v4-flash
+
+10. openclaw chat
+
+
+------------------------------------------------------------
+PART 3 - SAFETY THINKING (25 points)
+------------------------------------------------------------
+
+Answer each question in complete sentences.
+
+11. What is ask mode, and why is it safer than auto mode?
+
+12. OpenClaw asks to run this command:
+
+    rm -rf ~/Desktop
+
+    Should you approve or deny it? Explain why.
+
+13. OpenClaw asks to run this command while you are inside a
+    safe test folder:
+
+    echo "Hello from OpenClaw" > hello.txt
+
+    Should you approve or deny it? Explain what the command does.
+
+14. Why is it a good idea to use a fresh test folder when trying
+    an AI assistant that can edit files?
+
+15. Why should the Gateway be stopped when class or practice is over?
+
+
+------------------------------------------------------------
+PART 4 - AI ASSISTANT VS CHATBOT (15 points)
+------------------------------------------------------------
+
+Answer in complete sentences.
+
+16. What can an AI assistant do that a simple chatbot usually cannot do?
+
+17. Give one example of a helpful task an AI assistant could do.
+
+18. Give one example of something that could go wrong if an AI
+    assistant has too much permission.
+
+
+------------------------------------------------------------
+PART 5 - REFLECTION ON THE AI UNIT (20 points)
+------------------------------------------------------------
+
+This was the last class of the AI unit. Think back to what you
+learned about AI, agents, tools, memory, and safety.
+
+Answer in complete sentences.
+
+19. What is one thing you understand about AI now that you did
+    not understand before this unit?
+
+20. What was your favorite AI topic, demo, or activity from the unit?
+    Explain why.
+
+21. In your own words, what is an AI agent?
+
+22. How are tools and memory useful for an AI agent?
+
+23. What is one safe habit you will use whenever you work with
+    AI tools in the future?
+
+
+------------------------------------------------------------
+BONUS - DESIGN YOUR DREAM ASSISTANT (5 bonus points)
+------------------------------------------------------------
+
+Imagine you could build your own personal AI assistant.
+
+Answer both questions:
+
+BONUS 1. What would your assistant help you with?
+
+BONUS 2. What safety rule would you build into it so it does not
+         do anything dangerous?
+
+
+------------------------------------------------------------
+WHAT TO SUBMIT
+------------------------------------------------------------
+
+Submit your answers to questions 1-23.
+
+If you completed the bonus, include your bonus answers too.
+
+Do NOT submit your OpenRouter API key.
+Do NOT paste any private key, password, or secret into your homework.
+
+All homework must be submitted to:
+1. Microsoft Teams
+2. Ishwari Raut ma'am
+
+
+------------------------------------------------------------
+OPTIONAL: IF YOU WANT TO PRACTICE OPENCLAW AGAIN
+------------------------------------------------------------
+
+Only do this if you have permission to use the computer and
+you understand the safety rules.
+
+1. Open Terminal or PowerShell.
+2. Make a safe practice folder.
+
+   Mac:
+      mkdir ~/Desktop/openclaw-homework
+      cd ~/Desktop/openclaw-homework
+
+   Windows PowerShell:
+      mkdir $env:USERPROFILE\Desktop\openclaw-homework
+      cd $env:USERPROFILE\Desktop\openclaw-homework
+
+3. Start the Gateway in one terminal:
+
+      openclaw gateway
+
+4. Open a second terminal and start chat:
+
+      openclaw chat
+
+5. Ask:
+
+      Give me 3 ideas for how an AI assistant could help a student study.
+
+6. When you are done, type exit in chat and press Ctrl+C in the
+   Gateway terminal.
+
+This optional practice is not required for full credit.
+
+Great work finishing the AI unit!
+============================================================
