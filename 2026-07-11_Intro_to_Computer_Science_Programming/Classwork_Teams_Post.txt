@@ -1,13 +1,35 @@
 CLASSWORK - PROGRAMMING LAUNCH
 
-Today you will meet the class, explore Microsoft Teams, join a Code Crew
-breakout room, and create a project in Code.org Music Lab.
+Today you will complete the Programming Launch classwork PDF. You will meet the
+class, find important Microsoft Teams spaces, join your assigned Code Crew
+breakout room, and create in Code.org Music Lab.
+
+When your teacher opens breakout rooms, join your Code Crew and stay with your
+group until the teacher brings everyone back to the main room.
 
 Classwork file:
 2026-07-11_Classwork_Programming_Launch.pdf
 
 Code.org activity:
-https://code.org/en-US/hour-of-code/music
+https://studio.code.org/courses/music-jam-2024/units/1
+
+In your Code Crew:
+1. Everyone opens Music Lab on their own computer.
+2. Choose roles: Captain, Coach, and Reporter.
+3. Complete the intro challenges at your own pace.
+4. Create a mix with at least two sounds.
+5. Try an AI-generated drum beat when it becomes available.
+6. Help your teammates make progress.
+7. Choose one discovery or project to share with the class.
+
+In the PDF, complete:
+1. Meet the Class
+2. Find Your Way in Teams
+3. Code Crew Breakout
+4. Create in Code.org
+5. Reflection
+
+Bonus: Imagine one new Music Lab feature and explain how AI could help with it.
 
 Points: 100 points + 10 bonus points
 
