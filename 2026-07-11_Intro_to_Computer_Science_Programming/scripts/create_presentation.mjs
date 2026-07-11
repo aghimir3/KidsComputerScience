@@ -38,19 +38,35 @@ function setShapeTop(slide, name, top) {
 
 function addSlideHeading(slideNumber, heading) {
   const slide = presentation.slides.items[slideNumber - 1];
+  const markerBox = slide.shapes.add({
+    geometry: "textbox",
+    name: `slide-heading-marker-${slideNumber}`,
+    position: { left: 78, top: 47, width: 50, height: 34 },
+    fill: "none",
+    line: { style: "solid", fill: "none", width: 0 },
+  });
+  markerBox.text = "</";
+  markerBox.text.style = {
+    fontSize: 26,
+    bold: true,
+    color: "#FFDB5D",
+    typeface: "Source Code Pro",
+    alignment: "left",
+  };
+
   const headingBox = slide.shapes.add({
     geometry: "textbox",
-    name: `slide-heading-${slideNumber}`,
-    position: { left: 58, top: 23, width: 720, height: 28 },
+    name: `slide-heading-text-${slideNumber}`,
+    position: { left: 121, top: 45, width: 590, height: 38 },
     fill: "none",
     line: { style: "solid", fill: "none", width: 0 },
   });
   headingBox.text = heading;
   headingBox.text.style = {
-    fontSize: 18,
-    bold: true,
+    fontSize: 24,
+    bold: false,
     color: "#FFFFFF",
-    typeface: "Source Code Pro",
+    typeface: "Arial",
     alignment: "left",
   };
 }
