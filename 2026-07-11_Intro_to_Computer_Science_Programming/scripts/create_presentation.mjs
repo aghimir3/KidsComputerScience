@@ -26,6 +26,41 @@ function setText(slide, name, newText) {
   shapeByName(slide, name).text = newText;
 }
 
+function setShapeTop(slide, name, top) {
+  const shape = shapeByName(slide, name);
+  shape.position = {
+    left: shape.position.left,
+    top,
+    width: shape.position.width,
+    height: shape.position.height,
+  };
+}
+
+function addSlideHeading(slideNumber, heading) {
+  const slide = presentation.slides.items[slideNumber - 1];
+  const headingBox = slide.shapes.add({
+    geometry: "textbox",
+    name: `slide-heading-${slideNumber}`,
+    position: { left: 58, top: 23, width: 720, height: 28 },
+    fill: "none",
+    line: { style: "solid", fill: "none", width: 0 },
+  });
+  headingBox.text = heading;
+  headingBox.text.style = {
+    fontSize: 18,
+    bold: true,
+    color: "#FFFFFF",
+    typeface: "Source Code Pro",
+    alignment: "left",
+  };
+}
+
+function adjustDescriptionSpacing(slide) {
+  setShapeTop(slide, "Google Shape;304;p30", 188);
+  setShapeTop(slide, "Google Shape;302;p30", 300);
+  setShapeTop(slide, "Google Shape;307;p30", 411);
+}
+
 function setContentSlide(slideNumber, headings, descriptions) {
   const slide = presentation.slides.items[slideNumber - 1];
   const pairs = [
@@ -39,6 +74,7 @@ function setContentSlide(slideNumber, headings, descriptions) {
   for (const [name, newText] of pairs) {
     setText(slide, name, newText);
   }
+  adjustDescriptionSpacing(slide);
 }
 
 function setTransitionSlide(slideNumber, title, subtitle) {
@@ -70,36 +106,45 @@ setContentSlide(
   ["Meet", "Explore", "Create"],
   ["Learn who is here", "Teams, Kahoot, and breakout rooms", "Make music with code"],
 );
+addSlideHeading(6, "Today's mission");
 setContentSlide(
   7,
   ["Say your name", "Share favorites", "Listen kindly"],
   ["City/state or country only", "Grade, subject, and hobby", "Passing is always okay"],
 );
+addSlideHeading(7, "Introduce yourself");
 setContentSlide(
   8,
   ["Code.org", "TypeScript", "Projects"],
   ["Visual blocks make ideas move", "Writing code starts next week", "Build games, apps, and tools"],
 );
+addSlideHeading(8, "Programming starts with ideas");
 setContentSlide(
   9,
   ["Class: 9-1", "Break: 10:30", "Typing: 11:00"],
   ["Saturdays, Pacific Time", "Rest and recharge", "Practice accuracy and speed"],
 );
+addSlideHeading(9, "Our Saturday class routine");
 setContentSlide(
   10,
   ["Calendar", "Join the Team", "Ask for help"],
   ["Find the Saturday meeting", "Open Kids Computer Science", "Use chat or raise your hand"],
 );
+addSlideHeading(10, "Find class in Microsoft Teams");
 setContentSlide(
   11,
   ["Updates", "Assignments", "Hangout"],
   ["Important teacher updates", "Find and submit assignments", "Join extra help after class"],
 );
+addSlideHeading(11, "Know the Teams channels");
 setContentSlide(
   12,
   ["4:30-5:30", "Questions", "Join Hangout"],
   ["Pacific Time", "Homework, classwork, or setup", "Assistant teachers are ready to help"],
 );
+addSlideHeading(12, "Use hangout for extra help");
+addSlideHeading(13, "Class habits that help everyone");
+adjustDescriptionSpacing(presentation.slides.items[12]);
 
 setTransitionSlide(14, "Kahoot time!", "15 fun questions. Learn the game.");
 setTransitionSlide(15, "Break time", "Return at 11:00 AM Pacific.");
@@ -110,31 +155,37 @@ setContentSlide(
   ["Captain", "Coach", "Reporter"],
   ["Keeps the crew on the mission", "Helps when someone gets stuck", "Shares one discovery"],
 );
+addSlideHeading(17, "Breakout room jobs");
 setContentSlide(
   18,
   ["Own project", "Explain", "Everyone"],
   ["Work on your computer", "Help by asking questions", "A crew succeeds together"],
 );
+addSlideHeading(18, "How to work as a code crew");
 setContentSlide(
   19,
   ["Music Lab", "Build a mix", "Try AI drums"],
   ["Use the link in Teams", "Combine at least two sounds", "Notice what changes"],
 );
+addSlideHeading(19, "Code.org Music Lab");
 setContentSlide(
   20,
   ["Sequence", "Event", "Debug"],
   ["Steps run in an order", "An action starts something", "Find and fix a problem"],
 );
+addSlideHeading(20, "Programming words we will use");
 setContentSlide(
   21,
   ["AI suggests", "You choose", "Humans lead"],
   ["Music Lab can generate beats", "Keep, change, or remix", "Creativity and judgment stay yours"],
 );
+addSlideHeading(21, "AI can help, but you decide");
 setContentSlide(
   22,
   ["One discovery", "One project", "One shout-out"],
   ["What did your crew learn?", "Show a favorite moment", "Thank someone who helped"],
 );
+addSlideHeading(22, "Share what your crew made");
 
 setTransitionSlide(23, "Final Kahoot", "Show what you learned today.");
 
@@ -143,11 +194,13 @@ setContentSlide(
   ["Finish levels", "Remix it", "Submit"],
   ["Complete the guided levels", "3 sounds, AI drums, 2 changes", "Link or screenshot in Teams"],
 );
+addSlideHeading(24, "Homework: Music Lab remix");
 setContentSlide(
   25,
   ["TypeScript", "Write code", "Build together"],
   ["Our programming language", "Start with small, clear steps", "Questions are always welcome"],
 );
+addSlideHeading(25, "Next week we start TypeScript");
 setTransitionSlide(26, "Great first day!", "See you next Saturday.");
 
 await fs.mkdir(path.dirname(outputPath), { recursive: true });
