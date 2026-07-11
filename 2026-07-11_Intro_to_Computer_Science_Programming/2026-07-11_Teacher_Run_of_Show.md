@@ -14,8 +14,33 @@ Code.org Music Lab, and know that TypeScript begins next week.
 - Create or select the Code.org class section.
 - Assign **Music Lab: Jam Session** from the Hour of Code catalog.
 - Replace all bracketed placeholders in the Teams posts.
+- Homework due date: **Saturday, July 18, 2026**.
 - Prepare Teams breakout rooms with three students per room.
 - Keep the no-audio backup ready: https://code.org/hello
+
+## Links to Have Ready
+
+- Classwork PDF: `2026-07-11_Classwork_Programming_Launch.pdf`
+- Homework PDF: `2026-07-11_Homework_Music_Lab_Remix_Challenge.pdf`
+- Music Lab: https://code.org/en-US/hour-of-code/music
+- Backup activity: https://code.org/hello
+- Fun Kahoot workbook: `2026-07-11_Fun_Kahoot_Import.xlsx`
+- Closing Kahoot workbook: `2026-07-11_Closing_Kahoot_Import.xlsx`
+
+## Opening Script
+
+"Welcome to Kids Computer Science. Today is our programming launch day. We are
+not jumping straight into hard code yet. First, we will learn how class works,
+practice the tools we use every week, meet each other, and create something fun
+in Code.org Music Lab. Next week we begin TypeScript, where we will start
+writing our own code step by step."
+
+Set the tone early:
+
+- Beginners are welcome.
+- Passing during introductions is okay.
+- Progress matters more than speed.
+- Students should ask for help before they feel lost.
 
 ## Flexible Schedule
 
@@ -49,6 +74,9 @@ Display the sentence frame and call on students one at a time:
 For privacy, students should share only a city/state or country, never a street
 address. Passing on any question is always allowed.
 
+If the group is large, keep teacher responses short after each student. A simple
+"thank you" or one quick connection is enough.
+
 ## Teams Tour Checklist
 
 Demonstrate these live instead of relying only on the slide:
@@ -59,6 +87,9 @@ Demonstrate these live instead of relying only on the slide:
 4. Show **Classwork** for work completed during class.
 5. Show **Homework** for after-class assignments.
 6. Show **Hangout Session** for 4:30-5:30 PM Pacific help sessions.
+
+Ask students to point to or type the channel name after each stop. The goal is
+not memorization; it is confidence navigating back later.
 
 ## Kahoot Notes
 
@@ -76,9 +107,44 @@ Demonstrate these live instead of relying only on the slide:
 - If a room has two students, combine Captain and Reporter.
 - If Code.org audio is a problem, use Hello World at https://code.org/hello.
 
+## Music Lab Demo Cues
+
+Before sending students to breakout rooms, show only enough to get them started:
+
+1. Open the Music Lab link.
+2. Start the first level.
+3. Drag or arrange one block.
+4. Press run/play and ask, "What changed?"
+5. Point out that code is instructions in an order.
+6. Mention that the AI beat feature suggests ideas, but the student still
+   chooses what to keep.
+
+Do not complete the whole activity during the demo. Leave discovery for the
+breakout rooms.
+
+## If Pacing Changes
+
+- **Introductions run long:** shorten the Teams tour to the five must-find
+  locations and skip extra discussion after the fun Kahoot.
+- **Introductions finish early:** start the fun Kahoot before break, or let
+  students preview Music Lab individually.
+- **Code.org sign-in slows down:** allow students to use the public activity
+  link first, then handle account/section setup before homework.
+- **Breakout rooms are noisy:** bring everyone back briefly, restate roles, and
+  reopen rooms with a smaller goal: "make one sound happen."
+
 ## Closing Script
 
 "Today you met your class, practiced Teams, played Kahoot, worked in a
 breakout room, and created with Code.org. Next week we begin TypeScript and
 start writing our own code. Help is available in the Hangout Session channel
 from 4:30 to 5:30 PM Pacific."
+
+## After Class
+
+- Post the homework Teams message with the section code and joining link filled
+  in.
+- Confirm the homework PDF is available in the Homework channel.
+- Check whether students joined the Code.org section successfully.
+- Note any students who need help during the Hangout Session.
+- Save any pacing notes for the July 18 TypeScript lesson.
