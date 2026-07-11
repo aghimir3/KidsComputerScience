@@ -64,6 +64,10 @@ chore(tools): add test_pptx_layout.py validator
 **Day:** Saturday
 **Time:** 9:00 AM – 1:00 PM Pacific (4 hours total)
 
+**Assistant-teacher hangout:** 4:30 – 5:30 PM Pacific, as scheduled in the
+Microsoft Teams **Hangout Session** channel. Students may join for questions,
+homework help, or extra practice.
+
 ### Fixed Blocks (Non-Negotiable)
 
 | Time | Activity |
@@ -108,7 +112,8 @@ Content must align with the **current phase**. Do not introduce concepts early.
 
 ### July → December: Programming
 
-- Python fundamentals
+- A visual, block-based introduction during the first programming session
+- TypeScript fundamentals
 - Logic and problem-solving
 - Small projects and cumulative assignments
 - Developer tools (VS Code, GitHub)
@@ -120,7 +125,20 @@ Content must align with the **current phase**. Do not introduce concepts early.
 
 ## Current Phase
 
-**April 2026** → Focus on **Artificial Intelligence**
+**July 2026** → Focus on **Programming**, beginning with Code.org and then
+moving into beginner TypeScript.
+
+---
+
+## Microsoft Teams Class Hub
+
+Students should learn where to find the main class spaces:
+
+- **Calendar:** Saturday class meeting
+- **Announcements:** teacher updates and important reminders
+- **Classwork:** activities completed during class
+- **Homework:** assignments completed after class
+- **Hangout Session:** 4:30 – 5:30 PM Pacific help sessions
 
 ---
 
@@ -139,7 +157,8 @@ When creating or editing slides:
 
 ## Kahoot Quizzes
 
-Most classes include a Kahoot quiz with **15 questions**.
+Most classes include a Kahoot quiz with **15 questions**. Orientation classes
+may use a fun practice Kahoot plus a shorter lesson recap Kahoot.
 
 ### Question Guidelines
 
@@ -168,7 +187,7 @@ Correct: [Letter]
 ## Code Style (When Applicable)
 
 - Beginner-friendly only
-- Plain Python preferred
+- Plain TypeScript preferred for student programming lessons
 - Avoid advanced abstractions
 - Avoid clever shortcuts
 - Comments should explain *why*, not just *what*
@@ -180,7 +199,7 @@ Correct: [Letter]
 
 - Homework is **cumulative** — builds on previous weeks
 - Instructions in markdown (`.md`) with clear steps
-- Python files should be short and focused
+- TypeScript files (`.ts`) should be short and focused
 - Students must be able to complete work **without live help**
 - Include examples where helpful
 
@@ -222,7 +241,8 @@ When creating materials:
 Examples of AI connections by phase:
 - **Networking & Cloud:** AI models train on GPU clusters in cloud data centers
 - **Cybersecurity:** AI is used for both attacks (deepfakes) and defense (spam filters, threat detection)
-- **Programming:** AI coding assistants (Claude Code, GitHub Copilot); AI models are built with Python
+- **Programming:** AI coding assistants can suggest TypeScript, and many AI
+  products use TypeScript for websites, interfaces, APIs, and tools
 
 ---
 

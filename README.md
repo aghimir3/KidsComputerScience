@@ -1,6 +1,6 @@
 # Kids Computer Science
 
-Weekly computer science education program for students ages 10-18. Classes run every Saturday, 9 AM - 1 PM Pacific, taught live and remotely.
+Weekly computer science education program for students ages 10-18. Classes run every Saturday, 9 AM - 1 PM Pacific, taught live and remotely. Assistant-teacher hangout sessions run from 4:30 PM - 5:30 PM Pacific as scheduled in Microsoft Teams.
 
 ## Curriculum
 
@@ -8,7 +8,7 @@ Weekly computer science education program for students ages 10-18. Classes run e
 |-------|--------|--------|
 | Networking & Cloud | Jan - Mar | PC hardware, networking, cloud, data centers, Linux, CLI, cybersecurity |
 | Artificial Intelligence | Apr - Jun | What AI is, prompting, AI tools, simple AI projects, ethics |
-| Programming | Jul - Dec | Python fundamentals, logic, projects, VS Code, GitHub |
+| Programming | Jul - Dec | Code.org introduction, TypeScript fundamentals, logic, projects, VS Code, GitHub |
 
 ## Repository Structure
 
@@ -39,7 +39,7 @@ KidsComputerScience/
 
 ## Tools
 
-All lesson materials are generated programmatically with Python scripts.
+Lesson materials are generated programmatically with Python or JavaScript scripts. Student programming lessons use TypeScript beginning in July 2026.
 
 **Setup:**
 ```bash
@@ -87,3 +87,7 @@ Each lesson includes:
 - **Class activity** (.md) — guided hands-on exercise
 
 Every lesson includes at least one connection to AI, regardless of the current curriculum phase.
+
+## Microsoft Teams
+
+Students use the Teams calendar to join the Saturday meeting. The class Team includes **Announcements**, **Classwork**, **Homework**, and **Hangout Session** channels.
