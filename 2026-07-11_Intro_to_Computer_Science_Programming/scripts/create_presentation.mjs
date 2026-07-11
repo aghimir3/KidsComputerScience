@@ -5,10 +5,13 @@ import { FileBlob, PresentationFile } from "@oai/artifact-tool";
 const starterPath = process.argv[2];
 const outputPath = process.argv[3];
 const qaDir = process.argv[4];
+const sourceDeckPath =
+  process.argv[5] ??
+  path.join(path.dirname(outputPath), "Coding Adventures Presentation (2026).pptx");
 
 if (!starterPath || !outputPath || !qaDir) {
   throw new Error(
-    "Usage: node create_presentation.mjs <template-starter.pptx> <output.pptx> <qa-dir>",
+    "Usage: node create_presentation.mjs <template-starter.pptx> <output.pptx> <qa-dir> [source-deck.pptx]",
   );
 }
 
@@ -97,6 +100,84 @@ function setTransitionSlide(slideNumber, title, subtitle) {
   const slide = presentation.slides.items[slideNumber - 1];
   setText(slide, "Google Shape;214;p24", title);
   setText(slide, "Google Shape;215;p24", subtitle);
+}
+
+async function insertRoadmapSlide() {
+  const sourcePresentation = await PresentationFile.importPptx(
+    await FileBlob.load(sourceDeckPath),
+  );
+  const sourceSlide = sourcePresentation.slides.items[5];
+  const roadmapImage = await sourcePresentation.export({
+    slide: sourceSlide,
+    format: "png",
+    scale: 1,
+  });
+  const roadmapBytes = new Uint8Array(await roadmapImage.arrayBuffer());
+  const deckFrame = presentation.slides.items[0].frame;
+  const inserted = presentation.slides.insert({
+    after: presentation.slides.items[4],
+    width: deckFrame.width,
+    height: deckFrame.height,
+  });
+  const slide = inserted.slide ?? inserted;
+  const frame = deckFrame;
+  const scaleX = frame.width / 960;
+  const scaleY = frame.height / 540;
+  const scaled = (left, top, width, height) => ({
+    left: left * scaleX,
+    top: top * scaleY,
+    width: width * scaleX,
+    height: height * scaleY,
+  });
+
+  slide.images.add({
+    blob: roadmapBytes,
+    contentType: "image/png",
+    alt: "Kids Computer Science roadmap from the original Coding Adventures presentation",
+    fit: "cover",
+    position: { left: 0, top: 0, width: frame.width, height: frame.height },
+  });
+
+  // Keep the original roadmap visual, but align the language with this year's TypeScript plan.
+  slide.shapes.add({
+    geometry: "roundRect",
+    name: "roadmap-typescript-card",
+    position: scaled(628, 238, 120, 88),
+    fill: "#DDF7E3",
+    line: { style: "solid", fill: "#DDF7E3", width: 0 },
+    borderRadius: 14,
+  });
+
+  const title = slide.shapes.add({
+    geometry: "textbox",
+    name: "roadmap-typescript-title",
+    position: scaled(642, 247, 98, 36),
+    fill: "none",
+    line: { style: "solid", fill: "none", width: 0 },
+  });
+  title.text = "TypeScript\nBasics";
+  title.text.style = {
+    fontSize: 15,
+    bold: true,
+    color: "#000000",
+    typeface: "Arial",
+    alignment: "left",
+  };
+
+  const details = slide.shapes.add({
+    geometry: "textbox",
+    name: "roadmap-typescript-details",
+    position: scaled(642, 286, 98, 40),
+    fill: "none",
+    line: { style: "solid", fill: "none", width: 0 },
+  });
+  details.text = "Types\nLogic\nSyntax";
+  details.text.style = {
+    fontSize: 11.5,
+    color: "#000000",
+    typeface: "Arial",
+    alignment: "left",
+  };
 }
 
 const titleSlide = presentation.slides.items[0];
@@ -218,6 +299,8 @@ setContentSlide(
 );
 addSlideHeading(25, "Next week we start TypeScript");
 setTransitionSlide(26, "Great first day!", "See you next Saturday.");
+
+await insertRoadmapSlide();
 
 await fs.mkdir(path.dirname(outputPath), { recursive: true });
 await fs.mkdir(path.join(qaDir, "slides"), { recursive: true });
