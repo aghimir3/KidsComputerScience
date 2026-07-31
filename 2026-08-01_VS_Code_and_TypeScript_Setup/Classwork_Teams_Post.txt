@@ -1,0 +1,26 @@
+CLASSWORK - VS Code and TypeScript Setup
+
+Today we will install our coding tools once, create a real TypeScript file, and
+practice if / else if / else decisions.
+
+Choose the setup guide for your computer and follow the teacher one checkpoint
+at a time:
+
+- Windows: 2026-08-01_Windows_Setup_Guide.md
+- macOS: 2026-08-01_macOS_Setup_Guide.md
+
+Submit:
+1. Your completed classwork PDF or written response
+2. One screenshot showing your code and terminal output
+
+If installation is blocked, record the exact error and complete the coding
+activity in the TypeScript Playground for equal credit.
+
+Points: 100 points + 10 bonus points
+
+Submit to:
+1. Microsoft Teams
+2. Ishwari Raut ma'am
+
+Never include a password or private folder information in a screenshot.
+
