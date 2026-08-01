@@ -1,48 +1,37 @@
-# Class Activity: TypeScript Decision Arcade
+# Live Class Activity: TypeScript Decisions
 
 **Date:** August 1, 2026  
 **Tool:** https://www.typescriptlang.org/play/  
 **New concept:** `else if`
 
-## Arcade Mission
+## How We Will Work
 
-Your team will build and test decision-powered mini games. Every round uses the
-same six-step loop:
+Everyone follows the teacher in the TypeScript Playground. We will complete one
+small change at a time instead of copying a large finished program.
 
-1. Read the rules.
+For every exercise:
+
+1. Read the rule together.
 2. Predict the output.
-3. Type the code.
+3. Type the next small piece.
 4. Press **Run**.
-5. Compare the result with the prediction.
-6. Repair or improve the program.
+5. Compare the output with the prediction.
+6. Explain which branch ran and why.
 
-## Team Roles
-
-- **Navigator:** reads the next rule and keeps the team on the current step.
-- **Coder:** types while sharing their screen.
-- **Tester:** chooses test values and records predictions.
-- **Reporter:** explains which branch ran and why.
-
-Rotate roles after each mission. Every student should type at least one mission
-on their own computer.
-
-## Arcade Rules
-
-You may use only:
+Use only concepts the class already knows, plus today's `else if`:
 
 - `console.log`
 - `let` and `const`
 - `string`, `number`, and `boolean`
-- Template literals
 - Math and comparison operators
 - `if`, `else if`, and `else`
 
 Do not add functions, arrays, objects, loops, `switch`, logical operators, user
 input, randomness, or libraries.
 
-## Power-Up: Prediction Sprint
+## Live Exercise 1: Recharge July Skills
 
-Predict all four lines before pressing **Run**:
+Type this together:
 
 ```ts
 const player: string = "Nova";
@@ -52,63 +41,150 @@ const hasKey: boolean = true;
 coins = coins + 3;
 
 console.log(`${player} has ${coins} coins.`);
-console.log(coins > 5);
-console.log(coins % 2 === 0);
+console.log(coins >= 10);
 console.log(hasKey);
 ```
 
-Discuss:
+Before pressing **Run**, answer:
 
 - Which value changed?
-- Which values stayed locked?
+- What number will `coins` contain?
 - Which two lines produce booleans?
+- What will each line print?
 
-## New Move: `else if`
+Then run the program and compare the result with the class prediction.
 
-`if / else` gives a program two paths. `else if` adds another question between
-them.
+## Live Exercise 2: Review Two Paths
+
+Replace the editor with:
+
+```ts
+const fuel: number = 60;
+
+if (fuel >= 50) {
+  console.log("Launch approved!");
+} else {
+  console.log("Refuel first.");
+}
+```
+
+Predict, run, and explain the result for:
+
+- `fuel = 60`
+- `fuel = 49`
+
+Class discussion:
+
+- What question does the condition ask?
+- Which branch runs when the answer is true?
+- What is the job of `else`?
+
+## Live Exercise 3: Build a Multi-Path Rank Ladder
+
+Start with only the value:
 
 ```ts
 let score: number = 82;
+```
 
+Add one branch at a time with the teacher.
+
+### Step 1: Highest Rank
+
+```ts
 if (score >= 90) {
-  console.log("Legend rank!");
-} else if (score >= 70) {
-  console.log("Hero rank!");
-} else if (score >= 50) {
-  console.log("Explorer rank!");
-} else {
-  console.log("Keep training!");
+  console.log("Legendary");
 }
 ```
 
-The program checks from top to bottom. The first true branch runs, and then the
-ladder stops.
+### Step 2: Add Another Question
 
-## Mission 1: Galactic Gatekeeper
+```ts
+if (score >= 90) {
+  console.log("Legendary");
+} else if (score >= 70) {
+  console.log("Hero");
+}
+```
 
-The space station assigns a travel route based on fuel:
+### Step 3: Add a Third Question
 
-- `90` or more: Hyper Jump
-- `60` or more: Moon Route
-- `30` or more: Training Orbit
-- Lower than `30`: Recharge
+```ts
+if (score >= 90) {
+  console.log("Legendary");
+} else if (score >= 70) {
+  console.log("Hero");
+} else if (score >= 50) {
+  console.log("Explorer");
+}
+```
 
-Build the program:
+### Step 4: Add the Fallback
+
+```ts
+if (score >= 90) {
+  console.log("Legendary");
+} else if (score >= 70) {
+  console.log("Hero");
+} else if (score >= 50) {
+  console.log("Explorer");
+} else {
+  console.log("Keep training");
+}
+```
+
+After every step, pause and ask:
+
+- Where does the computer begin?
+- When does it move down?
+- What makes the ladder stop?
+- What values will reach the final `else`?
+
+## Live Exercise 4: Boundary Testing
+
+Change only the value of `score`. Predict every result before pressing **Run**.
+
+| Score | Class prediction | Actual output |
+|---:|---|---|
+| 95 |  |  |
+| 90 |  |  |
+| 89 |  |  |
+| 70 |  |  |
+| 69 |  |  |
+| 50 |  |  |
+| 49 |  |  |
+
+Explain why these pairs are useful:
+
+- `90` and `89`
+- `70` and `69`
+- `50` and `49`
+
+Main idea:
+
+> Test the exact boundary and the number just below it.
+
+## Live Exercise 5: Galactic Gatekeeper
+
+Build this second ladder together from a blank Playground:
+
+- `90` or more fuel: `Hyper Jump unlocked!`
+- `60` or more fuel: `Moon Route unlocked!`
+- `30` or more fuel: `Training Orbit unlocked!`
+- Lower than `30`: `Recharge before launch.`
+
+Start with:
 
 ```ts
 let fuel: number = 68;
-
-if (fuel >= 90) {
-  console.log("Hyper Jump unlocked!");
-} else if (fuel >= 60) {
-  console.log("Moon Route unlocked!");
-} else if (fuel >= 30) {
-  console.log("Training Orbit unlocked!");
-} else {
-  console.log("Recharge before launch.");
-}
 ```
+
+The completed program must use:
+
+- One `if`
+- Two `else if` branches
+- One final `else`
+- Conditions ordered from highest to lowest
 
 Predict and test:
 
@@ -116,93 +192,91 @@ Predict and test:
 95, 90, 89, 60, 59, 30, 29
 ```
 
-Reporter question: Why does `89` take the Moon Route instead of Hyper Jump?
+Explain why `89` takes the Moon Route instead of Hyper Jump.
 
-## Mission 2: Dragon Training Arena
+## Live Exercise 6: Dragon Training Arena
 
-Create a dragon-energy ladder:
+Build another decision ladder as a class, but let students call out each next
+line before the teacher types it.
 
-- `80` or more: Sky Flame
-- `50` or more: Fireball
-- `20` or more: Smoke Puff
-- Lower than `20`: Nap Time
+- `80` or more energy: `Sky Flame`
+- `50` or more energy: `Fireball`
+- `20` or more energy: `Smoke Puff`
+- Lower than `20`: `Nap Time`
 
 Requirements:
 
 - Use a typed number named `dragonEnergy`.
 - Use one `if`, two `else if` branches, and one `else`.
 - Print a different message in every branch.
+- Keep conditions ordered from highest to lowest.
 - Predict and test `80`, `79`, `50`, `49`, `20`, and `19`.
 
-Reporter question: Which test values sit directly on a boundary?
+After each test, ask one student to name the first true branch and explain why
+the earlier branches were false.
 
-## Mission 3: AI Bug Bounty
+## Live Exercise 7: AI Bug Hunt
 
-An AI assistant wrote this score ladder:
+An AI assistant suggested this program:
 
 ```ts
 let score: number = 95;
 
 if (score >= 50) {
-  console.log("Explorer rank!");
+  console.log("Explorer");
 } else if (score >= 70) {
-  console.log("Hero rank!");
+  console.log("Hero");
 } else if (score >= 90) {
-  console.log("Legend rank!");
+  console.log("Legendary");
 } else {
-  console.log("Keep training!");
+  console.log("Keep training");
 }
 ```
 
-Complete the bug bounty:
+Complete the bug hunt as one class:
 
-1. Predict the output for `95`.
-2. Run the code.
-3. Circle or name the first true condition.
-4. Explain why the program never reaches Legend.
-5. Reorder the conditions.
-6. Test `95`, `90`, `70`, `50`, and `49`.
+1. Predict what the program will print for `95`.
+2. Run it.
+3. Identify the first true condition.
+4. Compare the result with the intended rank rules.
+5. Reorder the conditions from highest to lowest.
+6. Test `95`, `90`, `70`, `50`, and `49` again.
 
-Main takeaway:
+AI connection:
 
-> Code can compile and run while still having incorrect logic. Humans must test
-> AI-written code.
+> Code can compile and run while still containing incorrect logic. Humans must
+> test AI-written code before trusting it.
 
-## Mission 4: Build Your Own Decision Game
+## If Time Permits: Create a Class Theme
 
-Choose a theme:
+Choose one theme together:
 
 - Superhero power meter
 - Pet robot mood
 - Treasure-vault security level
 - Sports tournament rank
-- Weather adventure
 - Reading challenge badge
 
-Your program must include:
+As a class, decide:
 
-- One typed number
-- One `if`
-- At least two `else if` branches
-- One final `else`
-- A different message in every branch
-- Conditions ordered from highest to lowest
-- At least six test values, including exact boundaries and values just below
-  them
+1. The number variable
+2. Three boundary values
+3. Four output messages
+4. The correct top-to-bottom order
+5. At least six useful test values
 
-## Arcade Showcase
+Keep the program within today's concepts. Returning students may suggest better
+messages, boundary tests, and explanations, but they should not add future
+course concepts.
 
-Each team shares:
+## Final Explain-It Check
 
-1. The theme and rules
-2. One boundary value
-3. The first true branch for that value
-4. One bug the team prevented or repaired
+Every student should be able to complete this sentence:
 
-## AI Discussion
+> An `else if` ladder checks __________, runs __________, and then __________.
 
-Discuss:
+A strong answer includes:
 
-- What part of a decision game could an AI assistant draft quickly?
-- What test values should a human still choose?
-- Why is "the program ran" not enough evidence that the rules are correct?
+- top to bottom
+- the first true branch
+- stops or skips the remaining branches

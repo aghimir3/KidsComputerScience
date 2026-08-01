@@ -26,6 +26,8 @@ By the end of class, students should be able to:
 
 - Open https://www.typescriptlang.org/play/ in a clean browser tab.
 - Open the presentation, class activity, classwork PDF, and teaching playbook.
+- Use the presentation only to introduce the concepts. Close it after Slide 8
+  and use the class activity for all live coding.
 - Post the classwork and Playground link in Microsoft Teams.
 - Keep the Kahoot ready but treat it as optional if activities need more time.
 - Post the homework with both operating-system setup guides.
@@ -50,15 +52,14 @@ Do not introduce:
 
 | Time | Activity | Teacher focus |
 |---|---|---|
-| 9:00-9:20 | Welcome and July recap | Variables, types, operators, comparisons, and `if / else`. |
-| 9:20-9:40 | Prediction Power-Up | Students predict before pressing Run. |
-| 9:40-10:10 | New concept: `else if` | Top-to-bottom checks and first true branch. |
-| 10:10-10:30 | Guided Rank Engine | Build and test the first decision ladder. |
+| 9:00-9:20 | Welcome and July recap | Show Slides 1-2, then use Live Exercises 1-2. |
+| 9:20-9:40 | Concept introduction | Show Slides 3-8 without turning them into coding worksheets. |
+| 9:40-10:30 | Guided Rank Engine | Close the deck and use Live Exercise 3. |
 | 10:30-11:00 | Break | Fixed block. |
 | 11:00-11:30 | Typing practice | Fixed block. |
-| 11:30-12:15 | TypeScript Decision Arcade | Team missions and rotating roles. |
-| 12:15-12:35 | AI Bug Bounty | Code can compile and still be logically wrong. |
-| 12:35-12:50 | Student remix and share-out | Create and test one decision game. |
+| 11:30-12:15 | Live decision exercises | Use Exercises 4-6 and adjust to student understanding. |
+| 12:15-12:35 | AI Bug Hunt | Use Live Exercise 7; running code can still be logically wrong. |
+| 12:35-12:50 | Class remix and share-out | Build one theme together if time permits. |
 | 12:50-1:00 | Kahoot or verbal recap and homework | Explain setup homework and Hangout help. |
 
 Only the break and typing blocks are fixed. Adjust all other activities to
@@ -92,7 +93,8 @@ Use this language:
 > the earlier question was false. The program checks from top to bottom and
 > stops at the first true branch.
 
-Build this together:
+Show the concept slides first. After Slide 8, close the deck and build this
+together through Live Exercise 3:
 
 ```ts
 let score: number = 82;

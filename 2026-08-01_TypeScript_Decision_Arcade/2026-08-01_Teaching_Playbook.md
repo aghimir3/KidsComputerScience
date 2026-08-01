@@ -80,8 +80,8 @@ Click **Run** once. Confirm that the output appears. Then clear the editor so st
 
 ### Show
 
-- Slide 1: TypeScript Decision Arcade
-- Slide 2: Today's outcomes
+- Slide 1: TypeScript Decisions
+- Slide 2: One ladder can choose one path
 
 ### Check for readiness
 
@@ -131,12 +131,10 @@ Expected response: **Type, Run, Read**.
 
 ## 9:20–9:40 — July recap through prediction
 
-### Show
+### Use the live class activity
 
-- Slide 3: July toolkit
-- Slide 4: Playground workflow
-- Slide 5: Prediction workflow
-- Slide 6: Recap challenge
+- Live Exercise 1: Recharge July Skills
+- Live Exercise 2: Review Two Paths
 
 ### Recap one idea at a time
 
@@ -206,7 +204,9 @@ Use the phrase:
 
 ### Returning-student option
 
-Students who finish early may begin the first half of the Robot Repair Arcade. Ask them to explain type corrections and `if`/`else` predictions. They should return when the new-concept slide begins.
+Students who finish early may begin the first half of the Robot Repair Arcade.
+Ask them to explain type corrections and `if`/`else` predictions. They should
+return when the concept slides resume.
 
 ---
 
@@ -214,17 +214,20 @@ Students who finish early may begin the first half of the Robot Repair Arcade. A
 
 ### Show
 
-- Slide 7: New concept — `else if`
-- Slide 8: Top-to-bottom checking
-- Slide 9: First true branch wins
+- Slide 3: `else if` adds another question
+- Slide 4: One connected decision ladder
+- Slide 5: The computer checks top to bottom
+- Slide 6: Order changes the result
+- Slide 7: Boundary values reveal mistakes
+- Slide 8: Transition to the live class activity
 
-### Build the need before the syntax
+### Explain the need before the syntax
 
 Say:
 
 > `if` and `else` are perfect for two paths. What if our game needs Legendary, Hero, Explorer, and Rookie? We need more than one question.
 
-Write the outcomes on screen before showing code:
+Use the outcomes on the concept slides:
 
 - 90 or more → Legendary
 - 70 or more → Hero
@@ -233,21 +236,9 @@ Write the outcomes on screen before showing code:
 
 ### Introduce the ladder
 
-Type slowly:
-
-```ts
-const score: number = 82;
-
-if (score >= 90) {
-  console.log("Legendary");
-} else if (score >= 70) {
-  console.log("Hero");
-} else if (score >= 50) {
-  console.log("Explorer");
-} else {
-  console.log("Rookie");
-}
-```
+Use Slide 4 as the static syntax reference. Point to the value, the first
+`if`, both `else if` branches, and the final `else`. Do not switch to the
+Playground or ask students to type yet.
 
 ### Exact talk track
 
@@ -266,7 +257,8 @@ Have students use:
 - thumbs down = false, move down
 - thumbs up = true, run and stop
 
-Trace scores 95, 82, 55, and 20 without running the code.
+Use only the score 82 example during the slide explanation. The class activity
+contains the additional tracing and test values.
 
 ### Prevent the main misconception
 
@@ -288,14 +280,16 @@ Expected responses:
 - the first true condition
 - catch every remaining value
 
+Finish on Slide 8, close the presentation, and open the class activity.
+
 ---
 
 ## 10:10–10:30 — Build the Rank Engine together
 
 ### Show
 
-- Slide 10: Build steps
-- Slide 11: Rank Engine code
+- Close the presentation after Slide 8.
+- Open Live Exercise 3: Build a Multi-Path Rank Ladder.
 
 ### Live-coding routine
 
@@ -370,7 +364,7 @@ Do not turn this into another programming lecture. Resume the lesson at 11:30.
 
 ### Show
 
-- Slide 12: Boundary Boss Battle
+- Use Live Exercise 4: Boundary Testing.
 
 ### Pair routine
 
@@ -391,11 +385,11 @@ If students state only the output, ask: “Which earlier conditions were false?�
 
 ---
 
-## 11:45–12:05 — Mission 1: Galactic Gatekeeper
+## 11:45–12:05 — Live Exercise 5: Galactic Gatekeeper
 
 ### Show
 
-- Slide 13: Galactic Gatekeeper
+- Use Live Exercise 5: Galactic Gatekeeper.
 
 ### Rules
 
@@ -424,11 +418,11 @@ Expected idea: a broad lower condition placed first could catch a high value too
 
 ---
 
-## 12:05–12:20 — Mission 2: Dragon Training Arena
+## 12:05–12:20 — Live Exercise 6: Dragon Training Arena
 
 ### Show
 
-- Slide 14: Dragon Training Arena
+- Use Live Exercise 6: Dragon Training Arena.
 
 ### Rules
 
@@ -458,11 +452,11 @@ Ask these questions in order:
 
 ---
 
-## 12:20–12:35 — Mission 3: Create a tiny decision game
+## 12:20–12:35 — If time permits: create a class decision game
 
 ### Show
 
-- Slide 15: Create your game
+- Use **If Time Permits: Create a Class Theme** from the live class activity.
 
 ### Student choices
 
@@ -500,7 +494,7 @@ Invite two students to show:
 
 ### Show
 
-- Slide 16: AI draft — order changes the answer
+- Use Live Exercise 7: AI Bug Hunt.
 
 ### Frame the AI connection
 
@@ -555,7 +549,8 @@ Expected ideas:
 
 ### Show
 
-- Slide 17: Homework builds your local workspace
+- The homework PDF
+- The Windows and macOS setup-guide PDFs
 
 ### Say
 
