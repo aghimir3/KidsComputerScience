@@ -1,0 +1,22 @@
+CLASSWORK — TypeScript Decision Arcade
+
+Today we will code in the official TypeScript Playground:
+https://www.typescriptlang.org/play/
+
+We will:
+- recap July's TypeScript skills
+- learn one new concept: else if
+- build decision-game missions
+- test exact boundary values
+- repair a logic bug in an AI-generated draft
+
+Complete the attached classwork as you follow the lesson.
+
+Points: 100 points + 10 bonus points
+
+Important: Predict before you click Run. We are using the browser Playground during class, so no installation is required today.
+
+Submit your completed classwork to BOTH:
+1. Microsoft Teams
+2. Ishwari Raut ma'am
+

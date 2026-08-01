@@ -1,0 +1,19 @@
+OPTIONAL BONUS PRACTICE — Robot Repair Arcade
+
+This activity is for returning students and anyone who finishes early.
+
+It strengthens the same TypeScript ideas everyone is learning. It does NOT move ahead to a new course topic.
+
+Before the else if lesson:
+- repair beginner type mistakes
+- predict an if/else gate
+
+After the teacher introduces else if:
+- test more values
+- improve messages
+- explain why each branch runs
+
+Use only today's skills. Do not add loops, arrays, functions, random numbers, or user input.
+
+This activity is optional and does not need a separate submission unless the teacher asks for it.
+
