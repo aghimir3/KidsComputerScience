@@ -1,6 +1,7 @@
 """Create fillable August 1 classwork and setup-homework PDFs."""
 
 import os
+import sys
 
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
@@ -386,7 +387,7 @@ def create_homework(output_path):
         522,
         96,
         "Permission safety",
-        "Do not share a password or copy random permission fixes. macOS students with EACCES should record the error and ask an adult or Hangout helper. Use sudo only if the approved guide/helper directs you on your own computer.",
+        "Do not share a password or copy random permission fixes. macOS students with EACCES should record the error and bring it to the teaching team or Hangout Session. Use sudo only if the approved guide/helper directs you on your own computer.",
     )
 
     pdf.start_page("Compile and Run a Local File", "Homework continued | Follow the workflow in order")
@@ -462,13 +463,18 @@ def create_homework(output_path):
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     lesson_dir = os.path.dirname(script_dir)
-    create_classwork(
-        os.path.join(lesson_dir, "2026-08-01_Classwork_TypeScript_Decision_Arcade.pdf")
-    )
-    create_homework(
-        os.path.join(lesson_dir, "2026-08-01_Homework_VS_Code_and_TypeScript_Setup.pdf")
-    )
-    print("Created August 1 classwork and homework PDFs")
+    mode = sys.argv[1] if len(sys.argv) > 1 else "all"
+    if mode not in {"all", "classwork", "homework"}:
+        raise ValueError("Mode must be: all, classwork, or homework")
+    if mode in {"all", "classwork"}:
+        create_classwork(
+            os.path.join(lesson_dir, "2026-08-01_Classwork_TypeScript_Decision_Arcade.pdf")
+        )
+    if mode in {"all", "homework"}:
+        create_homework(
+            os.path.join(lesson_dir, "2026-08-01_Homework_VS_Code_and_TypeScript_Setup.pdf")
+        )
+    print(f"Created August 1 {mode} PDF output")
 
 
 if __name__ == "__main__":
