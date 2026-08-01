@@ -10,7 +10,6 @@ TypeScript file.
 
 ## Before You Start
 
-- Ask a parent or guardian before approving an installer.
 - Never share the computer administrator password.
 - Download only from the official links above.
 - If a step is blocked, save the exact error and use the 4:30-5:30 PM Pacific
@@ -84,7 +83,7 @@ lesson folders do not need another TypeScript install.
 
 Stop and save the exact error. Do not repeatedly change permissions.
 
-With parent, guardian, or teacher approval, the documented class fallback is:
+Use this documented class fallback only when the teaching team directs you:
 
 ```text
 sudo npm install -g typescript
@@ -94,7 +93,7 @@ macOS may ask for the computer administrator password. Nothing appears while
 the password is typed. Never say, display, screenshot, or send the password.
 Do not use `sudo` for other class commands.
 
-If you are unsure, wait for the Hangout Session instead.
+If you are unsure, stop and bring the exact error to the Hangout Session.
 
 ## Step 5 - Create the Homework Folder
 

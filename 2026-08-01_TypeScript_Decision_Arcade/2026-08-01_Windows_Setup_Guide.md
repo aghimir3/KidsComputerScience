@@ -11,7 +11,6 @@ TypeScript file.
 ## Before You Start
 
 - Use a Windows account that is allowed to install applications.
-- Ask a parent or guardian before approving an installer.
 - Never share an administrator password.
 - Download only from the official links above.
 - If a step is blocked, save the exact error and use the 4:30-5:30 PM Pacific

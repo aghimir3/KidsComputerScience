@@ -581,7 +581,7 @@ Expected ideas:
 
 Say clearly:
 
-> Use only the official links in the guide. Never post or share a password. If the computer asks for administrator approval or shows a permissions error, record what happened and get an adult or Hangout helper. Do not change security settings by guessing.
+> Use only the official links in the guide. Never post or share a password. If the computer asks for administrator approval or shows a permissions error, record what happened and bring it to the teaching team or Hangout Session. Do not change security settings by guessing.
 
 ### Help route
 
@@ -739,4 +739,3 @@ After class, look for:
 - [ ] Homework includes both Windows and macOS guides.
 - [ ] Students heard the Hangout Session time: 4:30–5:30 PM Pacific.
 - [ ] Students know to submit to Microsoft Teams and Ishwari Raut ma'am.
-

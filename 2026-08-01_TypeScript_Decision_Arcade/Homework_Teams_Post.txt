@@ -4,9 +4,14 @@ Due: Before class on August 8, 2026
 
 Your classroom coding was in the TypeScript Playground. For homework, prepare the local tools we will use in future classes.
 
-Choose ONE attached guide:
-- Windows Setup Guide
-- macOS Setup Guide
+Attachments in this post:
+1. Homework: VS Code and TypeScript Setup PDF
+2. Windows Setup Guide PDF
+3. macOS Setup Guide PDF
+
+Complete the homework PDF and follow ONE setup guide:
+- Windows students: use the Windows Setup Guide PDF
+- macOS students: use the macOS Setup Guide PDF
 
 You will install and verify:
 1. Visual Studio Code
@@ -19,11 +24,10 @@ Points: 100 points + 5 bonus points
 Safety:
 - Use only the official links in the guide.
 - Never share a password.
-- If you see an administrator or permissions message, save the exact message and ask an adult or helper before changing anything.
+- If you see an administrator or permissions message, save the exact message and bring it to the teaching team or Hangout Session before changing anything.
 
 Need help? Join the assistant-teacher Hangout Session from 4:30–5:30 PM Pacific, as scheduled in the Microsoft Teams Hangout Session channel. Bring the guide, the step number, and the exact error message.
 
 Submit your completed homework to BOTH:
 1. Microsoft Teams
 2. Ishwari Raut ma'am
-
