@@ -2,9 +2,9 @@
 
 ## Class Goal
 
-Students will use the TypeScript Playground to recap July concepts, learn one
-new idea - `else if` - and build, test, debug, and explain decision-based mini
-games.
+Students will follow instructor-led TypeScript Playground demonstrations to
+recap July concepts, learn one new idea - `else if` - and understand how
+decision ladders are built, tested, and debugged.
 
 No student installs VS Code, Node.js, npm, or TypeScript during class. Detailed
 Windows and macOS setup is the homework assignment.
@@ -52,15 +52,15 @@ Do not introduce:
 
 | Time | Activity | Teacher focus |
 |---|---|---|
-| 9:00-9:20 | Welcome and July recap | Show Slides 1-2, then use Live Exercises 1-2. |
+| 9:00-9:20 | Welcome and July recap | Show Slides 1-2, then run Demos 1-2 while students follow. |
 | 9:20-9:40 | Concept introduction | Show Slides 3-8 without turning them into coding worksheets. |
-| 9:40-10:30 | Guided Rank Engine | Close the deck and use Live Exercise 3. |
+| 9:40-10:30 | Guided Rank Engine | Close the deck and run Demo 3 yourself. |
 | 10:30-11:00 | Break | Fixed block. |
 | 11:00-11:30 | Typing practice | Fixed block. |
-| 11:30-12:15 | Live decision exercises | Use Exercises 4-6 and adjust to student understanding. |
-| 12:15-12:35 | AI Bug Hunt | Use Live Exercise 7; running code can still be logically wrong. |
-| 12:35-12:50 | Class remix and share-out | Build one theme together if time permits. |
-| 12:50-1:00 | Kahoot or verbal recap and homework | Explain setup homework and Hangout help. |
+| 11:30-12:15 | Instructor demonstrations | Run Demos 4-5; use the optional Dragon demo only if time allows. |
+| 12:15-12:35 | Reinforcement and catch-up | Repeat difficult values or finish the optional Dragon demo. |
+| 12:35-12:48 | AI Logic Bug | Run Demo 6; valid syntax can still contain incorrect logic. |
+| 12:48-1:00 | Kahoot or verbal recap and homework | Explain setup homework and Hangout help. |
 
 Only the break and typing blocks are fixed. Adjust all other activities to
 student understanding.
@@ -94,7 +94,7 @@ Use this language:
 > stops at the first true branch.
 
 Show the concept slides first. After Slide 8, close the deck and build this
-together through Live Exercise 3:
+yourself through Demo 3 while students follow along:
 
 ```ts
 let score: number = 82;
@@ -110,8 +110,8 @@ if (score >= 90) {
 }
 ```
 
-Test `95`, `90`, `82`, `70`, `50`, and `49`. Require a prediction before every
-run.
+Test `95`, `90`, `82`, `70`, `50`, and `49`. Ask for a short prediction before
+each Run, but keep control of the editor and pacing.
 
 ## AI Connection
 
@@ -128,14 +128,14 @@ Emphasize:
 
 ## Adaptive Pacing
 
-- **Recap takes longer:** complete only the Rank Engine and one arcade mission.
+- **Recap takes longer:** complete only the Rank Engine and Galactic demos.
 - **Students struggle with `else if`:** trace values on paper before running.
-- **Students are confident:** add more test values or improve messages without
-  adding new syntax.
+- **Students are confident:** run extra test values and ask which branch will
+  be selected without adding new syntax.
 - **Activities run long:** use the five-question verbal recap instead of
   Kahoot.
-- **Students finish early:** use Robot Repair Arcade and require explanations,
-  not future concepts.
+- **Students finish early:** keep them with the demonstration and ask for
+  additional predictions, not future concepts.
 
 ## Homework Transition
 

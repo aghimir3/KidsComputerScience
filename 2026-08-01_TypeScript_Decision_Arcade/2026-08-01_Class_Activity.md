@@ -1,22 +1,30 @@
-# Live Class Activity: TypeScript Decisions
+# Instructor-Run Class Activity: TypeScript Decisions
 
-**Date:** August 1, 2026  
-**Tool:** https://www.typescriptlang.org/play/  
+**Date:** August 1, 2026
+
+**Tool:** https://www.typescriptlang.org/play/
+
 **New concept:** `else if`
 
-## How We Will Work
+**Format:** Instructor live-codes; students follow along
 
-Everyone follows the teacher in the TypeScript Playground. We will complete one
-small change at a time instead of copying a large finished program.
+## How to Run This Activity
 
-For every exercise:
+You drive the entire activity from your shared TypeScript Playground. Students
+keep their own Playground open and type the same code as you.
 
-1. Read the rule together.
-2. Predict the output.
-3. Type the next small piece.
-4. Press **Run**.
-5. Compare the output with the prediction.
-6. Explain which branch ran and why.
+This is not a team activity. Students do not need roles, separate missions, or
+long discussions. Keep the flow moving:
+
+1. Explain what you are about to type.
+2. Type one small section while students follow.
+3. Ask one short reinforcing question.
+4. Run the code yourself.
+5. Briefly explain the output.
+6. Move to the next change.
+
+Students may answer aloud or in chat. Accept short answers and continue once
+the main idea is clear.
 
 Use only concepts the class already knows, plus today's `else if`:
 
@@ -26,12 +34,16 @@ Use only concepts the class already knows, plus today's `else if`:
 - Math and comparison operators
 - `if`, `else if`, and `else`
 
-Do not add functions, arrays, objects, loops, `switch`, logical operators, user
-input, randomness, or libraries.
+Do not introduce functions, arrays, objects, loops, `switch`, logical
+operators, user input, randomness, or libraries.
 
-## Live Exercise 1: Recharge July Skills
+## Demo 1: Quick July Recap
 
-Type this together:
+### Say
+
+> Let us warm up with values, types, one calculation, and two booleans.
+
+### Type
 
 ```ts
 const player: string = "Nova";
@@ -45,21 +57,30 @@ console.log(coins >= 10);
 console.log(hasKey);
 ```
 
-Before pressing **Run**, answer:
+### Ask while typing
 
-- Which value changed?
-- What number will `coins` contain?
-- Which two lines produce booleans?
-- What will each line print?
+- Which variable is allowed to change?
+  **Expected:** `coins`, because it uses `let`.
+- What value will `coins` contain after the calculation?
+  **Expected:** `10`.
+- What type of answer does `coins >= 10` produce?
+  **Expected:** A boolean.
 
-Then run the program and compare the result with the class prediction.
+### Run and reinforce
 
-## Live Exercise 2: Review Two Paths
+Point out that the output contains one string followed by two boolean values.
 
-Replace the editor with:
+## Demo 2: Review `if` and `else`
+
+### Say
+
+> We already know how a program chooses between two paths. The condition is a
+> yes-or-no question.
+
+### Replace the editor with
 
 ```ts
-const fuel: number = 60;
+let fuel: number = 60;
 
 if (fuel >= 50) {
   console.log("Launch approved!");
@@ -68,28 +89,37 @@ if (fuel >= 50) {
 }
 ```
 
-Predict, run, and explain the result for:
+### Ask before Run
 
-- `fuel = 60`
-- `fuel = 49`
+- Is `fuel >= 50` true or false when fuel is `60`?
+  **Expected:** True.
+- Which message should print?
+  **Expected:** `Launch approved!`
 
-Class discussion:
+Run the program. Then change only the value to `49` and run it again.
 
-- What question does the condition ask?
-- Which branch runs when the answer is true?
+### Ask after the second Run
+
 - What is the job of `else`?
+  **Expected:** It catches the values that did not pass the `if` condition.
 
-## Live Exercise 3: Build a Multi-Path Rank Ladder
+## Demo 3: Build an `else if` Ladder
 
-Start with only the value:
+### Say
+
+> `if` and `else` give us two paths. `else if` lets us ask another question
+> when the earlier question was false.
+
+Start with:
 
 ```ts
 let score: number = 82;
 ```
 
-Add one branch at a time with the teacher.
+Build the ladder one branch at a time. Pause briefly after each addition so
+students can catch up.
 
-### Step 1: Highest Rank
+### Add the first condition
 
 ```ts
 if (score >= 90) {
@@ -97,7 +127,10 @@ if (score >= 90) {
 }
 ```
 
-### Step 2: Add Another Question
+Ask: “Is 82 at least 90?”
+**Expected:** No, so nothing prints yet.
+
+### Add the first `else if`
 
 ```ts
 if (score >= 90) {
@@ -107,7 +140,10 @@ if (score >= 90) {
 }
 ```
 
-### Step 3: Add a Third Question
+Ask: “Why does the computer check 70?”
+**Expected:** The 90 condition was false.
+
+### Add another `else if`
 
 ```ts
 if (score >= 90) {
@@ -119,7 +155,10 @@ if (score >= 90) {
 }
 ```
 
-### Step 4: Add the Fallback
+Ask: “Will the computer check 50 for score 82?”
+**Expected:** No. The 70 branch is already true, so the ladder stops.
+
+### Add the final fallback
 
 ```ts
 if (score >= 90) {
@@ -133,91 +172,83 @@ if (score >= 90) {
 }
 ```
 
-After every step, pause and ask:
+Ask: “Which scores reach the final `else`?”
+**Expected:** Scores lower than 50.
 
-- Where does the computer begin?
-- When does it move down?
-- What makes the ladder stop?
-- What values will reach the final `else`?
+### Reinforce before moving on
 
-## Live Exercise 4: Boundary Testing
+> The ladder checks from top to bottom. The first true branch runs, and then
+> the ladder stops.
 
-Change only the value of `score`. Predict every result before pressing **Run**.
+## Demo 4: Show Why Boundaries Matter
 
-| Score | Class prediction | Actual output |
-|---:|---|---|
-| 95 |  |  |
-| 90 |  |  |
-| 89 |  |  |
-| 70 |  |  |
-| 69 |  |  |
-| 50 |  |  |
-| 49 |  |  |
+Keep the completed rank ladder on screen. Change only `score`, one value at a
+time:
 
-Explain why these pairs are useful:
+```text
+95, 90, 89, 70, 69, 50, 49
+```
 
-- `90` and `89`
-- `70` and `69`
-- `50` and `49`
+Before each Run, state the value and give students a moment to predict. You
+still control every edit and Run click.
 
-Main idea:
+Use these reinforcing questions:
 
-> Test the exact boundary and the number just below it.
+- Why do 90 and 89 produce different results?
+  **Expected:** 90 passes the first condition; 89 does not.
+- Why do we test the exact boundary and the number just below it?
+  **Expected:** The pair helps reveal mistakes in the threshold.
+- How many branches print during one Run?
+  **Expected:** One.
 
-## Live Exercise 5: Galactic Gatekeeper
+Main message:
 
-Build this second ladder together from a blank Playground:
+> Boundary tests help prove that the code matches the written rules.
 
-- `90` or more fuel: `Hyper Jump unlocked!`
-- `60` or more fuel: `Moon Route unlocked!`
-- `30` or more fuel: `Training Orbit unlocked!`
-- Lower than `30`: `Recharge before launch.`
+## Demo 5: Galactic Gatekeeper
 
-Start with:
+### Say
+
+> Now I will use the same decision pattern with a different theme. Watch how
+> the structure stays the same while the values and messages change.
+
+### Type
 
 ```ts
 let fuel: number = 68;
+
+if (fuel >= 90) {
+  console.log("Hyper Jump unlocked!");
+} else if (fuel >= 60) {
+  console.log("Moon Route unlocked!");
+} else if (fuel >= 30) {
+  console.log("Training Orbit unlocked!");
+} else {
+  console.log("Recharge before launch.");
+}
 ```
 
-The completed program must use:
+### Ask while demonstrating
 
-- One `if`
-- Two `else if` branches
-- One final `else`
-- Conditions ordered from highest to lowest
+- Why is the 90 condition above the 60 condition?
+  **Expected:** The computer checks from the top, so the highest threshold
+  must come first.
+- Which route should fuel 68 choose?
+  **Expected:** Moon Route.
+- What happens when fuel is 29?
+  **Expected:** The final `else` prints the recharge message.
 
-Predict and test:
+Run `68`, `90`, `89`, `60`, `59`, `30`, and `29`. Students follow the value
+changes on their own screens.
 
-```text
-95, 90, 89, 60, 59, 30, 29
-```
+## Demo 6: AI Logic Bug
 
-Explain why `89` takes the Moon Route instead of Hyper Jump.
+### Say
 
-## Live Exercise 6: Dragon Training Arena
+> An AI coding assistant can produce code that runs but still makes the wrong
+> decision. We must test the logic ourselves.
 
-Build another decision ladder as a class, but let students call out each next
-line before the teacher types it.
-
-- `80` or more energy: `Sky Flame`
-- `50` or more energy: `Fireball`
-- `20` or more energy: `Smoke Puff`
-- Lower than `20`: `Nap Time`
-
-Requirements:
-
-- Use a typed number named `dragonEnergy`.
-- Use one `if`, two `else if` branches, and one `else`.
-- Print a different message in every branch.
-- Keep conditions ordered from highest to lowest.
-- Predict and test `80`, `79`, `50`, `49`, `20`, and `19`.
-
-After each test, ask one student to name the first true branch and explain why
-the earlier branches were false.
-
-## Live Exercise 7: AI Bug Hunt
-
-An AI assistant suggested this program:
+### Type the AI draft
 
 ```ts
 let score: number = 95;
@@ -233,50 +264,53 @@ if (score >= 50) {
 }
 ```
 
-Complete the bug hunt as one class:
+### Ask before Run
 
-1. Predict what the program will print for `95`.
-2. Run it.
-3. Identify the first true condition.
-4. Compare the result with the intended rank rules.
-5. Reorder the conditions from highest to lowest.
-6. Test `95`, `90`, `70`, `50`, and `49` again.
+- What will the code actually print for 95?
+  **Expected:** Explorer.
+- What should it print according to the rank rules?
+  **Expected:** Legendary.
+- Why does the code stop too early?
+  **Expected:** `score >= 50` is already true, so the first branch runs.
 
-AI connection:
+Run the incorrect version. Then move the thresholds into this order:
 
-> Code can compile and run while still containing incorrect logic. Humans must
-> test AI-written code before trusting it.
+```text
+90, 70, 50
+```
 
-## If Time Permits: Create a Class Theme
+Run it again and emphasize:
 
-Choose one theme together:
+> “The program ran” and “the program is correct” are not the same claim.
 
-- Superhero power meter
-- Pet robot mood
-- Treasure-vault security level
-- Sports tournament rank
-- Reading challenge badge
+## Optional Demo: Dragon Training Arena
 
-As a class, decide:
+Use this only if the main demos finish early. You still type and run the whole
+program while students follow.
 
-1. The number variable
-2. Three boundary values
-3. Four output messages
-4. The correct top-to-bottom order
-5. At least six useful test values
+- `80` or more energy: `Sky Flame`
+- `50` or more energy: `Fireball`
+- `20` or more energy: `Smoke Puff`
+- Lower than `20`: `Nap Time`
 
-Keep the program within today's concepts. Returning students may suggest better
-messages, boundary tests, and explanations, but they should not add future
-course concepts.
+Use a typed number named `dragonEnergy` and the same `if` / `else if` / `else`
+structure.
 
-## Final Explain-It Check
+Ask:
 
-Every student should be able to complete this sentence:
+- Which threshold belongs first?
+- Which values would be useful boundary tests?
+- What is the job of the final `else`?
 
-> An `else if` ladder checks __________, runs __________, and then __________.
+Do not add new syntax. The point is repetition with a different theme.
 
-A strong answer includes:
+## Closing Reinforcement
 
-- top to bottom
-- the first true branch
-- stops or skips the remaining branches
+Ask these three questions without turning them into a long discussion:
+
+1. In what direction does an `else if` ladder check?
+   **Expected:** Top to bottom.
+2. What happens after the first true condition?
+   **Expected:** That branch runs and the ladder stops.
+3. Why should we test AI-generated code?
+   **Expected:** Code can run while still containing incorrect logic.

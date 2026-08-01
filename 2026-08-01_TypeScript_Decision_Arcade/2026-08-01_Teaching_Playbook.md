@@ -131,10 +131,10 @@ Expected response: **Type, Run, Read**.
 
 ## 9:20–9:40 — July recap through prediction
 
-### Use the live class activity
+### Use the instructor-run class activity
 
-- Live Exercise 1: Recharge July Skills
-- Live Exercise 2: Review Two Paths
+- Demo 1: Quick July Recap
+- Demo 2: Review `if` and `else`
 
 ### Recap one idea at a time
 
@@ -204,9 +204,9 @@ Use the phrase:
 
 ### Returning-student option
 
-Students who finish early may begin the first half of the Robot Repair Arcade.
-Ask them to explain type corrections and `if`/`else` predictions. They should
-return when the concept slides resume.
+Returning students follow the same demonstration. Reinforce their understanding
+by asking them for the next boundary prediction or the reason a branch is
+skipped. Do not move them into a separate activity during the live demo.
 
 ---
 
@@ -289,17 +289,17 @@ Finish on Slide 8, close the presentation, and open the class activity.
 ### Show
 
 - Close the presentation after Slide 8.
-- Open Live Exercise 3: Build a Multi-Path Rank Ladder.
+- Open Demo 3: Build an `else if` Ladder.
 
 ### Live-coding routine
 
 Use the same routine after every small addition:
 
-1. Teacher types one part.
-2. Students say what it means.
-3. Students predict.
-4. Everyone runs.
-5. Everyone reads the output.
+1. Explain the next small addition.
+2. Type it while students follow along.
+3. Ask one short reinforcing question.
+4. Run the code yourself.
+5. Briefly explain the output and continue.
 
 ### Build in this order
 
@@ -310,18 +310,11 @@ Use the same routine after every small addition:
 5. Add the final `else`.
 6. Test several values.
 
-### Boundary Boss tests
+### Boundary tests
 
-Ask students to fill this table before running each test:
-
-| Score | Prediction |
-|---:|---|
-| 90 | Legendary |
-| 89 | Hero |
-| 70 | Hero |
-| 69 | Explorer |
-| 50 | Explorer |
-| 49 | Rookie |
+Change the values yourself while students follow: `90`, `89`, `70`, `69`,
+`50`, and `49`. Ask for a quick prediction before each Run, but keep control of
+the editor and pacing.
 
 ### Emphasize
 
@@ -329,7 +322,7 @@ Ask students to fill this table before running each test:
 
 ### Save progress
 
-Students should copy their Rank Engine code into their classwork answer area or keep the Playground tab open through break.
+Students should keep their follow-along Rank Engine code open through break.
 
 ---
 
@@ -339,7 +332,8 @@ Fixed break. Do not use this time for installation support.
 
 Before releasing students, say:
 
-> Keep your Playground tab open if possible. We will turn the ladder into game missions after typing practice.
+> Keep your Playground tab open if possible. I will continue the live coding
+> demonstrations after typing practice.
 
 ---
 
@@ -360,20 +354,17 @@ Do not turn this into another programming lecture. Resume the lesson at 11:30.
 
 ---
 
-## 11:30–11:45 — Boundary Boss Battle
+## 11:30–11:45 — Instructor Demo 4: Boundary Testing
 
 ### Show
 
-- Use Live Exercise 4: Boundary Testing.
+- Use Demo 4: Show Why Boundaries Matter.
 
-### Pair routine
+### Instructor routine
 
-For each test value:
-
-1. Partner A traces from the top.
-2. Partner B records the result.
-3. Both run the program.
-4. Switch roles.
+Change one value at a time on your shared screen. Students make the same edit
+in their Playground. Pause for one quick prediction, run the program yourself,
+and explain the selected branch.
 
 ### Listen for complete explanations
 
@@ -381,34 +372,32 @@ A strong explanation sounds like:
 
 > 69 fails the 90 condition and the 70 condition. It passes the 50 condition, so Explorer runs and the ladder stops.
 
-If students state only the output, ask: “Which earlier conditions were false?”
+Reinforcing question: “Which earlier conditions were false?”
 
 ---
 
-## 11:45–12:05 — Live Exercise 5: Galactic Gatekeeper
+## 11:45–12:05 — Instructor Demo 5: Galactic Gatekeeper
 
 ### Show
 
-- Use Live Exercise 5: Galactic Gatekeeper.
+- Use Demo 5: Galactic Gatekeeper.
 
 ### Rules
 
-- 80 or more fuel → `Warp speed!`
-- 50 or more fuel → `Cruise mode.`
-- 20 or more fuel → `Emergency reserve.`
-- anything lower → `Dock and refuel.`
+- 90 or more fuel → `Hyper Jump unlocked!`
+- 60 or more fuel → `Moon Route unlocked!`
+- 30 or more fuel → `Training Orbit unlocked!`
+- anything lower → `Recharge before launch.`
 
 ### Starter
 
 ```ts
-const fuel: number = 72;
-
-// Build the decision ladder here.
+let fuel: number = 68;
 ```
 
 ### Required tests
 
-80, 79, 50, 49, 20, and 19.
+68, 90, 89, 60, 59, 30, and 29.
 
 ### Facilitation prompt
 
@@ -418,83 +407,43 @@ Expected idea: a broad lower condition placed first could catch a high value too
 
 ---
 
-## 12:05–12:20 — Live Exercise 6: Dragon Training Arena
+## 12:05–12:20 — Optional Instructor Demo: Dragon Training Arena
 
 ### Show
 
-- Use Live Exercise 6: Dragon Training Arena.
+- Use the optional Dragon Training Arena demo only if pacing allows.
 
 ### Rules
 
-- 90 or more → `Master Dragon Rider`
-- 70 or more → `Skilled Flyer`
-- 40 or more → `Training Cadet`
-- anything lower → `Practice in the nest`
+- 80 or more energy → `Sky Flame`
+- 50 or more energy → `Fireball`
+- 20 or more energy → `Smoke Puff`
+- anything lower → `Nap Time`
 
-### Team roles
+### Instructor routine
 
-- **Navigator:** reads the mission rules.
-- **Coder:** types while teammates explain.
-- **Tester:** chooses boundary values.
-- **Reporter:** explains one trace to the class.
+You type and run the entire program. Students follow along. Ask only these
+reinforcing questions:
 
-Rotate roles when the team completes one successful test.
-
-### If the group is stuck
-
-Ask these questions in order:
-
-1. What is the value variable?
-2. What is the highest outcome?
-3. What condition belongs first?
-4. What should happen when that condition is false?
-5. What should the final `else` catch?
+1. Which threshold belongs first?
+2. Which values would be useful boundary tests?
+3. What is the job of the final `else`?
 
 ---
 
-## 12:20–12:35 — If time permits: create a class decision game
+## 12:20–12:35 — Reinforcement and catch-up
 
-### Show
-
-- Use **If Time Permits: Create a Class Theme** from the live class activity.
-
-### Student choices
-
-Students may design one of these:
-
-- superhero training rank
-- space explorer badge
-- pet-care helper
-- weather outfit guide using a number
-- robot battery status
-
-### Requirements
-
-- one number variable with a type
-- one `if`
-- at least two `else if` branches
-- one final `else`
-- four different messages
-- four test values, including a boundary
-
-### Scope reminder
-
-Students should not add input boxes, randomness, arrays, loops, or functions. The creative part is the theme, messages, thresholds, and test plan.
-
-### Share-out
-
-Invite two students to show:
-
-1. one boundary they tested
-2. the path the computer followed
+Use this block to finish the Galactic or Dragon demonstration, repeat any
+confusing value, or revisit the highest-to-lowest ordering rule. Do not begin a
+student-led project. You remain in control of the shared code.
 
 ---
 
-## 12:35–12:48 — AI Bug Bounty
+## 12:35–12:48 — Instructor Demo 6: AI Logic Bug
 
 ### Show
 
-- Use Live Exercise 7: AI Bug Hunt.
+- Use Demo 6: AI Logic Bug.
 
 ### Frame the AI connection
 
@@ -681,25 +630,23 @@ When a program does not work, avoid rewriting it for the student. Ask them to ch
 
 ### If students need more support
 
-- Use only the Rank Engine and Galactic Gatekeeper.
-- Trace with thumbs up/down before typing.
+- Run only the Rank Engine and Galactic Gatekeeper demos.
+- Trace with thumbs up/down before each Run.
 - Keep the four outcomes visible.
-- Complete the classwork together.
-- Shorten the student-created game to one `if`, one `else if`, and one `else`.
+- Slow your typing so students can keep their follow-along code synchronized.
 - Do the five-question verbal close instead of the full live Kahoot.
 
 ### If students are on pace
 
-- Complete both guided missions.
-- Give time for a themed decision game.
-- Run the AI Bug Bounty and full Kahoot.
+- Complete all six instructor demos.
+- Use the optional Dragon Training Arena demonstration.
+- Run the full Kahoot.
 
 ### If students finish early
 
-- Use the Robot Repair Arcade.
-- Require more boundary tests.
-- Ask for clearer output messages.
-- Have students explain the trace to a partner.
+- Keep them with the instructor-led demonstration.
+- Ask them to predict an extra boundary value.
+- Ask which branch will run and which branches will be skipped.
 - Do not introduce new syntax.
 
 ---
@@ -713,7 +660,7 @@ During class, look for:
 - one explanation of why a branch was skipped
 - boundary tests at and just below a threshold
 - a repair to the AI-generated wrong-order ladder
-- a student-created ladder with four outcomes
+- follow-along code that matches the instructor's ladder
 
 After class, look for:
 
