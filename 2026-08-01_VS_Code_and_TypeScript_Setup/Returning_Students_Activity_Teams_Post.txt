@@ -1,0 +1,23 @@
+RETURNING STUDENTS - ROBOT REPAIR ARCADE
+
+Only start this activity if both commands already work:
+
+node --version
+tsc --version
+
+Open the Returning Students Activity and complete the Robot Repair Arcade
+stations while the class finishes setup.
+
+This activity practices only concepts we already learned:
+- console.log
+- let and const
+- string, number, and boolean
+- template literals
+- math and comparisons
+- if / else
+- predicting, testing, and debugging
+
+Do not use else if, functions, arrays, loops, extensions, or new packages.
+The goal is deeper practice, not moving ahead.
+
+Stop and rejoin the whole class when the teacher says, "All coders together."

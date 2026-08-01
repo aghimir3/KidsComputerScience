@@ -36,6 +36,22 @@ as time permits.
 
 Students are installing TypeScript globally for the simplified class workflow.
 
+## Returning Student Lane
+
+Students whose local workspace already passes both `node --version` and
+`tsc --version` may complete **Robot Repair Arcade** while the teacher supports
+new installations.
+
+- Post `2026-08-01_Returning_Students_Activity.md` separately.
+- Keep returning students within July concepts: variables, types, template
+  literals, operators, comparisons, and `if / else`.
+- Do not let this lane preview `else if`, functions, arrays, loops, or other new
+  syntax.
+- Ask students to predict, test boundary values, repair type errors, and explain
+  their reasoning. The depth comes from debugging, not new content.
+- Bring everyone back together before the whole-class decision-ladder lesson.
+- Returning students begin `else if` at the same time as everyone else.
+
 ## Flexible Schedule
 
 | Time | Activity | Teacher focus |
@@ -180,4 +196,3 @@ practice making careful decisions and testing every path."
   Pacific.
 - Record common Windows and macOS issues for the next setup lesson.
 - Do not collect screenshots that display private account names or passwords.
-
