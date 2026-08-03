@@ -1,0 +1,32 @@
+ADVANCED CLASSWORK - Decision Arcade Challenge Lab
+
+This optional extension is for students who finished today's regular classwork early and want a harder challenge.
+
+It stays inside today's lesson:
+- TypeScript Playground
+- typed variables
+- comparisons
+- if / else if / else
+- top-to-bottom tracing
+- boundary testing
+- debugging AI-style logic mistakes
+
+Do NOT use future topics yet:
+- no functions
+- no arrays or objects
+- no loops
+- no switch
+- no random numbers
+- no user input
+
+Goal:
+Prove that your decision ladder works by tracing carefully, testing exact boundaries, and explaining why the first true branch wins.
+
+Points: 100 points + 10 bonus points
+
+Use the attached PDF:
+2026-08-01_Advanced_Classwork_Decision_Arcade.pdf
+
+Submit to BOTH if your teacher asks you to turn it in:
+1. Microsoft Teams
+2. Ishwari Raut ma'am
