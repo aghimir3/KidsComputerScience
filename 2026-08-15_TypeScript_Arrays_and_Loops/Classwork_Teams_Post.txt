@@ -1,0 +1,26 @@
+Classwork: TypeScript Arrays and Loops
+
+Today we will learn how one typed array stores an ordered list. You will use
+indexes, .length, and last week's for loop to process every item.
+
+Complete the attached classwork during class:
+
+- Predict before running each program.
+- Create string[] and number[] arrays.
+- Practice zero-based indexes and .length.
+- Trace a loop through every array item.
+- Build an AI Training Data Checker.
+- Repair an off-by-one boundary bug.
+
+Points: 100 points + 10 bonus points
+
+Submit:
+1. Your completed classwork PDF or written responses
+2. Your final TypeScript code or a clear screenshot of code and output
+
+Submit to BOTH:
+1. Microsoft Teams
+2. Ishwari Raut ma'am
+
+Do not include passwords, private folders, or personal information in your
+code or screenshots.
