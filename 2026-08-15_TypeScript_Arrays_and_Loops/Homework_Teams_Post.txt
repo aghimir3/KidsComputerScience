@@ -13,6 +13,41 @@ Complete the attached homework to practice:
 - Designing your own small list program
 - Explaining why AI data may need human review
 
+Important note about template literals:
+
+We did not have much time to explain template literals in class. For this
+homework, you only need this pattern:
+
+console.log(`${i}: ${pets[i]}`);
+
+A template literal is a string that uses backticks instead of regular quotes.
+On most keyboards, the backtick key is near the top-left, below Esc.
+
+Anything inside ${ } is calculated first and then placed into the message.
+
+Example:
+
+const name: string = "Maya";
+console.log(`Hello, ${name}!`);
+
+This prints:
+
+Hello, Maya!
+
+Array example:
+
+const pets: string[] = ["cat", "dog", "fish"];
+let i: number = 0;
+
+console.log(`${i}: ${pets[i]}`);
+
+This prints:
+
+0: cat
+
+Think of template literals as a cleaner way to build a message. They do not
+change the array, the loop, or the index.
+
 No computer is required. Complete the fillable PDF or write clear responses on
 paper. You may use VS Code afterward to check your predictions.
 

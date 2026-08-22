@@ -288,7 +288,7 @@ def build(prs):
     add_takeaway_bar(slide, "Automatic checks can flag uncertainty; people decide what is correct.", COLORS["dark_blue"])
 
     slide = new_slide(prs)
-    add_slide_title(slide, "Build the AI Data Checker", "Combine arrays, loops, decisions, and an accumulator")
+    add_slide_title(slide, "Build the Training Data Checker", "Check labels that might be used with an AI project")
     stages = [
         ("1. STORE", ["Create labels: string[]"], COLORS["medium_blue"]),
         ("2. VISIT", ["Loop to labels.length"], COLORS["teal"]),
@@ -337,7 +337,7 @@ def build(prs):
         ("Build typed arrays", COLORS["teal"]),
         ("Index and length lab", COLORS["purple"]),
         ("Trace an array loop", COLORS["green"]),
-        ("AI data checker", COLORS["orange"]),
+        ("training data checker", COLORS["orange"]),
         ("Repair the boundary bug", COLORS["red"]),
     ]
     for index, (text, color) in enumerate(missions):

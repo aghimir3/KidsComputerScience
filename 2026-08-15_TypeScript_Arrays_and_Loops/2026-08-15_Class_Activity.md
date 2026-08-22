@@ -264,6 +264,43 @@ const labels: string[] = ["cat", "unknown", "dog", "unknown", "bird"];
 
 Ask students to predict `labels.length` and the value at `labels[2]`.
 
+### Quick talking point: Template literals
+
+Explain that these are a special kind of string called **template literals**.
+They let the program build a message using text plus variable values.
+
+```ts
+const exampleNumber: number = 2;
+const label: string = "unknown";
+
+console.log("Example " + exampleNumber + ": " + label);
+console.log(`Example ${exampleNumber}: ${label}`);
+```
+
+Both lines print:
+
+```text
+Example 2: unknown
+```
+
+Use these talking points:
+
+- A regular string uses quotes and prints the text inside.
+- A template literal uses the backtick key: `` ` ``.
+- `${...}` means "calculate this part, then place the answer into the message."
+- `${i + 1}` turns a computer index like `0` into a human-friendly number like
+  `1`.
+- Template literals only change the printed message. They do not change the
+  array, loop, or index.
+
+Ask before moving on:
+
+- If `i` is `0`, what does `${i + 1}` become?
+  **Expected:** `1`.
+- If `labels[i]` is `"cat"`, what does
+  `` `Example ${i + 1}: ${labels[i]}` `` print when `i` is `0`?
+  **Expected:** `Example 1: cat`.
+
 ### Stage 2: Visit every label
 
 ```ts
