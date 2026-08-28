@@ -5,7 +5,22 @@
 **Points:** 100 points + 5 bonus points
 
 You can complete the core homework without a computer. Read each definition
-and call carefully. Predict first; use VS Code later only to check your work.
+and call carefully. Predict first, then use one of these options to check your
+work:
+
+## Tool Options
+
+### Option 1: VS Code (use this first)
+
+You should already have VS Code and TypeScript set up. Open your
+`august-29-functions` folder and use `functions.ts` to test your answers.
+
+### Option 2: TypeScript website (backup)
+
+If VS Code or TypeScript does not work on your computer, go to
+https://www.typescriptlang.org/play/, clear the sample code, and test the same
+programs there. You do not need to repair VS Code before finishing the
+homework.
 
 ## Part 1: Match the Vocabulary - 15 points
 

@@ -53,8 +53,8 @@ def create_homework(output_path):
         145,
         522,
         64,
-        "No computer required",
-        "Predict and explain first. Use VS Code later only to check your thinking.",
+        "Tool options",
+        "Predict first. Check in VS Code. If it fails, use typescriptlang.org/play.",
         fill=PALE_GREEN,
     )
 

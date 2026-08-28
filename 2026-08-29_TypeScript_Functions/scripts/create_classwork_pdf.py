@@ -24,7 +24,7 @@ def create_classwork(output_path):
 
     pdf.start_page(
         "Classwork: TypeScript Functions",
-        "100 points + 10 bonus | Define once, call many times",
+        "100 + 10 bonus | VS Code first | Backup: typescriptlang.org/play",
     )
     add_student_header(pdf, "cw")
     pdf.section(532, "Part 1 - Definition or Call?", "10 points", BLUE)

@@ -2,7 +2,7 @@
 
 **Date:** August 29, 2026
 **Points:** 100 points + 10 bonus points
-**Tool:** VS Code or the TypeScript Playground
+**Tool:** VS Code first; TypeScript Playground as a backup
 
 ## Goal
 
@@ -11,14 +11,22 @@ parameters. Predict before you run each program.
 
 ## Setup
 
-Create a folder named `august-29-functions`. Inside it, create
-`functions.ts`.
+### Option 1: VS Code (use this first)
+
+You should already have VS Code and TypeScript set up. Create a folder named
+`august-29-functions`. Open it in VS Code, then create `functions.ts`.
 
 Test the file:
 
 ```ts
 console.log("Functions class ready!");
 ```
+
+### Option 2: TypeScript website (backup)
+
+If VS Code or TypeScript does not work on your computer, do not stop the
+classwork. Go to https://www.typescriptlang.org/play/, clear the sample code,
+and type the same programs there. Click **Run** to test each program.
 
 ## Part 1: Definition or Call? - 10 points
 

@@ -16,8 +16,14 @@ This homework practices:
 - Responsible human review of uncertain AI labels
 
 The core homework can be completed without a computer. Read each program and
-predict first. You may use VS Code or the TypeScript Playground afterward to
-check your thinking.
+predict first. Check your code in VS Code afterward. You should already have it
+set up.
+
+If VS Code or TypeScript does not work, use this backup instead:
+https://www.typescriptlang.org/play/
+
+You can type and run the same programs on the website without repairing VS Code
+first.
 
 Complete the return-value bonus only if return values were introduced during
 class.

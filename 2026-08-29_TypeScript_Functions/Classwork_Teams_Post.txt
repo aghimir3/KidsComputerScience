@@ -11,9 +11,13 @@ Open the attached file:
 2026-08-29_Classwork_TypeScript_Functions.pdf
 
 You will need:
-- VS Code with TypeScript working, or the TypeScript Playground
+- VS Code with TypeScript working (use this first)
+- If VS Code does not work: https://www.typescriptlang.org/play/
 - A file named functions.ts
 - The class presentation and teacher demonstrations
+
+You should already have VS Code set up. If it does not work today, use the
+TypeScript website immediately so you can continue the same classwork.
 
 Important reminders:
 - Predict before you run each program.
