@@ -29,7 +29,9 @@ By the end of class, students should be able to:
 - Open the presentation, class activity, classwork PDF, and teaching playbook.
 - Test VS Code, TypeScript, and Node.js 24 or newer on the demo computer.
 - Create and run a `functions.ts` file before students arrive.
-- Keep https://www.typescriptlang.org/play/ available as a fallback.
+- Run every instructor demonstration and guided activity in VS Code.
+- Keep https://www.typescriptlang.org/play/ available only as a fallback for
+  an individual student whose local setup fails.
 - Post the classwork PDF in Microsoft Teams.
 - Prepare the Kahoot, but protect coding time if students need more practice.
 - Ask assistant teachers to watch for missing calls, missing arguments, and
@@ -197,7 +199,8 @@ reason matters more than typing speed.
 
 ## Adaptive Pacing
 
-- **Setup takes too long:** Pair students and use the TypeScript Playground.
+- **A student's setup fails:** Continue teaching in VS Code and ask that
+  student to use the TypeScript Playground for the same code.
 - **Students expect a definition to run:** Add and remove the call several
   times while they predict the output.
 - **Parameter and argument are mixed up:** Draw one labeled input box and send

@@ -2,7 +2,11 @@
 
 **Date:** August 29, 2026
 
-**Tool:** VS Code with Node.js 24 or newer
+**Instructor tool:** VS Code with Node.js 24 or newer
+
+**Delivery rule:** Run every demonstration and guided class activity in VS
+Code. The TypeScript website is only a backup for an individual student whose
+local setup does not work.
 
 **New concept:** Named functions with typed parameters
 
@@ -45,9 +49,11 @@ Run this setup check:
 console.log("Functions class ready!");
 ```
 
-If local TypeScript does not run, pair the student with a classmate or use
-https://www.typescriptlang.org/play/. Protect teaching time instead of turning
-the lesson into a long setup repair.
+Keep the instructor demonstration in VS Code for the complete lesson. If a
+student's local TypeScript does not run, ask that student to use
+https://www.typescriptlang.org/play/ for their own typing while following the
+same code. Protect teaching time instead of turning the lesson into a long
+setup repair.
 
 ## Readiness Gate: Can We Recognize Repeated Work?
 
@@ -364,7 +370,8 @@ Ask students to answer without running code:
 
 ## Adaptive Pacing
 
-- **Setup is slow:** Pair students or use the TypeScript Playground.
+- **A student's setup fails:** Keep teaching in VS Code. Ask that student to
+  use the TypeScript Playground for their own work and follow the same code.
 - **Calls are confusing:** Use only a no-parameter function and physically
   point from each call back to the definition.
 - **Parameters are confusing:** Use one parameter and trace its value in a box.
