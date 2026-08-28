@@ -1,0 +1,28 @@
+TypeScript Functions - Classwork
+
+Date: Saturday, August 29, 2026
+Points: 100 points + 10 bonus points
+
+Today we will learn how to define a reusable function, call it, and send typed
+values into parameters. We will finish by building an AI Label Review Helper
+that applies one consistent review rule to several labels.
+
+Open the attached file:
+2026-08-29_Classwork_TypeScript_Functions.pdf
+
+You will need:
+- VS Code with TypeScript working, or the TypeScript Playground
+- A file named functions.ts
+- The class presentation and teacher demonstrations
+
+Important reminders:
+- Predict before you run each program.
+- A definition describes a function; a call runs it.
+- Parameters are named inputs in the definition.
+- Arguments are values sent by a call.
+- Complete the return-value bonus only after it is introduced in class.
+
+Submission:
+Submit your completed classwork to BOTH:
+1. Microsoft Teams
+2. Ishwari Raut ma'am

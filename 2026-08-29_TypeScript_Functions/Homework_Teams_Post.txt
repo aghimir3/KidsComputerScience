@@ -1,0 +1,28 @@
+TypeScript Functions - Homework
+
+Assigned: Saturday, August 29, 2026
+Due: Before class on Saturday, September 5, 2026
+Points: 100 points + 5 bonus points
+
+Open the attached file:
+2026-08-29_Homework_TypeScript_Functions.pdf
+
+This homework practices:
+- Function definitions and calls
+- Parameters and arguments
+- Matching argument types and positions
+- Predicting function output
+- Finding and repairing function bugs
+- Responsible human review of uncertain AI labels
+
+The core homework can be completed without a computer. Read each program and
+predict first. You may use VS Code or the TypeScript Playground afterward to
+check your thinking.
+
+Complete the return-value bonus only if return values were introduced during
+class.
+
+Submission:
+Submit your completed homework to BOTH:
+1. Microsoft Teams
+2. Ishwari Raut ma'am
