@@ -29,6 +29,8 @@ Complete the return-value bonus only if return values were introduced during
 class.
 
 Submission:
-Submit your completed homework to BOTH:
-1. Microsoft Teams
-2. Ishwari Raut ma'am
+Send your completed homework ONLY to the assistant teachers:
+1. Ishwari Raut ma'am
+2. Khushi ma'am
+
+Do not post homework in Microsoft Teams.

@@ -218,7 +218,9 @@ explain why this function returns a value instead of only printing one.
 
 ## Submit
 
-Submit your completed homework to both:
+Send your completed homework only to the assistant teachers:
 
-1. Microsoft Teams
-2. Ishwari Raut ma'am
+1. Ishwari Raut ma'am
+2. Khushi ma'am
+
+Do not post homework in Microsoft Teams.

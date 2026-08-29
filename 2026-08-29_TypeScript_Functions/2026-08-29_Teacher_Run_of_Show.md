@@ -224,10 +224,16 @@ Homework is due before class on Saturday, September 5, 2026.
 
 ## Submission Reminder
 
-Classwork and homework must be submitted to:
+Classwork must be sent to both assistant teachers:
 
-1. Microsoft Teams
-2. Ishwari Raut ma'am
+1. Ishwari Raut ma'am
+2. Khushi ma'am
+
+Students may also post classwork in Microsoft Teams as a reply to the
+classwork post.
+
+Homework must be sent only to Ishwari Raut ma'am and Khushi ma'am. Do not
+post homework in Microsoft Teams.
 
 ## Closing Script
 

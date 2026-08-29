@@ -220,7 +220,9 @@ function needsReview(label: string): boolean {
 
 ## Submit
 
-Submit your completed classwork to both:
+Send your completed classwork to both assistant teachers:
 
-1. Microsoft Teams
-2. Ishwari Raut ma'am
+1. Ishwari Raut ma'am
+2. Khushi ma'am
+
+You may also post it in Microsoft Teams as a reply to the classwork post.

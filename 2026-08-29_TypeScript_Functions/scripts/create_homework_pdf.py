@@ -280,7 +280,9 @@ def create_homework(output_path):
         "The parameter type describes what goes in. The return type describes what comes back.",
         fill=PALE_GREEN,
     )
-    pdf.submission_bar("Submit to Microsoft Teams AND Ishwari Raut ma'am.")
+    pdf.submission_bar(
+        "Send ONLY to Ishwari ma'am + Khushi ma'am (assistant teachers) - not Teams."
+    )
     pdf.save()
 
 

@@ -212,9 +212,15 @@ This keeps grading consistent and makes it easy for students to understand their
 
 ### Submission Instructions (Always Include)
 
-All classwork and homework must be submitted to:
-1. **Microsoft Teams** (primary)
-2. **Ishwari Raut ma'am** (copy)
+**Classwork:**
+1. Send it to **Ishwari Raut ma'am**.
+2. Send it to **Khushi ma'am**.
+3. It may also be posted in Microsoft Teams as a reply to the classwork post.
+
+**Homework:**
+1. Send it only to the assistant teachers: **Ishwari Raut ma'am** and
+   **Khushi ma'am**.
+2. Do not submit homework in Microsoft Teams.
 
 ---
 

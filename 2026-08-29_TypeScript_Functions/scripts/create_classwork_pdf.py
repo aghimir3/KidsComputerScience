@@ -259,7 +259,9 @@ def create_classwork(output_path):
     pdf.field("cw_bonus_print_return", 48, 220, 522, 60, multiline=True)
     pdf.text(48, 200, "Write isPassing(score: number): boolean using a boundary of 70:", bold=True)
     pdf.field("cw_bonus_is_passing", 48, 80, 522, 100, multiline=True, font_size=8)
-    pdf.submission_bar("Submit to Microsoft Teams AND Ishwari Raut ma'am.")
+    pdf.submission_bar(
+        "Send to Ishwari ma'am + Khushi ma'am. Optional: reply to the Teams classwork post."
+    )
     pdf.save()
 
 
